@@ -1,0 +1,4 @@
+Low latency systems prioritize quick response times.
+To achieve this, systems usually keep context windows short, reduce retrieval depth,
+and cache frequently asked questions.
+

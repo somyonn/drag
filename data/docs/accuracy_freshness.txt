@@ -1,0 +1,4 @@
+Accuracy and freshness require continuous data updates and careful verification.
+When source documents change often, periodic re-embedding and re-indexing may be needed.
+Evaluation should track answer correctness and citation quality over time.
+

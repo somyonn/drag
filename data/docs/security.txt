@@ -1,0 +1,4 @@
+Security-oriented RAG systems focus on minimizing data exposure.
+Sensitive data should be filtered before it leaves edge environments.
+Audit logs and access control are important for compliance.
+

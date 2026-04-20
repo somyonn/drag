@@ -1,0 +1,26 @@
+[
+  {
+    "chunk_id": "doc::accuracy_freshness.txt::chunk::0",
+    "doc_id": "doc::accuracy_freshness.txt",
+    "source_uri": "data/docs/accuracy_freshness.txt",
+    "text": "Accuracy and freshness require continuous data updates and careful verification.\nWhen source documents change often, periodic re-embedding and re-indexing may be needed.\nEvaluation should track answer correctness and citation quality over time.",
+    "start_char": 0,
+    "end_char": 244
+  },
+  {
+    "chunk_id": "doc::low_latency.txt::chunk::0",
+    "doc_id": "doc::low_latency.txt",
+    "source_uri": "data/docs/low_latency.txt",
+    "text": "Low latency systems prioritize quick response times.\nTo achieve this, systems usually keep context windows short, reduce retrieval depth,\nand cache frequently asked questions.",
+    "start_char": 0,
+    "end_char": 175
+  },
+  {
+    "chunk_id": "doc::security.txt::chunk::0",
+    "doc_id": "doc::security.txt",
+    "source_uri": "data/docs/security.txt",
+    "text": "Security-oriented RAG systems focus on minimizing data exposure.\nSensitive data should be filtered before it leaves edge environments.\nAudit logs and access control are important for compliance.",
+    "start_char": 0,
+    "end_char": 194
+  }
+]

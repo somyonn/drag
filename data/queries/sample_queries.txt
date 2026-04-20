@@ -1,0 +1,4 @@
+How can a RAG system reduce response time?
+What is important for protecting sensitive data in RAG?
+Why does a RAG system need re-indexing?
+
