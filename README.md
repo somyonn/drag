@@ -69,6 +69,24 @@ export OPENAI_BASE_URL="https://api.openai.com/v1"
 python -m rag_dist.cli --mode distributed --query "보안 로그에서 개인정보가 포함될 수 있는 필드는?"
 ```
 
+### AWS 공개 문서(EC2/S3/IAM) 수집 후 인덱싱
+`data/docs/aws/` 아래에 AWS 문서를 텍스트로 저장한 뒤 기존 인덱싱 파이프라인에 바로 넣을 수 있습니다.
+
+```bash
+python scripts/fetch_aws_docs.py --services ec2 s3 iam --max-pages-per-service 30
+python run_ingest.py --docs-dir data/docs/aws --index-dir data/index/aws
+python run_query.py --index-dir data/index/aws --query "What is an IAM role?"
+```
+
+### 3개 도메인 정책 프로파일로 실행 (Low Latency / Privacy / Freshness+Accuracy)
+도메인별 정책은 `data/config/domain_profiles.json`에 정의되어 있으며, 아래 스크립트로 각 프로파일을 바로 실험할 수 있습니다.
+
+```bash
+python scripts/run_domain_demo.py --profile low_latency --query "EC2 instance에서 IAM role 붙이는 방법은?"
+python scripts/run_domain_demo.py --profile privacy --query "로그에서 이메일 주소는 어떻게 다뤄야 해?"
+python scripts/run_domain_demo.py --profile freshness_accuracy --query "What is the current best practice for temporary AWS credentials?"
+```
+
 기본 임베딩은 **오프라인 해시 임베딩**(즉시 실행/재현성)입니다. 신경망 임베딩을 쓰고 싶으면:
 ```bash
 export USE_SENTENCE_TRANSFORMERS=1

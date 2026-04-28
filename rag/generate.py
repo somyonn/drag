@@ -56,6 +56,19 @@ class OpenAIChatClient(LLMClient):
         return data["choices"][0]["message"]["content"].strip()
 
 
+class CloudThenMockLLMClient(LLMClient):
+    """Try cloud LLM first, then fallback to mock."""
+
+    def __init__(self) -> None:
+        self._mock = MockLLMClient()
+
+    def generate(self, prompt: str, context: list[RetrievedChunk]) -> str:
+        try:
+            return OpenAIChatClient().generate(prompt, context)
+        except Exception:
+            return self._mock.generate(prompt, context)
+
+
 def build_prompt(query: str, retrieved: list[RetrievedChunk]) -> str:
     context_blocks = []
     for i, item in enumerate(retrieved, start=1):

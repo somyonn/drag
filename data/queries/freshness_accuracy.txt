@@ -1,0 +1,3 @@
+What is the current recommended way to use IAM roles for EC2 workloads?
+How does AWS currently describe S3 bucket policies versus IAM policies?
+What are the latest best practices for temporary credentials in AWS?

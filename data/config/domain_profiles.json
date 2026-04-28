@@ -1,0 +1,32 @@
+{
+  "low_latency": {
+    "index_dir": "data/index/aws",
+    "retrieval_k": 6,
+    "top_k": 3,
+    "policy": [
+      "service keyword routing (ec2/s3/iam)",
+      "short context budget",
+      "fast path first"
+    ]
+  },
+  "privacy": {
+    "index_dir": "data/index/aws",
+    "retrieval_k": 5,
+    "top_k": 3,
+    "policy": [
+      "PII-like pattern redaction on context and answer",
+      "minimum context exposure",
+      "policy-focused responses"
+    ]
+  },
+  "freshness_accuracy": {
+    "index_dir": "data/index/aws",
+    "retrieval_k": 10,
+    "top_k": 4,
+    "policy": [
+      "freshness-aware rerank using file mtime",
+      "source citation required",
+      "higher recall retrieval"
+    ]
+  }
+}

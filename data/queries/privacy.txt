@@ -1,0 +1,3 @@
+What IAM controls should we enforce to reduce accidental data exposure in S3?
+How should security logs handle email addresses and personal identifiers?
+What is a minimal-privilege access pattern for service-to-service communication?

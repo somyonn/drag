@@ -5,7 +5,7 @@ import argparse
 import json
 
 from dotenv import load_dotenv
-from rag.generate import MockLLMClient, OpenAIChatClient
+from rag.generate import CloudThenMockLLMClient, MockLLMClient, OpenAIChatClient
 from rag.pipeline import query_pipeline
 
 
@@ -16,10 +16,15 @@ def main() -> None:
     parser.add_argument("--index-dir", default="data/index")
     parser.add_argument("--top-k", type=int, default=3)
     parser.add_argument("--log-path", default="runs/logs.jsonl")
-    parser.add_argument("--llm", choices=["mock", "openai"], default="mock")
+    parser.add_argument("--llm", choices=["auto", "mock", "openai"], default="auto")
     args = parser.parse_args()
 
-    llm_client = MockLLMClient() if args.llm == "mock" else OpenAIChatClient()
+    if args.llm == "mock":
+        llm_client = MockLLMClient()
+    elif args.llm == "openai":
+        llm_client = OpenAIChatClient()
+    else:
+        llm_client = CloudThenMockLLMClient()
     result = query_pipeline(
         query=args.query,
         index_dir=args.index_dir,
