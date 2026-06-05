@@ -33,14 +33,21 @@ OPENAI_API_KEY=your_openai_key
 OPENAI_MODEL=gpt-4o-mini
 ```
 
-## 인덱스 빌드
+## 인덱스 빌드 (clone 후 필수)
+
+통합 인덱스 바이너리(`index.faiss`, `chunks.json`, `vectorizer.pkl`)는 GitHub 용량 제한(100MB) 및 AWS 문서 예시 자격증명 문자열에 대한 secret scanning 때문에 **git에 포함하지 않습니다**. 저장소에는 `data/index/official/meta.json`만 있으며, **clone 후 로컬에서 인덱스를 생성해야** 질의·Web UI·KB 평가가 동작합니다.
 
 ```bash
+# 1) AWS 문서는 gitignore — 전체 코퍼스가 필요하면 먼저 수집 (Docker/Drive만으로도 ingest는 가능)
+python scripts/fetch_official_docs.py --sources all --max-pages 120
+
+# 2) 통합 인덱스 빌드
 python run_ingest.py --docs-dir data/docs --index-dir data/index/official
 ```
 
-> 저장소에 이미 빌드된 `data/index/official`가 포함돼 있으면 이 단계는 생략 가능합니다.
-> 단, 인덱스를 빌드한 scikit-learn 버전과 실행 환경 버전이 다르면 `InconsistentVersionWarning`이 뜨므로, 경고가 보이면 인덱스를 재생성하세요.
+생성 결과 예: `data/index/official/index.faiss`, `chunks.json`, `vectorizer.pkl`, `meta.json`.
+
+> 인덱스를 빌드한 scikit-learn 버전과 실행 환경 버전이 다르면 `InconsistentVersionWarning`이 뜨므로, 경고가 보이면 `run_ingest.py`로 인덱스를 재생성하세요.
 
 ## 1) 베이스라인 단일 질의 (CLI)
 
@@ -174,7 +181,7 @@ data/docs_privacy_test/   # 합성 PII 평가 코퍼스 (일반 + 난독화 + de
 data/docs_freshness_test/ # 통제 최신성 코퍼스 (날짜만 다름)
 data/docs_freshness_hard/ # 현실적 최신성 코퍼스 (관련성·최신성 상충)
 data/docs_freshness_nodate/ # 날짜 없는 코퍼스 (mtime 폴백 시연)
-data/index/official/ # 통합 TF-IDF 인덱스 + 메타
+data/index/official/ # 통합 인덱스 (git: meta.json만; faiss/chunks/pkl은 로컬 빌드)
 data/index/privacy_test/  # 프라이버시 평가 전용 인덱스
 data/index/freshness_test/  # 통제 최신성 전용 인덱스
 data/index/freshness_hard/  # 현실적 최신성 전용 인덱스
