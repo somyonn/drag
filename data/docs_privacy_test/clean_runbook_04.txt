@@ -1,0 +1,4 @@
+General operations runbook for access review and incident response.
+Rotate credentials every 90 days and review login records weekly.
+Escalate to the support team and document each incident in the tracker.
+Reference ticket version 2.0 and port 8080 for the internal access dashboard.

@@ -1,0 +1,676 @@
+# Reference documentation | Docker Docs
+
+Source: https://docs.docker.com/reference/
+
+Back
+Reference
+Get started
+Guides
+Manuals
+CLI reference
+docker
+docker build
+docker builder
+docker builder build
+docker builder prune
+docker buildx
+docker buildx bake
+docker buildx build
+docker buildx create
+docker buildx dap
+docker buildx dap build
+docker buildx debug
+docker buildx debug build
+docker buildx dial-stdio
+docker buildx du
+docker buildx history
+docker buildx history export
+docker buildx history import
+docker buildx history inspect
+docker buildx history inspect attachment
+docker buildx history logs
+docker buildx history ls
+docker buildx history open
+docker buildx history rm
+docker buildx history trace
+docker buildx imagetools
+docker buildx imagetools create
+docker buildx imagetools inspect
+docker buildx inspect
+docker buildx ls
+docker buildx policy
+docker buildx policy eval
+docker buildx policy test
+docker buildx prune
+docker buildx rm
+docker buildx stop
+docker buildx use
+docker buildx version
+docker checkpoint
+docker checkpoint create
+docker checkpoint ls
+docker checkpoint rm
+docker compose
+docker compose alpha dry-run
+docker compose alpha scale
+docker compose alpha watch
+docker compose attach
+docker compose bridge
+docker compose bridge convert
+docker compose bridge transformations
+docker compose bridge transformations create
+docker compose bridge transformations list
+docker compose build
+docker compose commit
+docker compose config
+docker compose convert
+docker compose cp
+docker compose create
+docker compose down
+docker compose events
+docker compose exec
+docker compose export
+docker compose images
+docker compose kill
+docker compose logs
+docker compose ls
+docker compose pause
+docker compose port
+docker compose ps
+docker compose publish
+docker compose pull
+docker compose push
+docker compose restart
+docker compose rm
+docker compose run
+docker compose scale
+docker compose start
+docker compose stats
+docker compose stop
+docker compose top
+docker compose unpause
+docker compose up
+docker compose version
+docker compose volumes
+docker compose wait
+docker compose watch
+docker config
+docker config create
+docker config inspect
+docker config ls
+docker config rm
+docker container
+docker container attach
+docker container commit
+docker container cp
+docker container create
+docker container diff
+docker container exec
+docker container export
+docker container inspect
+docker container kill
+docker container logs
+docker container ls
+docker container pause
+docker container port
+docker container prune
+docker container rename
+docker container restart
+docker container rm
+docker container run
+docker container start
+docker container stats
+docker container stop
+docker container top
+docker container unpause
+docker container update
+docker container wait
+docker context
+docker context create
+docker context export
+docker context import
+docker context inspect
+docker context ls
+docker context rm
+docker context show
+docker context update
+docker context use
+docker debug
+docker desktop
+docker desktop diagnose
+docker desktop disable
+docker desktop disable model-runner
+docker desktop enable
+docker desktop enable model-runner
+docker desktop engine
+docker desktop engine ls
+docker desktop engine use
+docker desktop kubernetes
+docker desktop kubernetes images
+docker desktop logs
+docker desktop restart
+docker desktop start
+docker desktop status
+docker desktop stop
+docker desktop update
+docker desktop version
+docker dhi
+docker dhi attestation
+docker dhi attestation get
+docker dhi attestation list
+docker dhi attestation sbom
+docker dhi auth
+docker dhi auth apk
+docker dhi catalog
+docker dhi catalog get
+docker dhi catalog list
+docker dhi customization
+docker dhi customization build
+docker dhi customization build get
+docker dhi customization build list
+docker dhi customization build logs
+docker dhi customization create
+docker dhi customization delete
+docker dhi customization edit
+docker dhi customization get
+docker dhi customization list
+docker dhi customization prepare
+docker dhi mirror
+docker dhi mirror list
+docker dhi mirror start
+docker dhi mirror stop
+docker exec
+docker image
+docker image build
+docker image history
+docker image import
+docker image inspect
+docker image load
+docker image ls
+docker image prune
+docker image pull
+docker image push
+docker image rm
+docker image save
+docker image tag
+docker images
+docker info
+docker init
+docker inspect
+docker login
+docker logout
+docker manifest
+docker manifest annotate
+docker manifest create
+docker manifest inspect
+docker manifest push
+docker manifest rm
+docker mcp
+docker mcp catalog
+docker mcp catalog create
+docker mcp catalog list
+docker mcp catalog ls
+docker mcp catalog pull
+docker mcp catalog push
+docker mcp catalog remove
+docker mcp catalog rm
+docker mcp catalog server
+docker mcp catalog server add
+docker mcp catalog server inspect
+docker mcp catalog server ls
+docker mcp catalog server remove
+docker mcp catalog show
+docker mcp catalog tag
+docker mcp client
+docker mcp client connect
+docker mcp client disconnect
+docker mcp client ls
+docker mcp feature
+docker mcp feature disable
+docker mcp feature enable
+docker mcp feature list
+docker mcp feature ls
+docker mcp gateway
+docker mcp gateway run
+docker mcp profile
+docker mcp profile config
+docker mcp profile create
+docker mcp profile export
+docker mcp profile import
+docker mcp profile list
+docker mcp profile pull
+docker mcp profile push
+docker mcp profile remove
+docker mcp profile server
+docker mcp profile server add
+docker mcp profile server ls
+docker mcp profile server remove
+docker mcp profile show
+docker mcp profile tools
+docker mcp secret
+docker mcp secret ls
+docker mcp secret rm
+docker mcp secret set
+docker mcp server
+docker mcp server init
+docker mcp tools
+docker mcp tools call
+docker mcp tools count
+docker mcp tools inspect
+docker mcp tools list
+docker mcp tools ls
+docker mcp version
+docker model
+docker model bench
+docker model context
+docker model context create
+docker model context inspect
+docker model context ls
+docker model context rm
+docker model context use
+docker model df
+docker model gateway
+docker model inspect
+docker model install-runner
+docker model launch
+docker model list
+docker model logs
+docker model package
+docker model ps
+docker model pull
+docker model purge
+docker model push
+docker model reinstall-runner
+docker model requests
+docker model restart-runner
+docker model rm
+docker model run
+docker model search
+docker model show
+docker model skills
+docker model start-runner
+docker model status
+docker model stop-runner
+docker model tag
+docker model uninstall-runner
+docker model unload
+docker model version
+docker network
+docker network connect
+docker network create
+docker network disconnect
+docker network inspect
+docker network ls
+docker network prune
+docker network rm
+docker node
+docker node demote
+docker node inspect
+docker node ls
+docker node promote
+docker node ps
+docker node rm
+docker node update
+docker offload
+docker offload diagnose
+docker offload start
+docker offload status
+docker offload stop
+docker offload version
+docker pass
+docker pass get
+docker pass ls
+docker pass rm
+docker pass set
+docker plugin
+docker plugin create
+docker plugin disable
+docker plugin enable
+docker plugin inspect
+docker plugin install
+docker plugin ls
+docker plugin push
+docker plugin rm
+docker plugin set
+docker plugin upgrade
+docker ps
+docker pull
+docker push
+docker run
+docker sandbox
+docker sandbox create
+docker sandbox create cagent
+docker sandbox create claude
+docker sandbox create codex
+docker sandbox create copilot
+docker sandbox create gemini
+docker sandbox create kiro
+docker sandbox create opencode
+docker sandbox create shell
+docker sandbox exec
+docker sandbox inspect
+docker sandbox ls
+docker sandbox network
+docker sandbox network log
+docker sandbox network proxy
+docker sandbox reset
+docker sandbox rm
+docker sandbox run
+docker sandbox save
+docker sandbox stop
+docker sandbox version
+docker scout
+docker scout attestation
+docker scout attestation add
+docker scout attestation get
+docker scout attestation list
+docker scout cache
+docker scout cache df
+docker scout cache prune
+docker scout compare
+docker scout config
+docker scout cves
+docker scout enroll
+docker scout environment
+docker scout help
+docker scout integration
+docker scout integration configure
+docker scout integration delete
+docker scout integration list
+docker scout policy
+docker scout push
+docker scout quickview
+docker scout recommendations
+docker scout repo
+docker scout repo disable
+docker scout repo enable
+docker scout repo list
+docker scout sbom
+docker scout stream
+docker scout version
+docker scout vex
+docker scout vex get
+docker scout watch
+docker search
+docker secret
+docker secret create
+docker secret inspect
+docker secret ls
+docker secret rm
+docker service
+docker service create
+docker service inspect
+docker service logs
+docker service ls
+docker service ps
+docker service rm
+docker service rollback
+docker service scale
+docker service update
+docker stack
+docker stack config
+docker stack deploy
+docker stack ls
+docker stack ps
+docker stack rm
+docker stack services
+docker swarm
+docker swarm ca
+docker swarm init
+docker swarm join
+docker swarm join-token
+docker swarm leave
+docker swarm unlock
+docker swarm unlock-key
+docker swarm update
+docker system
+docker system df
+docker system events
+docker system info
+docker system prune
+docker trust
+docker trust inspect
+docker trust key
+docker trust key generate
+docker trust key load
+docker trust revoke
+docker trust sign
+docker trust signer
+docker trust signer add
+docker trust signer remove
+docker version
+docker volume
+docker volume create
+docker volume inspect
+docker volume ls
+docker volume prune
+docker volume rm
+docker volume update
+dockerd
+sbx
+sbx completion
+sbx completion bash
+sbx completion fish
+sbx completion powershell
+sbx completion zsh
+sbx cp
+sbx create
+sbx create claude
+sbx create codex
+sbx create copilot
+sbx create cursor
+sbx create docker-agent
+sbx create droid
+sbx create gemini
+sbx create kiro
+sbx create opencode
+sbx create shell
+sbx diagnose
+sbx exec
+sbx login
+sbx logout
+sbx ls
+sbx policy
+sbx policy allow
+sbx policy allow network
+sbx policy deny
+sbx policy deny network
+sbx policy log
+sbx policy ls
+sbx policy reset
+sbx policy rm
+sbx policy rm network
+sbx policy set-default
+sbx ports
+sbx reset
+sbx rm
+sbx run
+sbx secret
+sbx secret ls
+sbx secret rm
+sbx secret set
+sbx stop
+sbx template
+sbx template load
+sbx template ls
+sbx template rm
+sbx template save
+sbx version
+API reference
+Docker Engine API
+SDK
+Examples
+Latest
+API reference by version
+v1.54
+v1.53
+v1.52
+v1.51
+v1.50
+v1.49
+v1.48
+v1.47
+v1.46
+v1.45
+v1.44
+v1.43
+v1.42
+v1.41
+v1.40
+Engine API version history
+Docker Hub API
+Latest
+Changelog
+Deprecated
+DVP Data API
+Latest
+Changelog
+Deprecated
+Extensions API
+Interface: BackendV0
+Interface: DesktopUI
+Interface: Dialog
+Interface: Docker
+Interface: DockerCommand
+Interface: DockerDesktopClient
+Interface: Exec
+Interface: ExecOptions
+Interface: ExecProcess
+Interface: ExecResult
+Interface: ExecResultV0
+Interface: ExecStreamOptions
+Interface: Extension
+Interface: ExtensionCli
+Interface: ExtensionHost
+Interface: ExtensionVM
+Interface: Host
+Interface: HttpService
+Interface: NavigationIntents
+Interface: OpenDialogResult
+Interface: RawExecResult
+Interface: RequestConfig
+Interface: RequestConfigV0
+Interface: ServiceError
+Interface: SpawnOptions
+Interface: Toast
+Registry API
+Latest
+Registry authentication
+Build checks
+ConsistentInstructionCasing
+CopyIgnoredFile
+DuplicateStageName
+ExposeInvalidFormat
+ExposeProtoCasing
+FromAsCasing
+FromPlatformFlagConstDisallowed
+InvalidDefaultArgInFrom
+InvalidDefinitionDescription
+JSONArgsRecommended
+LegacyKeyValueFormat
+MaintainerDeprecated
+MultipleInstructionsDisallowed
+NoEmptyContinuation
+RedundantTargetPlatform
+ReservedStageName
+SecretsUsedInArgOrEnv
+StageNameCasing
+UndefinedArgInFrom
+UndefinedVar
+WorkdirRelativePath
+Compose file reference
+Version and name top-level elements
+Services
+Networks
+Volumes
+Configs
+Secrets
+Fragments
+Extensions
+Interpolation
+Merge
+Include
+Models
+Profiles
+Compose Build Specification
+Compose Deploy Specification
+Compose Develop Specification
+Legacy versions
+Dockerfile reference
+Glossary
+Samples
+.NET samples
+Agentic AI samples
+AI/ML samples
+Angular samples
+Cloudflared samples
+Django samples
+Elasticsearch / Logstash / Kibana samples
+Express samples
+FastAPI samples
+Flask samples
+Gitea samples
+Go samples
+Java samples
+JavaScript samples
+MariaDB samples
+Minecraft samples
+MongoDB samples
+MS-SQL samples
+MySQL samples
+Nextcloud samples
+NGINX samples
+Node.js samples
+PHP samples
+Pi-hole samples
+Plex samples
+Portainer samples
+PostgreSQL samples
+Prometheus samples
+Python samples
+Rails samples
+React samples
+Redis samples
+Ruby samples
+Rust samples
+Spark samples
+Spring Boot samples
+Traefik samples
+TypeScript samples
+Vue.js samples
+WireGuard samples
+WordPress samples
+Home
+/
+Reference
+Reference documentation
+Ask Gordon
+Copy Markdown
+View Markdown
+This section includes the reference documentation for the Docker platform's
+various APIs, CLIs, drivers and specifications, and file formats.
+File formats
+Dockerfile
+Defines the contents and startup behavior of a single container.
+Compose file
+Defines a multi-container application.
+Command-line interfaces (CLIs)
+Docker CLI
+The main Docker CLI, includes all
+docker
+commands.
+Compose CLI
+The CLI for Docker Compose, for building and running multi-container applications.
+Daemon CLI (dockerd)
+Persistent process that manages containers.
+Application programming interfaces (APIs)
+Engine API
+The main API for Docker, provides programmatic access to a daemon.
+Docker Hub API
+API to interact with Docker Hub.
+DVP Data API
+API for Docker Verified Publishers to fetch analytics data.
+Registry API
+API for Docker Registry.
+Edit this page
+Request changes

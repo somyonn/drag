@@ -1,0 +1,1004 @@
+# Migrate from Autobuilds | Docker Docs
+
+Source: https://docs.docker.com/docker-hub/repos/manage/builds/migrate/
+
+Back
+Manuals
+Get started
+Guides
+Reference
+AI and agents
+Overview
+Docker Sandboxes
+Get started
+Usage
+Agents
+Claude Code
+Codex
+Copilot
+Cursor
+Droid
+Gemini
+Kiro
+OpenCode
+Docker Agent
+Shell
+Customize
+Early Access
+Templates
+Kits
+Examples
+Build an agent
+Architecture
+Security model
+Isolation layers
+Defaults
+Credentials
+Policies
+Org governance
+Workspace trust
+Troubleshooting
+FAQ
+Release notes
+MCP Catalog and Toolkit
+Beta
+Get started
+Catalog
+Profiles
+Toolkit UI
+Use with CLI
+Dynamic discovery
+Gateway
+Hub MCP server
+FAQs
+E2B sandboxes
+Model Runner
+Get started with DMR
+DMR REST API
+Configuration options
+DMR examples
+IDE and tool integrations
+Open WebUI integration
+Inference engines
+Gordon
+Use cases
+Concepts
+Capabilities
+Data privacy
+How-to guides
+Docker Desktop
+CLI
+Permissions
+Configure tools
+Usage limits
+AI and Docker Compose
+Use AI models in Compose
+Docker Agent
+Model providers
+Local models
+Building a coding agent
+Best practices
+Sharing agents
+Integrations
+A2A
+ACP
+MCP
+Reference
+Configuration file
+Toolsets
+CLI
+Examples
+RAG
+Evals
+Application development
+Docker Desktop
+Setup
+Install
+Mac
+Mac permission requirements
+Windows
+Windows permission requirements
+Linux
+Ubuntu
+Debian
+Fedora
+Arch
+RHEL
+VM or VDI environments
+Sign in
+Allowlist
+Explore Docker Desktop
+Containers
+Images
+Volumes
+Builds
+Kubernetes
+Logs
+Resource Saver mode
+Pause Docker Desktop
+Features and capabilities
+Networking
+How-tos
+GPU support
+USB/IP support
+Synchronized file shares
+containerd image store
+Wasm workloads
+Beta
+Docker Desktop CLI
+Virtual Machine Manager
+WSL
+Best practices
+Custom kernels
+Use WSL
+Settings and maintenance
+Change settings
+Backup and restore data
+Troubleshoot and support
+Troubleshoot and diagnose
+Common topics
+Known issues
+MacOS app damaged dialog
+FAQs
+General
+Mac
+Windows
+Linux
+Releases
+Give feedback
+Uninstall
+Release notes
+Docker Engine
+Install
+Ubuntu
+Debian
+RHEL
+Fedora
+Raspberry Pi OS (32-bit / armhf)
+CentOS
+Binaries
+Post-installation steps
+Storage
+Volumes
+Bind mounts
+tmpfs mounts
+Storage drivers
+Select a storage driver
+BTRFS storage driver
+Device Mapper storage driver (deprecated)
+OverlayFS storage driver
+VFS storage driver
+windowsfilter storage driver
+ZFS storage driver
+containerd image store
+Networking
+Docker with iptables
+Docker with nftables
+Packet filtering and firewalls
+Port publishing and mapping
+Network drivers
+Bridge network driver
+Host network driver
+IPvlan network driver
+Macvlan network driver
+None network driver
+Overlay network driver
+CA certificates
+Legacy container links
+Containers
+Start containers automatically
+Run multiple processes in a container
+Resource constraints
+GPU access
+Runtime metrics
+Running containers
+CLI
+Completion
+Proxy configuration
+Filter commands
+Format command and log output
+OpenTelemetry for the Docker CLI
+Daemon
+Start the daemon
+Use IPv6 networking
+Daemon proxy configuration
+Live restore
+Alternative container runtimes
+Collect Docker metrics with Prometheus
+Configure remote access for Docker daemon
+Read the daemon logs
+Troubleshooting the Docker daemon
+Manage resources
+Docker contexts
+Docker object labels
+Prune unused Docker objects
+Logs and metrics
+Configure logging drivers
+Customize log driver output
+Logging drivers
+Amazon CloudWatch Logs logging driver
+ETW logging driver
+Fluentd logging driver
+Google Cloud Logging driver
+Graylog Extended Format logging driver
+Journald logging driver
+JSON File logging driver
+Local file logging driver
+Splunk logging driver
+Syslog logging driver
+Use a logging driver plugin
+Use docker logs with remote logging drivers
+Security
+Rootless mode
+Tips
+Troubleshooting
+Antivirus software and Docker
+AppArmor security profiles for Docker
+Content trust in Docker
+Automation with content trust
+Delegations for content trust
+Deploy Notary Server with Compose
+Manage keys for content trust
+Play in a content trust sandbox
+Docker security non-events
+Isolate containers with a user namespace
+Protect the Docker daemon socket
+Seccomp security profiles for Docker
+Verify repository client with certificates
+Swarm mode
+Administer and maintain a swarm of Docker Engines
+Deploy a stack to a swarm
+Deploy services to a swarm
+Getting started with Swarm mode
+Create a swarm
+Add nodes to the swarm
+Deploy a service to the swarm
+Inspect a service on the swarm
+Scale the service in the swarm
+Delete the service running on the swarm
+Apply rolling updates to a service
+Drain a node on the swarm
+How swarm works
+How nodes work
+How services work
+Manage swarm security with public key infrastructure (PKI)
+Swarm task states
+Join nodes to a swarm
+Lock your swarm to protect its encryption key
+Manage nodes in a swarm
+Manage sensitive data with Docker secrets
+Manage swarm service networks
+Raft consensus in swarm mode
+Run Docker Engine in swarm mode
+Store configuration data using Docker Configs
+Swarm mode key concepts
+Use Swarm mode routing mesh
+Deprecated features
+Docker Engine plugins
+Access authorization plugin
+Docker log driver plugins
+Docker network driver plugins
+Docker Plugin API
+Docker volume plugins
+Plugin Config Version 1 of Plugin V2
+Use Docker Engine plugins
+Release notes
+Engine v29
+Engine v28
+Engine v27
+Engine v26.1
+Engine v26.0
+Engine v25.0
+Engine v24.0
+Engine v23.0
+Engine v20.10
+Engine v19.03
+Engine v18.09
+Engine v18.06
+Engine v18.05
+Engine v18.04
+Engine v18.03
+Engine v18.02
+Engine v18.01
+Engine v17.12
+Engine v17.11
+Engine v17.10
+Engine v17.09
+Engine v17.07
+Engine v17.06
+Engine v17.05
+Engine v17.04
+Engine v17.03
+Prior releases
+Docker Offload
+Quickstart
+About
+Configure
+Usage
+Optimize usage
+Troubleshoot
+Give feedback
+Docker Build
+Core concepts
+Docker Build Overview
+Dockerfile overview
+Build context
+Build checks
+Building
+Multi-stage
+Variables
+Secrets
+Multi-platform
+Export binaries
+Container Device Interface (CDI)
+Best practices
+Base images
+Builders
+Build drivers
+Docker container driver
+Docker driver
+Kubernetes driver
+Remote driver
+Manage builders
+Bake
+Introduction
+Targets
+Inheritance
+Variables
+Expressions
+Functions
+Matrix targets
+Contexts
+Bake file reference
+Bake standard library functions
+Building with Bake from a Compose file
+Overriding configurations
+Remote Bake file definition
+Cache
+Build cache invalidation
+Build garbage collection
+Cache storage backends
+Amazon S3 cache
+Azure Blob Storage cache
+GitHub Actions cache
+Inline cache
+Local cache
+Registry cache
+Optimize cache usage in builds
+CI
+GitHub Actions
+Annotations
+Attestations
+Build checks
+Build secrets
+Build summary
+BuildKit configuration
+Cache management
+Copy image between registries
+Export to Docker
+GitHub Builder
+New
+Architecture
+Build workflow
+Bake workflow
+Local registry
+Multi-platform image
+Named contexts
+Push to multiple registries
+Reproducible builds
+Share image between jobs
+Tags and labels
+Test before push
+Update Docker Hub description
+Validating builds
+Experimental
+Introduction
+Usage
+Image validation
+Git validation
+Templates & examples
+Testing
+Debugging
+Input reference
+Built-in functions
+Metadata
+Annotations
+Build attestations
+Image attestation storage
+Provenance attestations
+SBOM attestations
+SLSA definitions
+Exporters
+Image and registry exporters
+Local and tar exporters
+OCI and Docker exporters
+BuildKit
+buildkitd.toml
+Configure BuildKit
+Custom Dockerfile syntax
+Dockerfile release notes
+Debugging
+OpenTelemetry support
+Build release notes
+Docker Build Cloud
+Setup
+Usage
+Continuous integration
+Optimization
+Builder settings
+Release notes
+Docker Compose
+Introduction to Compose
+How Compose works
+Why use Compose?
+History and development
+Install
+Plugin
+Standalone (Legacy)
+Uninstall
+Quickstart
+How-tos
+Specify a project name
+Use lifecycle hooks
+Use service profiles
+Control startup order
+Use environment variables
+Set environment variables
+Environment variables precedence
+Pre-defined environment variables
+Interpolation
+Best practices
+Build dependent images
+Use Compose Watch
+Secrets in Compose
+Networking
+Use multiple Compose files
+Merge
+Extend
+Include
+Enable GPU support
+Use Compose in production
+OCI artifact applications
+Use provider services
+Compose Bridge
+Usage
+Customize
+Use Model Runner
+Compose SDK
+New
+Trust model for Compose files
+Support and feedback
+FAQs
+Give feedback
+Release notes
+Docker Extensions
+Marketplace extensions
+Non-marketplace extensions
+Configure a private marketplace
+Settings and feedback
+Extensions SDK
+The build and publish process
+Quickstart
+Part one: Build
+Create a simple extension
+Create an advanced frontend extension
+Add a backend to your extension
+Part two: Publish
+Add labels
+Validate
+Package and release your extension
+Share your extension
+Publish in the Marketplace
+Build multi-arch extensions
+Architecture
+Metadata
+Security
+Design and UI styling
+Guidelines
+Docker design principles
+MUI best practices
+Developer Guides
+Authentication
+Interacting with Kubernetes
+Invoke host binaries
+Use the Docker socket
+Developer SDK tools
+Test and debug
+Continuous Integration (CI)
+CLI reference
+Extension APIs
+Dashboard
+Docker
+Extension Backend
+Extension UI API
+Navigation
+Deprecated products and features
+Release lifecycle
+Supply chain security
+Docker Hardened Images
+New
+Quickstart
+Features
+Explore
+Hardened images
+Build process
+Image types
+Scanner integrations
+Image testing
+Responsibility overview
+Malware scanning
+Feedback
+Migration
+Migration checklist
+AI-assisted migration
+Experimental
+Migrate from Alpine or Debian
+Migrate from Ubuntu
+Migrate from Wolfi
+Migration examples
+Go
+Python
+Node.js
+How-tos
+Search and evaluate
+Mirror a repository
+Customize an image or chart
+Create and build an image
+Use an image
+Use a Helm chart
+Use hardened packages
+Verify an image or chart
+Scan an image
+Enforce image usage
+Use the CLI
+Use DHI Select & Enterprise
+Core concepts
+Attestations
+CIS Benchmark
+Code signing
+CVEs
+Distroless images
+FIPS
+glibc and musl
+Hardening
+Image digests
+Image provenance
+Immutability
+SBOMs
+SLSA
+Software Supply Chain Security
+SSDLC
+STIG
+VEX
+Troubleshoot
+Additional resources
+Docker Hub
+Quickstart
+Library
+Search
+Trusted content
+Catalogs
+Mirror
+Repositories
+Create
+Manage
+Repository information
+Access
+Images
+Tags
+Immutable tags
+Image Management
+Software artifacts
+Push images
+Move images
+Bulk migrate images
+Image security insights
+Webhooks
+Automated builds
+Deprecated
+Set up
+Link accounts
+Automated repository tests
+Advanced options
+Migrate
+Manage autobuilds
+Troubleshoot
+Trusted content
+Docker Official Images
+Docker Verified Publisher Program
+Docker-Sponsored Open Source Program
+Insights and analytics
+Export repositories
+Archive
+Delete
+Settings
+Usage and limits
+Pulls
+Optimize usage
+Troubleshoot
+Release notes
+Docker Scout
+Install
+Quickstart
+Explore
+Dashboard
+Docker Scout image analysis
+Docker Scout metrics exporter
+Image details view
+Manage vulnerability exceptions
+How-tos
+Create an exception using the GUI
+Create an exception using the VEX
+Docker Scout environment variables
+Docker Scout SBOMs
+Use Scout with different artifact types
+Deep dive
+Advisory database sources and matching service
+Data collection and storage in Docker Scout
+Policy Evaluation
+Configure policies
+Docker Scout health scores
+Evaluate policy compliance in CI
+Remediation with Docker Scout
+View Docker Scout policy status
+Integrations
+Code quality
+SonarQube
+Container registries
+Amazon ECR
+Artifactory Container Registry
+Azure Container Registry
+Continuous Integration
+Azure DevOps Pipelines
+Circle CI
+GitHub Actions
+GitLab CI/CD
+Jenkins
+Integrating Docker Scout with environments
+Generic (CLI)
+Sysdig
+Source code management
+GitHub
+Team collaboration
+Slack
+Release notes
+CLI release notes
+Platform release notes
+Platform
+Support
+Billing
+Add or update a payment method
+Manage your billing information
+3D Secure authentication
+Invoices and billing history
+Change your billing cycle
+Submit a tax exemption certificate
+FAQs
+Docker accounts
+Accounts
+Create an account
+Manage an account
+Deactivate an account
+Security
+Personal access tokens
+Two-factor authentication
+Recover your Docker account
+FAQs
+General
+Container
+Network and VM
+Security announcements
+Subscription
+Compare
+Setup
+Scale
+Upgrade or change
+Manage seats
+Docker Desktop license agreement
+FAQs
+Release notes
+Enterprise
+Administration
+Organization
+Setup
+Create
+Onboard
+Change information
+Convert account
+Manage
+Members
+Teams
+Docker products
+Deactivate
+FAQs
+Company
+Create
+Manage
+Organizations
+Owners
+Users
+FAQs
+Activity logs
+Insights
+Deploy Docker Desktop
+MSI installer
+PKG installer
+MS Store
+Deploy with Intune
+Deploy with Jamf Pro
+Microsoft Dev Box
+FAQs
+Security
+Add and manage domains
+Single sign-on
+Setup
+Manage connections
+Troubleshoot
+FAQs
+General
+Domains
+Enforcement
+Identity providers
+User management
+Provision
+SCIM
+Setup
+Group mapping
+Migrate
+Just-in-Time
+Auto-provision
+Troubleshoot
+Enforce sign-in
+Configure
+Roles and permissions
+Core roles
+Custom roles
+Hardened Docker Desktop
+Enhanced Container Isolation
+Enable ECI
+Configure advanced settings
+Limitations
+FAQs
+Settings Management
+Use a JSON file
+Use the Admin Console
+Desktop settings reporting
+Settings reference
+Air-gapped containers
+Registry Access Management
+Image Access Management
+Namespace access
+Organization access tokens
+Home
+/
+Manuals
+/
+Docker Hub
+/
+Repositories
+/
+Manage
+/
+Automated builds
+/
+Migrate
+Migrate from Autobuilds
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+Step 1: Create access tokens
+Step 2: Extract your Autobuilds configuration
+Example configuration
+Step 3: Migrate to your CI/CD platform
+Warning
+Docker Hub Automated Builds is a deprecated feature.
+It will be fully retired on April 1, 2027.
+This guide explains how to migrate your Docker Hub Autobuilds setup to
+Continuous Integration (CI) workflows, focusing on GitHub Actions and Bitbucket
+Pipelines as these are the built-in CI services for the two version control
+services supported via Autobuilds.
+Step 1: Create access tokens
+To grant your CI workflows the ability to pull and push images to and from
+Docker Hub, you first need to create access tokens:
+For a personal repository: Create a
+Personal
+Access Token
+with
+Read & Write
+permissions.
+For an organization repository: Create an
+Organization Access
+Token
+with the following
+permissions:
+Read public repositories
+Image Pull
+on any private repositories that the build needs to pull from
+Image Push
+on the repository that the built image will be pushed to
+The same token can be used for all CI workflows under the account's namespace
+provided it has adequate permissions to all relevant Docker Hub repositories.
+Store the token securely in a password manager or your CI/CD platform's secrets
+manager. Never commit tokens to source code repositories.
+Step 2: Extract your Autobuilds configuration
+For each Docker Hub repository currently configured to use Autobuilds, you need
+to extract its configuration to set up your CI workflows to duplicate the
+existing functionality. The only way to extract the configuration is via the
+Docker Hub web interface.
+Sign in to
+Docker Hub
+.
+Navigate to your repository by going to
+My Hub
+>
+Your namespace
+>
+Repositories
+>
+Your Repository
+.
+Go to the
+Builds
+tab and select
+Configure automated builds
+.
+If there is no existing build configuration, then this repository is not
+configured for Autobuilds.
+Note the following configuration details:
+Source Repository
+: The GitHub or Bitbucket repository. The organization
+is the namespace and the repository is the repository name. This is where
+you need to add your workflow.
+Autotest
+: If Autotest is enabled for Pull Requests (either internal
+only or internal and external), then extra steps are needed in your
+workflow to run the Autotest step.
+Repository Links
+: Not supported and can be ignored. If chain builds are
+required, see the documentation for your CI service on how to chain builds
+together.
+Build Rules
+: Specify the triggers, tags, and paths of your builds.
+Ignore any entry where
+Autobuild
+is toggled off.
+Build Environment Variables
+: User-defined variables injected as
+environment variables into your build. You need to add these to your
+workflow. If the environment variables contain secrets, add them to your CI
+service's secrets manager. Then update your Dockerfile or build scripts to
+reference these secrets using your CI platform's syntax. See your CI
+service documentation on how to handle secrets.
+Example configuration
+The following image shows an example Autobuilds configuration.
+Based on the pictured example, you would note the following items for this
+Autobuilds configuration:
+Source code repository: GitHub repository
+docker/docker-rust-hello
+Autotest: Disabled
+Build rule 1: Build and push the image with tag
+latest
+when a new commit to
+the
+main
+branch is detected. The Dockerfile is at
+./Dockerfile
+and the
+build context is the root of the cloned code.
+Build rule 2: Build and push the image with tag
+v{\1}
+when a new commit
+to a tag matching the regex
+^v([0-9.]+)$
+is detected. The Dockerfile is at
+./Dockerfile
+and the build context is the root of the cloned code.
+Environment variable: Key
+ENV_KEY
+with value
+ENV_VALUE
+Step 3: Migrate to your CI/CD platform
+Select the tab that matches your source code repository hosting platform.
+GitHub Actions
+Bitbucket Pipelines
+If your source code repository is hosted on GitHub, see the
+Docker
+Autobuilds example repository
+.
+All files except those under the
+.github/workflows
+directory are for example
+purposes only.
+The repository's readme details how to migrate from Autobuilds to GitHub Actions
+using one of the two provided workflows:
+The
+simple-build
+workflow builds and pushes a Docker image to your Docker
+Hub repository.
+The
+full-autobuilds
+workflow contains all the steps commonly used within an
+Autobuilds run, including building, tagging, running Docker Compose tests, and
+running optional bash hook files.
+Steps to migrate
+Follow the instructions in the
+example repository
+readme
+to configure a CI GitHub
+Action workflow in your GitHub repository.
+The workflows contain comments on what each step does and where changes
+should be made. Important changes to make include:
+Set the
+DOCKER_REPOSITORY_NAME
+environment variable to the full name of your Docker Hub repository
+Set your image tagging policy
+Set the workflow triggers
+Links to relevant documentation are provided in the readme and the workflow comments.
+After you have completed migrating to GitHub Actions, delete the build
+configuration from your Docker Hub repository:
+Navigate to the repository's
+Builds
+tab.
+Select
+Configure automated builds
+.
+Select
+Delete Build Configuration
+.
+If your source code repository is hosted on Bitbucket, see the
+Docker
+Autobuilds Bitbucket example
+repository
+.
+All files except the
+bitbucket-pipelines.yml
+file are for example purposes only.
+The repository's readme details how to migrate from Autobuilds to Bitbucket
+Pipelines using the provided example
+bitbucket-pipelines.yml
+configuration
+file.
+The pipeline example contains three separate pipelines:
+branches/main
+: Shows how to build, test, and push an image on changes to a specific branch
+tags/*
+: Shows how to build, test, and push an image on tag pushes, including
+tagging the image the same as the Git tag
+pull-requests/*
+: Shows how to build and test, but not push, an image from a pull request
+Steps to migrate
+Follow the instructions in the
+example repository
+readme
+to configure
+a Bitbucket Pipeline in your Bitbucket repository.
+Comments in the pipeline configuration explain what each part does and where
+changes need to be made. Important changes to make include:
+Set the
+DOCKER_REPOSITORY_NAME
+environment variable to the full name of
+your Docker Hub repository
+Set your image tagging policy (see where the
+DOCKER_TAG
+variable is set in each pipeline)
+Set the pipeline triggers for branches, tags, and/or pull-requests
+Links to relevant documentation are provided in the readme and the workflow comments.
+After you have completed migrating to Bitbucket Pipelines, delete the Build
+configuration from your Docker Hub repository:
+Navigate to the repository's
+Builds
+tab.
+Select
+Configure automated builds
+.
+Select
+Delete Build Configuration
+.
+Edit this page
+Request changes
+Table of contents
+Step 1: Create access tokens
+Step 2: Extract your Autobuilds configuration
+Example configuration
+Step 3: Migrate to your CI/CD platform

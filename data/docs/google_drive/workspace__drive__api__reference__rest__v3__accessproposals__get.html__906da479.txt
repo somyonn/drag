@@ -1,0 +1,60 @@
+# Method: accessproposals.get  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/accessproposals/get
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: accessproposals.get
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Path parameters
+Request body
+Response body
+Authorization scopes
+Try it!
+Retrieves an access proposal by ID. For more information, see
+Manage pending access proposals
+.
+HTTP request
+GET https://www.googleapis.com/drive/v3/files/{fileId}/accessproposals/{proposalId}
+The URL uses
+gRPC Transcoding
+syntax.
+Path parameters
+Parameters
+fileId
+string
+Required. The ID of the item the request is on.
+proposalId
+string
+Required. The ID of the access proposal to resolve.
+Request body
+The request body must be empty.
+Response body
+If successful, the response body contains an instance of
+AccessProposal
+.
+Authorization scopes
+Requires one of the following OAuth scopes:
+https://www.googleapis.com/auth/docs
+https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/drive.file
+https://www.googleapis.com/auth/drive.metadata
+https://www.googleapis.com/auth/drive.metadata.readonly
+https://www.googleapis.com/auth/drive.readonly
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-09-09 UTC.

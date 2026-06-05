@@ -1,0 +1,54 @@
+# Google Docs  |  Google for Developers
+
+Source: https://developers.google.com/workspace/docs
+
+Home
+Google Workspace
+Google Docs
+Send feedback
+Stay organized with collections
+Save and categorize content based on your preferences.
+Develop Google Docs solutions.
+Enhance the Google Docs experience
+Insert interactive content, powered by your account data or an external service, with
+add-ons
+.
+Add an interface to automate your custom style guide checks in Docs.
+Build customized workflow improvements.
+Connect users' Docs with a third-party service.
+View documentation
+Learn about add-ons
+Automate Google Docs with simple code
+Anyone can use
+Apps Script
+to automate and enhance Google Docs in a web-based, low-code environment.
+Create customized Docs based on Google Form submissions.
+Add custom menus, dialog boxes, and sidebars.
+Connect Docs to other Google Workspace apps or third-party services.
+View documentation
+Learn about Apps Script
+Build AI-powered Google Docs solutions
+Discover and try Google Docs samples that help you get started with building AI features using AI models, agents, platforms, and more.
+smart_toy
+Travel Concierge agent
+Build an AI agent add-on that integrates with ADK and Vertex AI Agent Engine.
+Open tutorial
+smart_toy
+All samples
+Explore add-on samples by featured Google products, language, sample type, and type.
+Explore catalog
+Connect your service to Google Docs
+Use the REST APIs below to interact programmatically with Google Docs.
+Docs API
+Access and update Google Docs programmatically
+, just like any other user.
+View documentation
+Try it out
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-05-19 UTC.

@@ -1,0 +1,92 @@
+# Building images | Docker Docs
+
+Source: https://docs.docker.com/get-started/docker-concepts/building-images/
+
+Back
+Get started
+Guides
+Manuals
+Reference
+Get Docker
+What is Docker?
+Introduction
+Get Docker Desktop
+Develop with containers
+Build and push your first image
+What's next
+Docker concepts
+The basics
+What is a container?
+What is an image?
+What is a registry?
+What is Docker Compose?
+Building images
+Understanding the image layers
+Writing a Dockerfile
+Build, tag, and publish an image
+Using the build cache
+Multi-stage builds
+Running containers
+Publishing and exposing ports
+Overriding container defaults
+Persisting container data
+Sharing local files with containers
+Multi-container applications
+Docker workshop
+Part 1: Containerize an application
+Part 2: Update the application
+Part 3: Share the application
+Part 4: Persist the DB
+Part 5: Use bind mounts
+Part 6: Multi-container apps
+Part 7: Use Docker Compose
+Part 8: Image-building best practices
+Part 9: What next
+Educational resources
+Home
+/
+Get started
+/
+Docker concepts
+/
+Building images
+Building images
+Table of contents
+About this series
+What you'll learn
+Building container images is both technical and an art. You want to keep the
+image small and focused to increase your security posture, but also need to
+balance potential tradeoffs, such as caching impacts. In this series, youâll
+deep dive into the secrets of images, how they are built and best practices.
+Skill level
+Beginner
+Time to complete
+25 minutes
+Prerequisites
+None
+About this series
+Learn how to build production-ready images that are lean and efficient Docker
+images, essential for minimizing overhead and enhancing deployment in
+production environments.
+What you'll learn
+Understanding image layers
+Writing a Dockerfile
+Build, tag and publish an image
+Using the build cache
+Multi-stage builds
+Modules
+Understanding the image layers
+This concept page will teach you about the layers of container image.
+Writing a Dockerfile
+This concept page will teach you how to create image using Dockerfile.
+Build, tag, and publish an image
+This concept page will teach you how to build, tag, and publish an image to Docker Hub or any other registry
+Using the build cache
+This concept page will teach you about the build cache, what changes invalidate the cache and how to effectively use the build cache.
+Multi-stage builds
+This concept page will teach you about the purpose of the multi-stage build and its benefits
+Edit this page
+Request changes
+Table of contents
+About this series
+What you'll learn

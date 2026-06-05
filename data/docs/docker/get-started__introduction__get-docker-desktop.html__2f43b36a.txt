@@ -1,0 +1,132 @@
+# Get Docker Desktop | Docker Docs
+
+Source: https://docs.docker.com/get-started/introduction/get-docker-desktop/
+
+Back
+Get started
+Guides
+Manuals
+Reference
+Get Docker
+What is Docker?
+Introduction
+Get Docker Desktop
+Develop with containers
+Build and push your first image
+What's next
+Docker concepts
+The basics
+What is a container?
+What is an image?
+What is a registry?
+What is Docker Compose?
+Building images
+Understanding the image layers
+Writing a Dockerfile
+Build, tag, and publish an image
+Using the build cache
+Multi-stage builds
+Running containers
+Publishing and exposing ports
+Overriding container defaults
+Persisting container data
+Sharing local files with containers
+Multi-container applications
+Docker workshop
+Part 1: Containerize an application
+Part 2: Update the application
+Part 3: Share the application
+Part 4: Persist the DB
+Part 5: Use bind mounts
+Part 6: Multi-container apps
+Part 7: Use Docker Compose
+Part 8: Image-building best practices
+Part 9: What next
+Educational resources
+Home
+/
+Get started
+/
+Introduction
+/
+Get Docker Desktop
+Get Docker Desktop
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+Explanation
+Try it out
+Run your first container
+Access the frontend
+Manage containers using Docker Desktop
+What's next?
+Explanation
+Docker Desktop is the all-in-one package to build images, run containers, and so much more.
+This guide will walk you through the installation process, enabling you to experience Docker Desktop firsthand.
+Docker Desktop terms
+Commercial use of Docker Desktop in larger enterprises (more than 250
+employees OR more than $10 million USD in annual revenue) requires a
+paid subscription
+.
+Docker Desktop for Mac
+Download (Apple Silicon)
+|
+Download (Intel)
+|
+Install instructions
+Docker Desktop for Windows
+Download
+|
+Install instructions
+Docker Desktop for Linux
+Install instructions
+Once it's installed, complete the setup process and you're all set to run a Docker container.
+Try it out
+In this hands-on guide, you will see how to run a Docker container using Docker Desktop.
+Follow the instructions to run a container using the CLI.
+Run your first container
+Open your CLI terminal and start a container by running the
+docker run
+command:
+$
+docker run -d -p 8080:80 docker/welcome-to-docker
+Access the frontend
+For this container, the frontend is accessible on port
+8080
+. To open the website, visit
+http://localhost:8080
+in your browser.
+Manage containers using Docker Desktop
+Open Docker Desktop and select the
+Containers
+field on the left sidebar.
+You can view information about your container including logs, and files, and even access the shell by selecting the
+Exec
+tab.
+Select the
+Inspect
+field to obtain detailed information about the container. You can perform various actions such as pause, resume, start or stop containers, or explore the
+Logs
+,
+Bind mounts
+,
+Exec
+,
+Files
+, and
+Stats
+tabs.
+Docker Desktop simplifies container management for developers by streamlining the setup, configuration, and compatibility of applications across different environments, thereby addressing the pain points of environment inconsistencies and deployment challenges.
+What's next?
+Now that you have Docker Desktop installed and ran your first container, it's time to start developing with containers.
+Develop with containers
+Edit this page
+Request changes
+Table of contents
+Explanation
+Try it out
+Run your first container
+Access the frontend
+Manage containers using Docker Desktop
+What's next?

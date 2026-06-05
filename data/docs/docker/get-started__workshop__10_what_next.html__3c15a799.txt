@@ -1,0 +1,90 @@
+# What next after the Docker workshop | Docker Docs
+
+Source: https://docs.docker.com/get-started/workshop/10_what_next/
+
+Back
+Get started
+Guides
+Manuals
+Reference
+Get Docker
+What is Docker?
+Introduction
+Get Docker Desktop
+Develop with containers
+Build and push your first image
+What's next
+Docker concepts
+The basics
+What is a container?
+What is an image?
+What is a registry?
+What is Docker Compose?
+Building images
+Understanding the image layers
+Writing a Dockerfile
+Build, tag, and publish an image
+Using the build cache
+Multi-stage builds
+Running containers
+Publishing and exposing ports
+Overriding container defaults
+Persisting container data
+Sharing local files with containers
+Multi-container applications
+Docker workshop
+Part 1: Containerize an application
+Part 2: Update the application
+Part 3: Share the application
+Part 4: Persist the DB
+Part 5: Use bind mounts
+Part 6: Multi-container apps
+Part 7: Use Docker Compose
+Part 8: Image-building best practices
+Part 9: What next
+Educational resources
+Home
+/
+Get started
+/
+Docker workshop
+/
+Part 9: What next
+What next after the Docker workshop
+Ask Gordon
+Copy Markdown
+View Markdown
+Congratulations on completing the Docker workshop. You've learned how to containerize applications, work with multi-container setups, use Docker Compose, and apply image-building best practices.
+Here's what to explore next.
+Secure your images
+Take your image-building skills to the next level with Docker Hardened Imagesâsecure, minimal, and production-ready base images that are now free for everyone.
+What are Docker Hardened Images?
+Understand secure, minimal, production-ready base images with near-zero CVEs.
+Get started with DHI
+Pull and run your first Docker Hardened Image in minutes.
+Use hardened images
+Learn how to use DHI in your Dockerfiles and CI/CD pipelines.
+Explore the DHI catalog
+Browse available hardened images, variants, and security attestations.
+Build with AI
+Docker makes it easy to run AI models locally and build agentic AI applications. Explore Docker's AI tools and start building AI-powered apps.
+Docker Model Runner
+Run and manage AI models locally using familiar Docker commands with OpenAI-compatible APIs.
+MCP Toolkit
+Set up, manage, and run containerized MCP servers to power your AI agents.
+Build AI agents with Docker Agent
+Create teams of specialized AI agents that collaborate to solve complex problems.
+Use AI models in Compose
+Define AI model dependencies in your Docker Compose applications.
+Language-specific guides
+Apply what you've learned to your preferred programming language with hands-on tutorials.
+Node.js
+Learn how to containerize and develop Node.js applications.
+Python
+Build and run Python applications in containers.
+Java
+Containerize Java applications with best practices.
+Go
+Develop and deploy Go applications using Docker.
+Edit this page
+Request changes

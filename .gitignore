@@ -201,9 +201,20 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
-# Local generated AWS crawl artifacts
+.DS_Store
+
+# Local generated AWS crawl artifacts (optional; large)
 data/docs/aws/
-data/index/aws/
+
+# Transient eval run logs (regenerated each run); keep curated *_report.json
+runs/*.jsonl
+
+# Vector index artifacts (rebuild: python run_ingest.py --docs-dir data/docs --index-dir data/index/official)
+data/index/**/index.faiss
+data/index/**/index.npy
+# Official index payload is large and may embed AWS doc example credentials in chunk text
+data/index/official/chunks.json
+data/index/official/vectorizer.pkl
 
 # Marimo
 marimo/_static/

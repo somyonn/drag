@@ -1,0 +1,1258 @@
+# MSI installer | Docker Docs
+
+Source: https://docs.docker.com/enterprise/enterprise-deployment/msi-install-and-configure/
+
+Back
+Manuals
+Get started
+Guides
+Reference
+AI and agents
+Overview
+Docker Sandboxes
+Get started
+Usage
+Agents
+Claude Code
+Codex
+Copilot
+Cursor
+Droid
+Gemini
+Kiro
+OpenCode
+Docker Agent
+Shell
+Customize
+Early Access
+Templates
+Kits
+Examples
+Build an agent
+Architecture
+Security model
+Isolation layers
+Defaults
+Credentials
+Policies
+Org governance
+Workspace trust
+Troubleshooting
+FAQ
+Release notes
+MCP Catalog and Toolkit
+Beta
+Get started
+Catalog
+Profiles
+Toolkit UI
+Use with CLI
+Dynamic discovery
+Gateway
+Hub MCP server
+FAQs
+E2B sandboxes
+Model Runner
+Get started with DMR
+DMR REST API
+Configuration options
+DMR examples
+IDE and tool integrations
+Open WebUI integration
+Inference engines
+Gordon
+Use cases
+Concepts
+Capabilities
+Data privacy
+How-to guides
+Docker Desktop
+CLI
+Permissions
+Configure tools
+Usage limits
+AI and Docker Compose
+Use AI models in Compose
+Docker Agent
+Model providers
+Local models
+Building a coding agent
+Best practices
+Sharing agents
+Integrations
+A2A
+ACP
+MCP
+Reference
+Configuration file
+Toolsets
+CLI
+Examples
+RAG
+Evals
+Application development
+Docker Desktop
+Setup
+Install
+Mac
+Mac permission requirements
+Windows
+Windows permission requirements
+Linux
+Ubuntu
+Debian
+Fedora
+Arch
+RHEL
+VM or VDI environments
+Sign in
+Allowlist
+Explore Docker Desktop
+Containers
+Images
+Volumes
+Builds
+Kubernetes
+Logs
+Resource Saver mode
+Pause Docker Desktop
+Features and capabilities
+Networking
+How-tos
+GPU support
+USB/IP support
+Synchronized file shares
+containerd image store
+Wasm workloads
+Beta
+Docker Desktop CLI
+Virtual Machine Manager
+WSL
+Best practices
+Custom kernels
+Use WSL
+Settings and maintenance
+Change settings
+Backup and restore data
+Troubleshoot and support
+Troubleshoot and diagnose
+Common topics
+Known issues
+MacOS app damaged dialog
+FAQs
+General
+Mac
+Windows
+Linux
+Releases
+Give feedback
+Uninstall
+Release notes
+Docker Engine
+Install
+Ubuntu
+Debian
+RHEL
+Fedora
+Raspberry Pi OS (32-bit / armhf)
+CentOS
+Binaries
+Post-installation steps
+Storage
+Volumes
+Bind mounts
+tmpfs mounts
+Storage drivers
+Select a storage driver
+BTRFS storage driver
+Device Mapper storage driver (deprecated)
+OverlayFS storage driver
+VFS storage driver
+windowsfilter storage driver
+ZFS storage driver
+containerd image store
+Networking
+Docker with iptables
+Docker with nftables
+Packet filtering and firewalls
+Port publishing and mapping
+Network drivers
+Bridge network driver
+Host network driver
+IPvlan network driver
+Macvlan network driver
+None network driver
+Overlay network driver
+CA certificates
+Legacy container links
+Containers
+Start containers automatically
+Run multiple processes in a container
+Resource constraints
+GPU access
+Runtime metrics
+Running containers
+CLI
+Completion
+Proxy configuration
+Filter commands
+Format command and log output
+OpenTelemetry for the Docker CLI
+Daemon
+Start the daemon
+Use IPv6 networking
+Daemon proxy configuration
+Live restore
+Alternative container runtimes
+Collect Docker metrics with Prometheus
+Configure remote access for Docker daemon
+Read the daemon logs
+Troubleshooting the Docker daemon
+Manage resources
+Docker contexts
+Docker object labels
+Prune unused Docker objects
+Logs and metrics
+Configure logging drivers
+Customize log driver output
+Logging drivers
+Amazon CloudWatch Logs logging driver
+ETW logging driver
+Fluentd logging driver
+Google Cloud Logging driver
+Graylog Extended Format logging driver
+Journald logging driver
+JSON File logging driver
+Local file logging driver
+Splunk logging driver
+Syslog logging driver
+Use a logging driver plugin
+Use docker logs with remote logging drivers
+Security
+Rootless mode
+Tips
+Troubleshooting
+Antivirus software and Docker
+AppArmor security profiles for Docker
+Content trust in Docker
+Automation with content trust
+Delegations for content trust
+Deploy Notary Server with Compose
+Manage keys for content trust
+Play in a content trust sandbox
+Docker security non-events
+Isolate containers with a user namespace
+Protect the Docker daemon socket
+Seccomp security profiles for Docker
+Verify repository client with certificates
+Swarm mode
+Administer and maintain a swarm of Docker Engines
+Deploy a stack to a swarm
+Deploy services to a swarm
+Getting started with Swarm mode
+Create a swarm
+Add nodes to the swarm
+Deploy a service to the swarm
+Inspect a service on the swarm
+Scale the service in the swarm
+Delete the service running on the swarm
+Apply rolling updates to a service
+Drain a node on the swarm
+How swarm works
+How nodes work
+How services work
+Manage swarm security with public key infrastructure (PKI)
+Swarm task states
+Join nodes to a swarm
+Lock your swarm to protect its encryption key
+Manage nodes in a swarm
+Manage sensitive data with Docker secrets
+Manage swarm service networks
+Raft consensus in swarm mode
+Run Docker Engine in swarm mode
+Store configuration data using Docker Configs
+Swarm mode key concepts
+Use Swarm mode routing mesh
+Deprecated features
+Docker Engine plugins
+Access authorization plugin
+Docker log driver plugins
+Docker network driver plugins
+Docker Plugin API
+Docker volume plugins
+Plugin Config Version 1 of Plugin V2
+Use Docker Engine plugins
+Release notes
+Engine v29
+Engine v28
+Engine v27
+Engine v26.1
+Engine v26.0
+Engine v25.0
+Engine v24.0
+Engine v23.0
+Engine v20.10
+Engine v19.03
+Engine v18.09
+Engine v18.06
+Engine v18.05
+Engine v18.04
+Engine v18.03
+Engine v18.02
+Engine v18.01
+Engine v17.12
+Engine v17.11
+Engine v17.10
+Engine v17.09
+Engine v17.07
+Engine v17.06
+Engine v17.05
+Engine v17.04
+Engine v17.03
+Prior releases
+Docker Offload
+Quickstart
+About
+Configure
+Usage
+Optimize usage
+Troubleshoot
+Give feedback
+Docker Build
+Core concepts
+Docker Build Overview
+Dockerfile overview
+Build context
+Build checks
+Building
+Multi-stage
+Variables
+Secrets
+Multi-platform
+Export binaries
+Container Device Interface (CDI)
+Best practices
+Base images
+Builders
+Build drivers
+Docker container driver
+Docker driver
+Kubernetes driver
+Remote driver
+Manage builders
+Bake
+Introduction
+Targets
+Inheritance
+Variables
+Expressions
+Functions
+Matrix targets
+Contexts
+Bake file reference
+Bake standard library functions
+Building with Bake from a Compose file
+Overriding configurations
+Remote Bake file definition
+Cache
+Build cache invalidation
+Build garbage collection
+Cache storage backends
+Amazon S3 cache
+Azure Blob Storage cache
+GitHub Actions cache
+Inline cache
+Local cache
+Registry cache
+Optimize cache usage in builds
+CI
+GitHub Actions
+Annotations
+Attestations
+Build checks
+Build secrets
+Build summary
+BuildKit configuration
+Cache management
+Copy image between registries
+Export to Docker
+GitHub Builder
+New
+Architecture
+Build workflow
+Bake workflow
+Local registry
+Multi-platform image
+Named contexts
+Push to multiple registries
+Reproducible builds
+Share image between jobs
+Tags and labels
+Test before push
+Update Docker Hub description
+Validating builds
+Experimental
+Introduction
+Usage
+Image validation
+Git validation
+Templates & examples
+Testing
+Debugging
+Input reference
+Built-in functions
+Metadata
+Annotations
+Build attestations
+Image attestation storage
+Provenance attestations
+SBOM attestations
+SLSA definitions
+Exporters
+Image and registry exporters
+Local and tar exporters
+OCI and Docker exporters
+BuildKit
+buildkitd.toml
+Configure BuildKit
+Custom Dockerfile syntax
+Dockerfile release notes
+Debugging
+OpenTelemetry support
+Build release notes
+Docker Build Cloud
+Setup
+Usage
+Continuous integration
+Optimization
+Builder settings
+Release notes
+Docker Compose
+Introduction to Compose
+How Compose works
+Why use Compose?
+History and development
+Install
+Plugin
+Standalone (Legacy)
+Uninstall
+Quickstart
+How-tos
+Specify a project name
+Use lifecycle hooks
+Use service profiles
+Control startup order
+Use environment variables
+Set environment variables
+Environment variables precedence
+Pre-defined environment variables
+Interpolation
+Best practices
+Build dependent images
+Use Compose Watch
+Secrets in Compose
+Networking
+Use multiple Compose files
+Merge
+Extend
+Include
+Enable GPU support
+Use Compose in production
+OCI artifact applications
+Use provider services
+Compose Bridge
+Usage
+Customize
+Use Model Runner
+Compose SDK
+New
+Trust model for Compose files
+Support and feedback
+FAQs
+Give feedback
+Release notes
+Docker Extensions
+Marketplace extensions
+Non-marketplace extensions
+Configure a private marketplace
+Settings and feedback
+Extensions SDK
+The build and publish process
+Quickstart
+Part one: Build
+Create a simple extension
+Create an advanced frontend extension
+Add a backend to your extension
+Part two: Publish
+Add labels
+Validate
+Package and release your extension
+Share your extension
+Publish in the Marketplace
+Build multi-arch extensions
+Architecture
+Metadata
+Security
+Design and UI styling
+Guidelines
+Docker design principles
+MUI best practices
+Developer Guides
+Authentication
+Interacting with Kubernetes
+Invoke host binaries
+Use the Docker socket
+Developer SDK tools
+Test and debug
+Continuous Integration (CI)
+CLI reference
+Extension APIs
+Dashboard
+Docker
+Extension Backend
+Extension UI API
+Navigation
+Deprecated products and features
+Release lifecycle
+Supply chain security
+Docker Hardened Images
+New
+Quickstart
+Features
+Explore
+Hardened images
+Build process
+Image types
+Scanner integrations
+Image testing
+Responsibility overview
+Malware scanning
+Feedback
+Migration
+Migration checklist
+AI-assisted migration
+Experimental
+Migrate from Alpine or Debian
+Migrate from Ubuntu
+Migrate from Wolfi
+Migration examples
+Go
+Python
+Node.js
+How-tos
+Search and evaluate
+Mirror a repository
+Customize an image or chart
+Create and build an image
+Use an image
+Use a Helm chart
+Use hardened packages
+Verify an image or chart
+Scan an image
+Enforce image usage
+Use the CLI
+Use DHI Select & Enterprise
+Core concepts
+Attestations
+CIS Benchmark
+Code signing
+CVEs
+Distroless images
+FIPS
+glibc and musl
+Hardening
+Image digests
+Image provenance
+Immutability
+SBOMs
+SLSA
+Software Supply Chain Security
+SSDLC
+STIG
+VEX
+Troubleshoot
+Additional resources
+Docker Hub
+Quickstart
+Library
+Search
+Trusted content
+Catalogs
+Mirror
+Repositories
+Create
+Manage
+Repository information
+Access
+Images
+Tags
+Immutable tags
+Image Management
+Software artifacts
+Push images
+Move images
+Bulk migrate images
+Image security insights
+Webhooks
+Automated builds
+Deprecated
+Set up
+Link accounts
+Automated repository tests
+Advanced options
+Migrate
+Manage autobuilds
+Troubleshoot
+Trusted content
+Docker Official Images
+Docker Verified Publisher Program
+Docker-Sponsored Open Source Program
+Insights and analytics
+Export repositories
+Archive
+Delete
+Settings
+Usage and limits
+Pulls
+Optimize usage
+Troubleshoot
+Release notes
+Docker Scout
+Install
+Quickstart
+Explore
+Dashboard
+Docker Scout image analysis
+Docker Scout metrics exporter
+Image details view
+Manage vulnerability exceptions
+How-tos
+Create an exception using the GUI
+Create an exception using the VEX
+Docker Scout environment variables
+Docker Scout SBOMs
+Use Scout with different artifact types
+Deep dive
+Advisory database sources and matching service
+Data collection and storage in Docker Scout
+Policy Evaluation
+Configure policies
+Docker Scout health scores
+Evaluate policy compliance in CI
+Remediation with Docker Scout
+View Docker Scout policy status
+Integrations
+Code quality
+SonarQube
+Container registries
+Amazon ECR
+Artifactory Container Registry
+Azure Container Registry
+Continuous Integration
+Azure DevOps Pipelines
+Circle CI
+GitHub Actions
+GitLab CI/CD
+Jenkins
+Integrating Docker Scout with environments
+Generic (CLI)
+Sysdig
+Source code management
+GitHub
+Team collaboration
+Slack
+Release notes
+CLI release notes
+Platform release notes
+Platform
+Support
+Billing
+Add or update a payment method
+Manage your billing information
+3D Secure authentication
+Invoices and billing history
+Change your billing cycle
+Submit a tax exemption certificate
+FAQs
+Docker accounts
+Accounts
+Create an account
+Manage an account
+Deactivate an account
+Security
+Personal access tokens
+Two-factor authentication
+Recover your Docker account
+FAQs
+General
+Container
+Network and VM
+Security announcements
+Subscription
+Compare
+Setup
+Scale
+Upgrade or change
+Manage seats
+Docker Desktop license agreement
+FAQs
+Release notes
+Enterprise
+Administration
+Organization
+Setup
+Create
+Onboard
+Change information
+Convert account
+Manage
+Members
+Teams
+Docker products
+Deactivate
+FAQs
+Company
+Create
+Manage
+Organizations
+Owners
+Users
+FAQs
+Activity logs
+Insights
+Deploy Docker Desktop
+MSI installer
+PKG installer
+MS Store
+Deploy with Intune
+Deploy with Jamf Pro
+Microsoft Dev Box
+FAQs
+Security
+Add and manage domains
+Single sign-on
+Setup
+Manage connections
+Troubleshoot
+FAQs
+General
+Domains
+Enforcement
+Identity providers
+User management
+Provision
+SCIM
+Setup
+Group mapping
+Migrate
+Just-in-Time
+Auto-provision
+Troubleshoot
+Enforce sign-in
+Configure
+Roles and permissions
+Core roles
+Custom roles
+Hardened Docker Desktop
+Enhanced Container Isolation
+Enable ECI
+Configure advanced settings
+Limitations
+FAQs
+Settings Management
+Use a JSON file
+Use the Admin Console
+Desktop settings reporting
+Settings reference
+Air-gapped containers
+Registry Access Management
+Image Access Management
+Namespace access
+Organization access tokens
+Home
+/
+Manuals
+/
+Deploy Docker Desktop
+/
+MSI installer
+MSI installer
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+Install interactively
+Install from the command line
+Common installation commands
+Common uninstall commands
+Configuration options
+Analytics
+How to opt-out
+Persistence
+Additional resources
+Subscription:
+Business
+For:
+Administrators
+The MSI package supports various MDM (Mobile Device Management) solutions, making it ideal for bulk installations and eliminating the need for manual setups by individual users. With this package, IT administrators can ensure standardized, policy-driven installations of Docker Desktop, enhancing efficiency and software management across their organizations.
+Install interactively
+In
+Docker Home
+, choose your organization.
+Select
+Admin Console
+, then
+Enterprise deployment
+.
+From the
+Windows OS
+tab, select the
+Download MSI installer
+button.
+Once downloaded, double-click
+Docker Desktop Installer.msi
+to run the installer.
+After accepting the license agreement, choose the install location. By default, Docker Desktop is installed at
+C:\Program Files\Docker\Docker
+(all-user installations) or
+%LOCALAPPDATA%\Programs\DockerDesktop
+(per-user installations)
+Configure the Docker Desktop installation. You can:
+Create a desktop shortcut
+Set the Docker Desktop service startup type to automatic
+Disable Windows Container usage
+Select the Docker Desktop backend: WSL or Hyper-V. If only one is supported by your system, you won't be able to choose.
+Follow the instructions on the installation wizard to authorize the installer and proceed with the install.
+When the installation is successful, select
+Finish
+to complete the installation process.
+If your administrator account is different from your user account, you must add the user to the
+docker-users
+group to access features that require higher privileges, such as creating and managing the Hyper-V VM, or using Windows containers:
+Run
+Computer Management
+as an
+administrator
+.
+Navigate to
+Local Users and Groups
+>
+Groups
+>
+docker-users
+.
+Right-click to add the user to the group.
+Sign out and sign back in for the changes to take effect.
+Note
+When installing Docker Desktop with the MSI, in-app updates are automatically disabled by default. This ensures organizations can maintain version consistency and prevent unapproved updates.
+Starting with Docker Desktop version 4.60 and later, in-app updates from an MSI installation can be enabled by changing the
+disableUpdate
+setting to
+false
+through
+Settings Management
+.
+Docker Desktop notifies you when an update is available. To update Docker Desktop, download the latest installer from the Docker Admin Console. Navigate to the
+Enterprise deployment
+page.
+To keep up to date with new releases, check the
+release notes
+page.
+Install from the command line
+This section covers command line installations of Docker Desktop using PowerShell. It provides common installation commands that you can run. You can also add additional arguments which are outlined in
+configuration options
+.
+When installing Docker Desktop, you can choose between interactive or non-interactive installations.
+Interactive installations, without specifying
+/quiet
+or
+/qn
+, display the user interface and let you select your own properties.
+When installing via the user interface it's possible to:
+Choose the destination folder
+Create a desktop shortcut
+Configure the Docker Desktop service startup type
+Disable Windows Containers
+Choose between the WSL or Hyper-V engine
+Non-interactive installations are silent and any additional configuration must be passed as arguments.
+Common installation commands
+Admin rights are required to run any of the following commands.
+Install interactively with verbose logging
+msiexec
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+Install interactively without verbose logging
+msiexec
+/
+i
+"DockerDesktop.msi"
+Install non-interactively with verbose logging
+msiexec
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+/
+quiet
+Install non-interactively and suppressing reboots
+msiexec
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+/
+quiet
+/
+norestart
+Install non-interactively with admin settings
+msiexec
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+/
+quiet
+/
+norestart
+ADMINSETTINGS
+=
+"{""configurationFileVersion"":2,""enhancedContainerIsolation"":{""value"":true,""locked"":false}}"
+ALLOWEDORG
+=
+"your-organization"
+Install interactively and allow users to switch to Windows containers without admin rights
+msiexec
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+/
+quiet
+/
+norestart
+ALLOWEDORG
+=
+"your-organization"
+ALWAYSRUNSERVICE
+=
+1
+Install interactively specifying a PAC file
+PowerShell
+msiexec
+--%
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+PROXYHTTPMODE
+=
+"manual"
+OVERRIDEPROXYPAC
+=
+"http://localhost:8080/myproxy.pac"
+Install interactively specifying a PAC script
+PowerShell
+msiexec
+--%
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+PROXYHTTPMODE
+=
+"manual"
+OVERRIDEPROXYEMBEDDEDPAC
+=
+"function FindProxyForURL(url,host) {return ""DIRECT"" ;; }"
+Install with the passive display option
+You can use the
+/passive
+display option instead of
+/quiet
+when you want to perform a non-interactive installation but show a progress dialog.
+In passive mode the installer doesn't display any prompts or error messages to the user and the installation cannot be cancelled.
+For example:
+msiexec
+/
+i
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+/
+passive
+/
+norestart
+Tip
+When creating a value that expects a JSON string:
+The property expects a JSON formatted string
+The string should be wrapped in double quotes
+The string shouldn't contain any whitespace
+Property names are expected to be in double quotes
+Common uninstall commands
+When uninstalling Docker Desktop, you need to use the same
+.msi
+file that was originally used to install the application.
+If you no longer have the original
+.msi
+file, you need to use the product code associated with the installation. To find the product code, run:
+Get-WmiObject
+Win32_Product
+|
+Select-Object
+IdentifyingNumber
+,
+Name
+|
+Where-Object
+{
+$_
+.
+Name
+-eq
+"Docker Desktop"
+}
+It should return output similar to the following:
+IdentifyingNumber Name
+----------------- ----
+{10FC87E2-9145-4D7D-B493-2E99E8D8E103} Docker Desktop
+Note
+This command may take some time, depending on the number of installed applications.
+IdentifyingNumber
+is the applications product code and can be used to uninstall Docker Desktop. For example:
+msiexec
+/
+x
+{
+10FC87E2
+-
+9145
+-
+4D7D-B493
+-
+2E99E8D8E103
+}
+/
+L
+*
+V
+".\msi.log"
+/
+quiet
+Uninstall interactively with verbose logging
+msiexec
+/
+x
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+Uninstall interactively without verbose logging
+msiexec
+/
+x
+"DockerDesktop.msi"
+Uninstall non-interactively with verbose logging
+msiexec
+/
+x
+"DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+/
+quiet
+Uninstall non-interactively without verbose logging
+msiexec
+/
+x
+"DockerDesktop.msi"
+/
+quiet
+Configuration options
+In addition to the following custom properties, the Docker Desktop MSI installer also supports the standard
+Windows Installer command line options
+.
+Property
+Description
+Default
+ENABLEDESKTOPSHORTCUT
+Creates a desktop shortcut.
+1
+INSTALLFOLDER
+Specifies a custom location where Docker Desktop will be installed.
+C:\Program Files\Docker
+ADMINSETTINGS
+Automatically creates an
+admin-settings.json
+file which is used to
+control certain Docker Desktop settings
+on client machines within organizations. It must be used together with the
+ALLOWEDORG
+property.
+None
+ALLOWEDORG
+Requires the user to sign in and be part of the specified Docker Hub organization when running the application. This creates a registry key called
+allowedOrgs
+in
+HKLM\Software\Policies\Docker\Docker Desktop
+.
+None
+ALWAYSRUNSERVICE
+Lets users switch to Windows containers without needing admin rights
+0
+DISABLEWINDOWSCONTAINERS
+Disables the Windows containers integration
+0
+ENGINE
+Sets the Docker Engine that's used to run containers. This can be either
+wsl
+,
+hyperv
+, or
+windows
+wsl
+PROXYENABLEKERBEROSNTLM
+When set to 1, enables support for Kerberos and NTLM proxy authentication.
+0
+PROXYHTTPMODE
+Sets the HTTP Proxy mode. This can be either
+system
+or
+manual
+system
+OVERRIDEPROXYHTTP
+Sets the URL of the HTTP proxy that must be used for outgoing HTTP requests.
+None
+OVERRIDEPROXYHTTPS
+Sets the URL of the HTTP proxy that must be used for outgoing HTTPS requests.
+None
+OVERRIDEPROXYEXCLUDE
+Bypasses proxy settings for the hosts and domains. Uses a comma-separated list.
+None
+OVERRIDEPROXYPAC
+Sets the PAC file URL. This setting takes effect only when using
+manual
+proxy mode.
+None
+OVERRIDEPROXYEMBEDDEDPAC
+Specifies an embedded PAC (Proxy Auto-config) script. This setting takes effect only when using
+manual
+proxy mode and has precedence over the
+OVERRIDEPROXYPAC
+flag.
+None
+HYPERVDEFAULTDATAROOT
+Specifies the default location for the Hyper-V VM disk.
+None
+WINDOWSCONTAINERSDEFAULTDATAROOT
+Specifies the default location for Windows containers.
+None
+WSLDEFAULTDATAROOT
+Specifies the default location for the WSL distribution disk.
+None
+DISABLEANALYTICS
+When set to 1, analytics collection will be disabled for the MSI. For more information, see
+Analytics
+.
+0
+REMOVEEXISTINGINSTALL
+When set to 1, any existing EXE installations are removed. Existing settings and content are preserved. Available with Docker Desktop version 4.61 and later.
+1
+Additionally, you can also use
+/norestart
+or
+/forcerestart
+to control reboot behaviour.
+By default, the installer reboots the machine after a successful installation. When run silently, the reboot is automatic and the user is not prompted.
+Analytics
+The MSI installer collects anonymous usage statistics relating to installation only. This is to better understand user behaviour and to improve the user experience by identifying and addressing issues or optimizing popular features.
+How to opt-out
+From the GUI
+From the command line
+When you install Docker Desktop from the default installer GUI, select the
+Disable analytics
+checkbox located on the bottom-left corner of the
+Welcome
+dialog.
+When you install Docker Desktop from the command line, use the
+DISABLEANALYTICS
+property.
+msiexec
+/
+i
+"win\msi\bin\en-US\DockerDesktop.msi"
+/
+L
+*
+V
+".\msi.log"
+DISABLEANALYTICS
+=
+1
+Persistence
+If you decide to disable analytics for an installation, your choice is persisted in the registry and honoured across future upgrades and uninstalls.
+However, the key is removed when Docker Desktop is uninstalled and must be configured again via one of the previous methods.
+The registry key is as follows:
+SOFTWARE
+\
+Docker
+Inc
+.\
+Docker
+Desktop
+\
+DisableMsiAnalytics
+When analytics is disabled, this key is set to
+1
+.
+Additional resources
+Explore the FAQs
+Edit this page
+Request changes
+Table of contents
+Install interactively
+Install from the command line
+Common installation commands
+Common uninstall commands
+Configuration options
+Analytics
+How to opt-out
+Persistence
+Additional resources

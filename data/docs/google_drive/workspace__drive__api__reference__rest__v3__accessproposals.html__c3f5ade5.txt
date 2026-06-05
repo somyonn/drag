@@ -1,0 +1,132 @@
+# REST Resource: accessproposals  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/accessproposals
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+REST Resource: accessproposals
+Stay organized with collections
+Save and categorize content based on your preferences.
+Resource: AccessProposal
+JSON representation
+RoleAndView
+JSON representation
+Methods
+Resource: AccessProposal
+Manage outstanding access proposals on a file.
+JSON representation
+{
+"fileId"
+:
+string
+,
+"proposalId"
+:
+string
+,
+"requesterEmailAddress"
+:
+string
+,
+"recipientEmailAddress"
+:
+string
+,
+"rolesAndViews"
+:
+[
+{
+object (
+RoleAndView
+)
+}
+]
+,
+"requestMessage"
+:
+string
+,
+"createTime"
+:
+string
+}
+Fields
+fileId
+string
+The file ID that the proposal for access is on.
+proposalId
+string
+The ID of the access proposal.
+requesterEmailAddress
+string
+The email address of the requesting user.
+recipientEmailAddress
+string
+The email address of the user that will receive permissions, if accepted.
+rolesAndViews[]
+object (
+RoleAndView
+)
+A wrapper for the role and view of an access proposal. For more information, see
+Roles and permissions
+.
+requestMessage
+string
+The message that the requester added to the proposal.
+createTime
+string (
+Timestamp
+format)
+The creation time.
+Uses RFC 3339, where generated output will always be Z-normalized and use 0, 3, 6 or 9 fractional digits. Offsets other than "Z" are also accepted. Examples:
+"2014-10-02T15:01:23Z"
+,
+"2014-10-02T15:01:23.045123456Z"
+or
+"2014-10-02T15:01:23+05:30"
+.
+RoleAndView
+A wrapper for the role and view of an access proposal. For more information, see
+Roles and permissions
+.
+JSON representation
+{
+"role"
+:
+string
+,
+"view"
+:
+string
+}
+Fields
+role
+string
+The role that was proposed by the requester. The supported values are:
+writer
+commenter
+reader
+view
+string
+Indicates the view for this access proposal. Only populated for proposals that belong to a view. Only
+published
+is supported.
+Methods
+get
+Retrieves an access proposal by ID.
+list
+List the access proposals on a file.
+resolve
+Approves or denies an access proposal.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-09-09 UTC.

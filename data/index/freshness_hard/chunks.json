@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "doc::d_fresh_2026.txt::chunk::0",
+    "doc_id": "doc::d_fresh_2026.txt",
+    "source_uri": "data/docs_freshness_hard/d_fresh_2026.txt",
+    "text": "Creating and naming an S3 bucket.\nChoose a globally unique S3 bucket name and select a region when you create the bucket.\nBucket naming rules restrict characters and length for the S3 bucket.\nThis page covers S3 bucket creation and naming conventions only.\nLast updated: 2026-06-01",
+    "start_char": 0,
+    "end_char": 281
+  },
+  {
+    "chunk_id": "doc::d_old_2021.txt::chunk::0",
+    "doc_id": "doc::d_old_2021.txt",
+    "source_uri": "data/docs_freshness_hard/d_old_2021.txt",
+    "text": "Launching an EC2 instance with an instance profile.\nAttach an IAM role through an instance profile so the EC2 instance can call AWS APIs.\nSelect an AMI, instance type, and key pair when launching the EC2 instance.\nThis page is about EC2 instances and IAM roles, not storage lifecycles.\nLast updated: 2021-05-05",
+    "start_char": 0,
+    "end_char": 310
+  },
+  {
+    "chunk_id": "doc::r_mid_2024.txt::chunk::0",
+    "doc_id": "doc::r_mid_2024.txt",
+    "source_uri": "data/docs_freshness_hard/r_mid_2024.txt",
+    "text": "Expiring noncurrent versions with an S3 lifecycle configuration.\nUse a lifecycle rule containing NoncurrentVersionExpiration to expire noncurrent object versions automatically.\nSet NoncurrentDays so the lifecycle policy removes noncurrent versions once they age out.\nThis guide covers how to expire noncurrent object versions in an S3 lifecycle policy.\nLast updated: 2024-03-15",
+    "start_char": 0,
+    "end_char": 377
+  },
+  {
+    "chunk_id": "doc::r_new_2026.txt::chunk::0",
+    "doc_id": "doc::r_new_2026.txt",
+    "source_uri": "data/docs_freshness_hard/r_new_2026.txt",
+    "text": "How to expire noncurrent object versions in an S3 lifecycle policy.\nDefine a lifecycle rule with NoncurrentVersionExpiration to expire noncurrent object versions after NoncurrentDays.\nThe lifecycle policy then expires noncurrent versions on the configured schedule.\nThis is the current recommended way to expire noncurrent object versions.\nLast updated: 2026-02-20",
+    "start_char": 0,
+    "end_char": 364
+  },
+  {
+    "chunk_id": "doc::r_old_2022.txt::chunk::0",
+    "doc_id": "doc::r_old_2022.txt",
+    "source_uri": "data/docs_freshness_hard/r_old_2022.txt",
+    "text": "S3 lifecycle policy: expiring noncurrent object versions.\nTo expire noncurrent object versions, add a lifecycle rule with a NoncurrentVersionExpiration action.\nThe rule deletes older noncurrent versions after the specified number of noncurrent days.\nThis is the primary mechanism to expire noncurrent object versions in an S3 lifecycle policy.\nLast updated: 2022-01-10",
+    "start_char": 0,
+    "end_char": 368
+  },
+  {
+    "chunk_id": "doc::r_partial_2025.txt::chunk::0",
+    "doc_id": "doc::r_partial_2025.txt",
+    "source_uri": "data/docs_freshness_hard/r_partial_2025.txt",
+    "text": "S3 lifecycle transitions and version management overview.\nA lifecycle policy can transition object versions between storage classes and manage noncurrent versions.\nLifecycle rules apply to current and noncurrent versions across the bucket.\nThis overview touches on lifecycle policies and object versions at a high level.\nLast updated: 2025-08-01",
+    "start_char": 0,
+    "end_char": 345
+  }
+]

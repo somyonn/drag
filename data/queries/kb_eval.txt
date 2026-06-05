@@ -1,0 +1,10 @@
+What do the AutoPlacement and Quantity parameters mean in the EC2 AllocateHosts API?
+What is the recommended way to attach an IAM role to an EC2 workload according to AWS documentation?
+How does AWS documentation describe the difference between S3 bucket policies and IAM policies?
+What limits or cautions apply when setting environment variables on AWS Lambda functions?
+What is the difference between customer managed keys and AWS managed keys in KMS?
+What is the basic workflow for defining and running a multi-container app with Docker Compose?
+Why use multi-stage builds in a Dockerfile according to Docker documentation?
+How do you search files and folders with the Google Drive API files.list method and query syntax?
+Which method and fields are required to add a permission to a file in the Google Drive API?
+Customer email user@example.com appeared in S3 logs; what IAM and S3 access controls minimize exposure?

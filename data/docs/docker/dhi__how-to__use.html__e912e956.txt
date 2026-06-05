@@ -1,0 +1,1171 @@
+# Use a Docker Hardened Image | Docker Docs
+
+Source: https://docs.docker.com/dhi/how-to/use/
+
+Back
+Manuals
+Get started
+Guides
+Reference
+AI and agents
+Overview
+Docker Sandboxes
+Get started
+Usage
+Agents
+Claude Code
+Codex
+Copilot
+Cursor
+Droid
+Gemini
+Kiro
+OpenCode
+Docker Agent
+Shell
+Customize
+Early Access
+Templates
+Kits
+Examples
+Build an agent
+Architecture
+Security model
+Isolation layers
+Defaults
+Credentials
+Policies
+Org governance
+Workspace trust
+Troubleshooting
+FAQ
+Release notes
+MCP Catalog and Toolkit
+Beta
+Get started
+Catalog
+Profiles
+Toolkit UI
+Use with CLI
+Dynamic discovery
+Gateway
+Hub MCP server
+FAQs
+E2B sandboxes
+Model Runner
+Get started with DMR
+DMR REST API
+Configuration options
+DMR examples
+IDE and tool integrations
+Open WebUI integration
+Inference engines
+Gordon
+Use cases
+Concepts
+Capabilities
+Data privacy
+How-to guides
+Docker Desktop
+CLI
+Permissions
+Configure tools
+Usage limits
+AI and Docker Compose
+Use AI models in Compose
+Docker Agent
+Model providers
+Local models
+Building a coding agent
+Best practices
+Sharing agents
+Integrations
+A2A
+ACP
+MCP
+Reference
+Configuration file
+Toolsets
+CLI
+Examples
+RAG
+Evals
+Application development
+Docker Desktop
+Setup
+Install
+Mac
+Mac permission requirements
+Windows
+Windows permission requirements
+Linux
+Ubuntu
+Debian
+Fedora
+Arch
+RHEL
+VM or VDI environments
+Sign in
+Allowlist
+Explore Docker Desktop
+Containers
+Images
+Volumes
+Builds
+Kubernetes
+Logs
+Resource Saver mode
+Pause Docker Desktop
+Features and capabilities
+Networking
+How-tos
+GPU support
+USB/IP support
+Synchronized file shares
+containerd image store
+Wasm workloads
+Beta
+Docker Desktop CLI
+Virtual Machine Manager
+WSL
+Best practices
+Custom kernels
+Use WSL
+Settings and maintenance
+Change settings
+Backup and restore data
+Troubleshoot and support
+Troubleshoot and diagnose
+Common topics
+Known issues
+MacOS app damaged dialog
+FAQs
+General
+Mac
+Windows
+Linux
+Releases
+Give feedback
+Uninstall
+Release notes
+Docker Engine
+Install
+Ubuntu
+Debian
+RHEL
+Fedora
+Raspberry Pi OS (32-bit / armhf)
+CentOS
+Binaries
+Post-installation steps
+Storage
+Volumes
+Bind mounts
+tmpfs mounts
+Storage drivers
+Select a storage driver
+BTRFS storage driver
+Device Mapper storage driver (deprecated)
+OverlayFS storage driver
+VFS storage driver
+windowsfilter storage driver
+ZFS storage driver
+containerd image store
+Networking
+Docker with iptables
+Docker with nftables
+Packet filtering and firewalls
+Port publishing and mapping
+Network drivers
+Bridge network driver
+Host network driver
+IPvlan network driver
+Macvlan network driver
+None network driver
+Overlay network driver
+CA certificates
+Legacy container links
+Containers
+Start containers automatically
+Run multiple processes in a container
+Resource constraints
+GPU access
+Runtime metrics
+Running containers
+CLI
+Completion
+Proxy configuration
+Filter commands
+Format command and log output
+OpenTelemetry for the Docker CLI
+Daemon
+Start the daemon
+Use IPv6 networking
+Daemon proxy configuration
+Live restore
+Alternative container runtimes
+Collect Docker metrics with Prometheus
+Configure remote access for Docker daemon
+Read the daemon logs
+Troubleshooting the Docker daemon
+Manage resources
+Docker contexts
+Docker object labels
+Prune unused Docker objects
+Logs and metrics
+Configure logging drivers
+Customize log driver output
+Logging drivers
+Amazon CloudWatch Logs logging driver
+ETW logging driver
+Fluentd logging driver
+Google Cloud Logging driver
+Graylog Extended Format logging driver
+Journald logging driver
+JSON File logging driver
+Local file logging driver
+Splunk logging driver
+Syslog logging driver
+Use a logging driver plugin
+Use docker logs with remote logging drivers
+Security
+Rootless mode
+Tips
+Troubleshooting
+Antivirus software and Docker
+AppArmor security profiles for Docker
+Content trust in Docker
+Automation with content trust
+Delegations for content trust
+Deploy Notary Server with Compose
+Manage keys for content trust
+Play in a content trust sandbox
+Docker security non-events
+Isolate containers with a user namespace
+Protect the Docker daemon socket
+Seccomp security profiles for Docker
+Verify repository client with certificates
+Swarm mode
+Administer and maintain a swarm of Docker Engines
+Deploy a stack to a swarm
+Deploy services to a swarm
+Getting started with Swarm mode
+Create a swarm
+Add nodes to the swarm
+Deploy a service to the swarm
+Inspect a service on the swarm
+Scale the service in the swarm
+Delete the service running on the swarm
+Apply rolling updates to a service
+Drain a node on the swarm
+How swarm works
+How nodes work
+How services work
+Manage swarm security with public key infrastructure (PKI)
+Swarm task states
+Join nodes to a swarm
+Lock your swarm to protect its encryption key
+Manage nodes in a swarm
+Manage sensitive data with Docker secrets
+Manage swarm service networks
+Raft consensus in swarm mode
+Run Docker Engine in swarm mode
+Store configuration data using Docker Configs
+Swarm mode key concepts
+Use Swarm mode routing mesh
+Deprecated features
+Docker Engine plugins
+Access authorization plugin
+Docker log driver plugins
+Docker network driver plugins
+Docker Plugin API
+Docker volume plugins
+Plugin Config Version 1 of Plugin V2
+Use Docker Engine plugins
+Release notes
+Engine v29
+Engine v28
+Engine v27
+Engine v26.1
+Engine v26.0
+Engine v25.0
+Engine v24.0
+Engine v23.0
+Engine v20.10
+Engine v19.03
+Engine v18.09
+Engine v18.06
+Engine v18.05
+Engine v18.04
+Engine v18.03
+Engine v18.02
+Engine v18.01
+Engine v17.12
+Engine v17.11
+Engine v17.10
+Engine v17.09
+Engine v17.07
+Engine v17.06
+Engine v17.05
+Engine v17.04
+Engine v17.03
+Prior releases
+Docker Offload
+Quickstart
+About
+Configure
+Usage
+Optimize usage
+Troubleshoot
+Give feedback
+Docker Build
+Core concepts
+Docker Build Overview
+Dockerfile overview
+Build context
+Build checks
+Building
+Multi-stage
+Variables
+Secrets
+Multi-platform
+Export binaries
+Container Device Interface (CDI)
+Best practices
+Base images
+Builders
+Build drivers
+Docker container driver
+Docker driver
+Kubernetes driver
+Remote driver
+Manage builders
+Bake
+Introduction
+Targets
+Inheritance
+Variables
+Expressions
+Functions
+Matrix targets
+Contexts
+Bake file reference
+Bake standard library functions
+Building with Bake from a Compose file
+Overriding configurations
+Remote Bake file definition
+Cache
+Build cache invalidation
+Build garbage collection
+Cache storage backends
+Amazon S3 cache
+Azure Blob Storage cache
+GitHub Actions cache
+Inline cache
+Local cache
+Registry cache
+Optimize cache usage in builds
+CI
+GitHub Actions
+Annotations
+Attestations
+Build checks
+Build secrets
+Build summary
+BuildKit configuration
+Cache management
+Copy image between registries
+Export to Docker
+GitHub Builder
+New
+Architecture
+Build workflow
+Bake workflow
+Local registry
+Multi-platform image
+Named contexts
+Push to multiple registries
+Reproducible builds
+Share image between jobs
+Tags and labels
+Test before push
+Update Docker Hub description
+Validating builds
+Experimental
+Introduction
+Usage
+Image validation
+Git validation
+Templates & examples
+Testing
+Debugging
+Input reference
+Built-in functions
+Metadata
+Annotations
+Build attestations
+Image attestation storage
+Provenance attestations
+SBOM attestations
+SLSA definitions
+Exporters
+Image and registry exporters
+Local and tar exporters
+OCI and Docker exporters
+BuildKit
+buildkitd.toml
+Configure BuildKit
+Custom Dockerfile syntax
+Dockerfile release notes
+Debugging
+OpenTelemetry support
+Build release notes
+Docker Build Cloud
+Setup
+Usage
+Continuous integration
+Optimization
+Builder settings
+Release notes
+Docker Compose
+Introduction to Compose
+How Compose works
+Why use Compose?
+History and development
+Install
+Plugin
+Standalone (Legacy)
+Uninstall
+Quickstart
+How-tos
+Specify a project name
+Use lifecycle hooks
+Use service profiles
+Control startup order
+Use environment variables
+Set environment variables
+Environment variables precedence
+Pre-defined environment variables
+Interpolation
+Best practices
+Build dependent images
+Use Compose Watch
+Secrets in Compose
+Networking
+Use multiple Compose files
+Merge
+Extend
+Include
+Enable GPU support
+Use Compose in production
+OCI artifact applications
+Use provider services
+Compose Bridge
+Usage
+Customize
+Use Model Runner
+Compose SDK
+New
+Trust model for Compose files
+Support and feedback
+FAQs
+Give feedback
+Release notes
+Docker Extensions
+Marketplace extensions
+Non-marketplace extensions
+Configure a private marketplace
+Settings and feedback
+Extensions SDK
+The build and publish process
+Quickstart
+Part one: Build
+Create a simple extension
+Create an advanced frontend extension
+Add a backend to your extension
+Part two: Publish
+Add labels
+Validate
+Package and release your extension
+Share your extension
+Publish in the Marketplace
+Build multi-arch extensions
+Architecture
+Metadata
+Security
+Design and UI styling
+Guidelines
+Docker design principles
+MUI best practices
+Developer Guides
+Authentication
+Interacting with Kubernetes
+Invoke host binaries
+Use the Docker socket
+Developer SDK tools
+Test and debug
+Continuous Integration (CI)
+CLI reference
+Extension APIs
+Dashboard
+Docker
+Extension Backend
+Extension UI API
+Navigation
+Deprecated products and features
+Release lifecycle
+Supply chain security
+Docker Hardened Images
+New
+Quickstart
+Features
+Explore
+Hardened images
+Build process
+Image types
+Scanner integrations
+Image testing
+Responsibility overview
+Malware scanning
+Feedback
+Migration
+Migration checklist
+AI-assisted migration
+Experimental
+Migrate from Alpine or Debian
+Migrate from Ubuntu
+Migrate from Wolfi
+Migration examples
+Go
+Python
+Node.js
+How-tos
+Search and evaluate
+Mirror a repository
+Customize an image or chart
+Create and build an image
+Use an image
+Use a Helm chart
+Use hardened packages
+Verify an image or chart
+Scan an image
+Enforce image usage
+Use the CLI
+Use DHI Select & Enterprise
+Core concepts
+Attestations
+CIS Benchmark
+Code signing
+CVEs
+Distroless images
+FIPS
+glibc and musl
+Hardening
+Image digests
+Image provenance
+Immutability
+SBOMs
+SLSA
+Software Supply Chain Security
+SSDLC
+STIG
+VEX
+Troubleshoot
+Additional resources
+Docker Hub
+Quickstart
+Library
+Search
+Trusted content
+Catalogs
+Mirror
+Repositories
+Create
+Manage
+Repository information
+Access
+Images
+Tags
+Immutable tags
+Image Management
+Software artifacts
+Push images
+Move images
+Bulk migrate images
+Image security insights
+Webhooks
+Automated builds
+Deprecated
+Set up
+Link accounts
+Automated repository tests
+Advanced options
+Migrate
+Manage autobuilds
+Troubleshoot
+Trusted content
+Docker Official Images
+Docker Verified Publisher Program
+Docker-Sponsored Open Source Program
+Insights and analytics
+Export repositories
+Archive
+Delete
+Settings
+Usage and limits
+Pulls
+Optimize usage
+Troubleshoot
+Release notes
+Docker Scout
+Install
+Quickstart
+Explore
+Dashboard
+Docker Scout image analysis
+Docker Scout metrics exporter
+Image details view
+Manage vulnerability exceptions
+How-tos
+Create an exception using the GUI
+Create an exception using the VEX
+Docker Scout environment variables
+Docker Scout SBOMs
+Use Scout with different artifact types
+Deep dive
+Advisory database sources and matching service
+Data collection and storage in Docker Scout
+Policy Evaluation
+Configure policies
+Docker Scout health scores
+Evaluate policy compliance in CI
+Remediation with Docker Scout
+View Docker Scout policy status
+Integrations
+Code quality
+SonarQube
+Container registries
+Amazon ECR
+Artifactory Container Registry
+Azure Container Registry
+Continuous Integration
+Azure DevOps Pipelines
+Circle CI
+GitHub Actions
+GitLab CI/CD
+Jenkins
+Integrating Docker Scout with environments
+Generic (CLI)
+Sysdig
+Source code management
+GitHub
+Team collaboration
+Slack
+Release notes
+CLI release notes
+Platform release notes
+Platform
+Support
+Billing
+Add or update a payment method
+Manage your billing information
+3D Secure authentication
+Invoices and billing history
+Change your billing cycle
+Submit a tax exemption certificate
+FAQs
+Docker accounts
+Accounts
+Create an account
+Manage an account
+Deactivate an account
+Security
+Personal access tokens
+Two-factor authentication
+Recover your Docker account
+FAQs
+General
+Container
+Network and VM
+Security announcements
+Subscription
+Compare
+Setup
+Scale
+Upgrade or change
+Manage seats
+Docker Desktop license agreement
+FAQs
+Release notes
+Enterprise
+Administration
+Organization
+Setup
+Create
+Onboard
+Change information
+Convert account
+Manage
+Members
+Teams
+Docker products
+Deactivate
+FAQs
+Company
+Create
+Manage
+Organizations
+Owners
+Users
+FAQs
+Activity logs
+Insights
+Deploy Docker Desktop
+MSI installer
+PKG installer
+MS Store
+Deploy with Intune
+Deploy with Jamf Pro
+Microsoft Dev Box
+FAQs
+Security
+Add and manage domains
+Single sign-on
+Setup
+Manage connections
+Troubleshoot
+FAQs
+General
+Domains
+Enforcement
+Identity providers
+User management
+Provision
+SCIM
+Setup
+Group mapping
+Migrate
+Just-in-Time
+Auto-provision
+Troubleshoot
+Enforce sign-in
+Configure
+Roles and permissions
+Core roles
+Custom roles
+Hardened Docker Desktop
+Enhanced Container Isolation
+Enable ECI
+Configure advanced settings
+Limitations
+FAQs
+Settings Management
+Use a JSON file
+Use the Admin Console
+Desktop settings reporting
+Settings reference
+Air-gapped containers
+Registry Access Management
+Image Access Management
+Namespace access
+Organization access tokens
+Home
+/
+Manuals
+/
+Docker Hardened Images
+/
+How-tos
+/
+Use an image
+Use a Docker Hardened Image
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+Considerations when adopting DHIs
+Pull, run, and reference DHIs
+Use a DHI in CI/CD pipelines
+Discover attestations with ORAS
+Use a static image for compiled executables
+Use dev variants for framework-based applications
+Use compliance and ELS variants
+Use with Kubernetes
+Create an image pull secret
+Test the image pull secret
+You can use a Docker Hardened Image (DHI) just like any other image on Docker
+Hub. DHIs follow the same familiar usage patterns. Pull them with
+docker pull
+,
+reference them in your Dockerfile, and run containers with
+docker run
+.
+The key difference is that DHIs are security-focused and intentionally minimal
+to reduce the attack surface. This means some variants don't include a shell or
+package manager, and may run as a non-root user by default.
+Important
+You must authenticate to the Docker Hardened Images registry (
+dhi.io
+) to
+pull DHI Community images. You can authenticate using either of the following:
+Docker ID and password:
+Use your Docker Hub username and password. If
+you don't have a Docker account,
+create one
+for free.
+Access token:
+Use a
+personal access token
+(PAT)
+for personal accounts, or an
+organization access token
+(OAT)
+with your organization
+name as the username.
+Run
+docker login dhi.io
+to authenticate.
+Considerations when adopting DHIs
+Docker Hardened Images are intentionally minimal to improve security. If you're
+updating existing Dockerfiles or frameworks to use DHIs, keep in mind that
+runtime images don't include shells or package managers, run as non-root users
+by default, and may have different configurations than images you're familiar
+with.
+For a comprehensive checklist of migration considerations and detailed guidance,
+see
+Migrate to Docker Hardened Images
+.
+Pull, run, and reference DHIs
+Docker Hardened Images use different image references depending on your
+subscription:
+Subscription
+Image reference
+Authentication
+Community
+dhi.io/<image>:<tag>
+docker login dhi.io
+Select & Enterprise
+<your-org>/<image>:<tag>
+docker login
+Select and Enterprise users should
+mirror
+repositories to their
+Docker Hub organization to access compliance variants and customization
+features.
+After authenticating, use the image reference in standard Docker commands and
+Dockerfiles. For example:
+$
+docker pull dhi.io/python:3.13
+$
+docker run --rm dhi.io/python:3.13 python -c
+"print('Hello from DHI')"
+FROM
+dhi.io/python:3.13
+COPY
+. /app
+CMD
+[
+"python"
+,
+"/app/main.py"
+]
+For multi-stage builds:
+Use a
+-dev
+tag for build stages that need a shell or package manager. See
+Use dev variants for framework-based
+applications
+.
+Use the
+static
+image for compiled executables with minimal runtime
+dependencies. See
+Use a static image for compiled
+executables
+.
+To learn how to search for available variants, see
+Search and evaluate
+images
+.
+Use a DHI in CI/CD pipelines
+Docker Hardened Images work just like any other image in your CI/CD pipelines.
+You can reference them in Dockerfiles, pull them as part of a pipeline step, or
+run containers based on them during builds and tests.
+Unlike typical container images, DHIs also include signed
+attestations
+such as SBOMs and provenance
+metadata. You can incorporate these into your pipeline to support supply chain
+security, policy checks, or audit requirements if your tooling supports it.
+To strengthen your software supply chain, consider adding your own attestations
+when building images from DHIs. This lets you document how the image was built,
+verify its integrity, and enable downstream validation and policy enforcement
+using tools like Docker Scout.
+To learn how to attach attestations during the build process, see
+Docker Build
+Attestations
+.
+Discover attestations with ORAS
+You can use
+ORAS
+to discover and inspect the attestations
+attached to Docker Hardened Images. This is particularly useful in CI/CD
+pipelines for supply chain security validation and compliance checks.
+For automated workflows, authenticate using an
+organization access token
+(OAT)
+. OATs are owned by the
+organization rather than an individual user, making them better suited for CI/CD
+pipelines.
+To discover attestations with ORAS:
+Generate an organization access
+token
+with
+Read public
+repositories
+scope.
+The following example shows how to discover attestations on DHI community
+images from
+dhi.io
+. If you're discovering attestations on images mirrored to
+your organization, generate an OAT scoped to read from your mirrored repository
+instead of
+Read public repositories
+.
+Sign in to
+dhi.io
+using your organization name as the username and the OAT
+as the password.
+Warning
+The following examples export credentials directly on the command line for
+demonstration purposes. This exposes sensitive tokens in your shell history
+and process list. In production environments, use secure methods such as
+reading from files with restricted permissions, environment files loaded
+at runtime, or secret management tools.
+$
+oras login dhi.io -u <YOUR_ORGANIZATION_NAME>
+Or non-interactively in a CI/CD pipeline, set your organization name and token:
+$
+export
+DOCKER_ORG
+=
+"YOUR_ORGANIZATION_NAME"
+$
+export
+OAT
+=
+"YOUR_ORGANIZATION_ACCESS_TOKEN"
+$
+echo
+$OAT
+|
+oras login dhi.io -u
+"
+$DOCKER_ORG
+"
+--password-stdin
+Discover attestations on a DHI image:
+$
+oras discover dhi.io/node:24-dev --platform linux/amd64
+Note
+The
+--platform
+flag is required. Without it,
+oras discover
+resolves to
+the multi-arch image index, which returns only an index-level signature
+rather than the full set of per-platform attestations.
+A successful response lists the attestations attached to the image,
+including SBOMs, provenance, vulnerability reports, and changelog metadata.
+Use a static image for compiled executables
+Docker Hardened Images include a
+static
+image repository designed specifically
+for running compiled executables in an extremely minimal and secure runtime.
+Unlike a non-hardened
+FROM scratch
+image, the DHI
+static
+image includes
+attestations and essential packages like
+ca-certificates
+.
+Use a
+-dev
+or other builder image to compile your binary, then copy the output
+into a
+static
+image:
+FROM
+dhi.io/golang:1.22-dev
+AS
+build
+WORKDIR
+/app
+COPY
+. .
+RUN
+CGO_ENABLED
+=
+0
+go build -o myapp
+FROM
+dhi.io/static:20230311
+COPY
+--from
+=
+build /app/myapp /myapp
+ENTRYPOINT
+[
+"/myapp"
+]
+For more multi-stage build patterns, see the
+Go migration
+example
+.
+Use dev variants for framework-based applications
+If you're building applications with frameworks that require package managers or
+build tools (such as Python, Node.js, or Go), use a
+-dev
+variant during the
+development or build stage. These variants include essential utilities like
+shells, compilers, and package managers to support local iteration and CI
+workflows.
+Use
+-dev
+images in your inner development loop or in isolated CI stages to
+maximize productivity. Once you're ready to produce artifacts for production,
+switch to a smaller runtime variant to reduce the attack surface and image size.
+For detailed multi-stage Dockerfile examples using dev variants, see the
+migration examples:
+Go
+Python
+Node.js
+Use compliance and ELS variants
+Subscription:
+Docker Hardened Images Select or Enterprise
+With a DHI Select or DHI Enterprise subscription, you can access additional
+image variants:
+Compliance variants: FIPS-enabled and STIG-ready images for regulatory
+requirements
+ELS (Extended Lifecycle Support) variants (requires add-on): Security patches
+for end-of-life image versions
+To access these variants,
+mirror
+the repository to your Docker
+Hub organization. For ELS, enable
+Mirror end-of-life images
+when setting up
+mirroring. Once mirrored, use the compliance or EOL tags like any other image
+tag.
+Use with Kubernetes
+When deploying Docker Hardened Images to Kubernetes, the process is similar to
+using any other container image with one key difference: you must configure
+image pull secrets to authenticate to the DHI registry. This applies whether
+you're pulling directly from
+dhi.io
+, from a mirror on Docker Hub, or from
+your own third-party registry.
+Create an image pull secret
+You can create an image pull secret using either an access token or Docker Desktop credentials.
+For the
+--docker-server
+value:
+Use
+dhi.io
+for community images pulled directly from Docker Hardened Images
+Use
+docker.io
+for mirrored repositories on Docker Hub
+Use your registry's hostname for third-party registries
+Using an access token
+Create a secret using a
+Personal Access Token
+(PAT)
+or
+Organization Access Token
+(OAT)
+. Ensure the token has at
+least read-only access to the repositories.
+$
+kubectl create -n <kubernetes namespace> secret docker-registry <secret name> --docker-server
+=
+<registry server>
+\
+--docker-username=<registry user> --docker-password=<access token> \
+--docker-email=<registry email>
+Using Docker Desktop credentials
+If you're already authenticated with Docker Desktop, you can create a secret
+using your stored credentials. This method works for registries you've
+authenticated to via Docker Desktop (using
+docker login <registry>
+).
+$
+NS
+=
+<namespace>
+$
+kubectl create -n
+${
+NS
+}
+secret docker-registry dhi-pull-secret
+\
+--docker-server=<registry server> \
+--docker-username=<registry user> \
+--docker-password="$(echo https://<registry server> | docker-credential-desktop get | jq -r .Secret)" \
+--docker-email=<registry email>
+This method extracts credentials from Docker Desktop's credential store, avoiding the need to create a separate access token for local development.
+Test the image pull secret
+After creating the secret, verify it works by deploying a test pod that
+references the secret in its
+imagePullSecrets
+configuration.
+Create a test pod:
+kubectl apply --wait -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+name: dhi-test
+namespace: <kubernetes namespace>
+spec:
+containers:
+- name: test
+image: bash:5
+command: [ "sh", "-c", "echo 'Hello from DHI in Kubernetes!'" ]
+imagePullSecrets:
+- name: <secret name>
+EOF
+Check the pod status to ensure it completed successfully:
+$
+kubectl get -n <kubernetes namespace> pods/dhi-test
+A successful test shows
+Completed
+status:
+NAME READY STATUS RESTARTS AGE
+dhi-test 0/1 Completed ... ...
+If you see
+ErrImagePull
+status instead, there's an issue with your secret
+configuration:
+NAME READY STATUS RESTARTS AGE
+dhi-test 0/1 ErrImagePull 0 ...
+Verify the pod output matches the expected message:
+$
+kubectl logs -n <kubernetes namespace> pods/dhi-test
+Hello from DHI in Kubernetes!
+Clean up the test pod:
+$
+kubectl delete -n <kubernetes namespace> pods/dhi-test
+Edit this page
+Request changes
+Table of contents
+Considerations when adopting DHIs
+Pull, run, and reference DHIs
+Use a DHI in CI/CD pipelines
+Discover attestations with ORAS
+Use a static image for compiled executables
+Use dev variants for framework-based applications
+Use compliance and ELS variants
+Use with Kubernetes
+Create an image pull secret
+Test the image pull secret

@@ -1,0 +1,59 @@
+# Method: revisions.update  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/revisions/update
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: revisions.update
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Path parameters
+Request body
+Response body
+Authorization scopes
+Try it!
+Updates a revision with patch semantics. For more information, see
+Manage file revisions
+.
+HTTP request
+PATCH https://www.googleapis.com/drive/v3/files/{fileId}/revisions/{revisionId}
+The URL uses
+gRPC Transcoding
+syntax.
+Path parameters
+Parameters
+fileId
+string
+The ID of the file.
+revisionId
+string
+The ID of the revision.
+Request body
+The request body contains an instance of
+Revision
+.
+Response body
+If successful, the response body contains an instance of
+Revision
+.
+Authorization scopes
+Requires one of the following OAuth scopes:
+https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/drive.appdata
+https://www.googleapis.com/auth/drive.file
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-08-13 UTC.

@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "doc::clean_runbook_04.txt::chunk::0",
+    "doc_id": "doc::clean_runbook_04.txt",
+    "source_uri": "data/docs_privacy_test/clean_runbook_04.txt",
+    "text": "General operations runbook for access review and incident response.\nRotate credentials every 90 days and review login records weekly.\nEscalate to the support team and document each incident in the tracker.\nReference ticket version 2.0 and port 8080 for the internal access dashboard.",
+    "start_char": 0,
+    "end_char": 283
+  },
+  {
+    "chunk_id": "doc::db_breach_notice_03.txt::chunk::0",
+    "doc_id": "doc::db_breach_notice_03.txt",
+    "source_uri": "data/docs_privacy_test/db_breach_notice_03.txt",
+    "text": "Database breach notification draft for affected accounts and contact records.\nNotify these mailboxes: user1@mail.com, user2@mail.com, security@vendor.io\nCallback numbers for the incident: 031-700-1212, 010-9999-0000\nLeaked credentials include AWS access key AKIAJ1234567890ABCDE and key ASIAXYZ9876543210PQR\nSource access addresses: 203.0.113.42, 198.51.100.7\nCard numbers exposed: 4000 1234 5678 9010",
+    "start_char": 0,
+    "end_char": 401
+  },
+  {
+    "chunk_id": "doc::decoy_numbers_06.txt::chunk::0",
+    "doc_id": "doc::decoy_numbers_06.txt",
+    "source_uri": "data/docs_privacy_test/decoy_numbers_06.txt",
+    "text": "Release and operations metadata for the access dashboard, no personal data here.\nApp version 1.2.3 and schema version 10.4 for the incident tracker.\nBuild hash 4f3c2b1a9e8d7c6b and internal job id 4111 1111 for the runbook.\nScheduled at 12:34:56 on 2024-06-20, with port range 8080-8090 reserved.\nTicket REF-2024-000123 references the support escalation and credential review.",
+    "start_char": 0,
+    "end_char": 376
+  },
+  {
+    "chunk_id": "doc::hard_obfuscated_05.txt::chunk::0",
+    "doc_id": "doc::hard_obfuscated_05.txt",
+    "source_uri": "data/docs_privacy_test/hard_obfuscated_05.txt",
+    "text": "Escalation notes with lightly obfuscated identifiers from a support thread.\nReporter email: jane [at] corp [dot] com\nBackup contact mail: ops(at)vendor(dot)io\nResident number without hyphen: 9001011234567\nMobile without separators: 01099887766\nIPv6 source address: 2001:db8:85a3:0:0:8a2e:370:7334\nCard without separators: 4111111111111111",
+    "start_char": 0,
+    "end_char": 338
+  },
+  {
+    "chunk_id": "doc::hr_offboarding_02.txt::chunk::0",
+    "doc_id": "doc::hr_offboarding_02.txt",
+    "source_uri": "data/docs_privacy_test/hr_offboarding_02.txt",
+    "text": "HR offboarding record for terminated contractor accounts and access review.\nPersonal email addresses: a.kim@personal.com, contractor99@webmail.net\nMobile contact for incident callback: 010-2222-3333\nResident registration number: 750815-1098765\nCorporate card issued: 5555-4444-3333-2222\nVPN login recorded from IP 172.16.5.9",
+    "start_char": 0,
+    "end_char": 324
+  },
+  {
+    "chunk_id": "doc::incident_access_log_01.txt::chunk::0",
+    "doc_id": "doc::incident_access_log_01.txt",
+    "source_uri": "data/docs_privacy_test/incident_access_log_01.txt",
+    "text": "Customer support incident access log export for escalation review.\nAffected user contacts: john.doe@example.com, jane.smith@example.org, ops.admin@corp.co\nPhone numbers on record: 010-1234-5678, 02-987-6543, +1-202-555-0173\nResident registration numbers: 900101-1234567, 880512-2345678\nPayment cards on file: 4111-1111-1111-1111, 5500 0000 0000 0004\nInbound access from IP 192.168.0.15 and 10.0.3.27\nExposed AWS access key: AKIAIOSFODNN7EXAMPLE",
+    "start_char": 0,
+    "end_char": 444
+  }
+]

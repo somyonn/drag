@@ -1,0 +1,13 @@
+{
+  "embedding_model_id": "tfidf-ngram-1-2",
+  "chunk_params": {
+    "chunk_size": 500,
+    "overlap": 100
+  },
+  "doc_fingerprint": "58830a1cdd732fb41c983e72765e9155604e262be63492a71a060cdafa58a36d",
+  "created_at": "2026-06-04T12:39:37.002774+00:00",
+  "index_backend": "faiss",
+  "num_chunks": 6,
+  "dim": 119,
+  "docs_dir": "/Users/somyeongzzang/drag/data/docs_freshness_test"
+}

@@ -1,0 +1,124 @@
+# Educational resources | Docker Docs
+
+Source: https://docs.docker.com/get-started/resources/
+
+Back
+Get started
+Guides
+Manuals
+Reference
+Get Docker
+What is Docker?
+Introduction
+Get Docker Desktop
+Develop with containers
+Build and push your first image
+What's next
+Docker concepts
+The basics
+What is a container?
+What is an image?
+What is a registry?
+What is Docker Compose?
+Building images
+Understanding the image layers
+Writing a Dockerfile
+Build, tag, and publish an image
+Using the build cache
+Multi-stage builds
+Running containers
+Publishing and exposing ports
+Overriding container defaults
+Persisting container data
+Sharing local files with containers
+Multi-container applications
+Docker workshop
+Part 1: Containerize an application
+Part 2: Update the application
+Part 3: Share the application
+Part 4: Persist the DB
+Part 5: Use bind mounts
+Part 6: Multi-container apps
+Part 7: Use Docker Compose
+Part 8: Image-building best practices
+Part 9: What next
+Educational resources
+Home
+/
+Get started
+/
+Educational resources
+Educational resources
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+Docker Training
+Books
+CLI cheat sheet
+Self-Paced online learning
+Docker and the broader community of Docker experts have put together many different ways to get further training and hands-on experience with Docker. Expand your understanding of Docker and Kubernetes with these additional free and paid resources.
+Docker Training
+Learn Docker and containerization fundamentals through self-paced,
+hands-on training courses
+created by Docker experts.
+Books
+If books are your preferred learning style, check out these written by the
+Docker Captains
+. Docker Captain is a distinction that Docker awards to select members of the community that are both experts in their field and are committed to sharing their Docker knowledge with others.
+Operational AI with Docker
+, Ajeet Singh Raina & Harsh Manvar, April 2026
+Learn Docker in a Month of Lunches
+, Elton Stoneman. Use the code
+stonemanpc
+for a 40% discount.
+Docker on Windows: From 101 to Production with Docker on Windows
+, Elton Stoneman
+Learn Kubernetes in a Month of Lunches
+, Elton Stoneman. Use the code
+stonemanpc
+for a 40% discount.
+Docker in Action 2nd Edition
+Jeff Nickoloff, Oct 2019
+The Kubernetes Book
+, Nigel Poulton, Nov 2018
+Docker Deep Dive
+, Nigel Poulton, 2024 Edition
+[Portuguese]
+Docker para desenvolvedores
+(2017) by Rafael Gomes
+[Spanish]
+Ãrase una vez Docker
+, Manuel MorejÃ³n, March 2023
+[Spanish]
+Ãrase una vez Kubernetes
+, Manuel MorejÃ³n, Jan 2022
+CLI cheat sheet
+The
+Docker CLI cheat sheet
+features the common Docker CLI commands for easy reference. It covers working with Images, Containers, Docker Hub, and other general purpose commands.
+Self-Paced online learning
+A number of Docker Captains have also created video courses on Docker and Kubernetes.
+Bret Fisher
+: Docker Mastery, Docker Swarm Mastery, Docker Mastery for Node.js Projects
+Elton Stoneman
+: Docker for .NET Apps - on Linux and Windows. Includes the discount code
+644ABCBC33F474541885
+.
+Nick Janetakis
+Dive into Docker, Docker for DevOps
+Nigel Poulton
+: Kubernetes 101, Getting Started with Kubernetes, Docker and Kubernetes: The Big Picture, Kubernetes Deep Dive, Docker Deep Dive
+Ajeet Singh Raina
+: Docker and Kubernetes Labs
+[French]
+Luc Juggery
+: Introduction to Kubernetes, The Docker Platform
+* Many of the courses are fee-based
+Edit this page
+Request changes
+Table of contents
+Docker Training
+Books
+CLI cheat sheet
+Self-Paced online learning

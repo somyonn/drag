@@ -1,0 +1,6 @@
+HR offboarding record for terminated contractor accounts and access review.
+Personal email addresses: a.kim@personal.com, contractor99@webmail.net
+Mobile contact for incident callback: 010-2222-3333
+Resident registration number: 750815-1098765
+Corporate card issued: 5555-4444-3333-2222
+VPN login recorded from IP 172.16.5.9

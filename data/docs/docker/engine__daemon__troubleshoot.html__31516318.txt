@@ -1,0 +1,1397 @@
+# Troubleshooting the Docker daemon | Docker Docs
+
+Source: https://docs.docker.com/engine/daemon/troubleshoot/
+
+Back
+Manuals
+Get started
+Guides
+Reference
+AI and agents
+Overview
+Docker Sandboxes
+Get started
+Usage
+Agents
+Claude Code
+Codex
+Copilot
+Cursor
+Droid
+Gemini
+Kiro
+OpenCode
+Docker Agent
+Shell
+Customize
+Early Access
+Templates
+Kits
+Examples
+Build an agent
+Architecture
+Security model
+Isolation layers
+Defaults
+Credentials
+Policies
+Org governance
+Workspace trust
+Troubleshooting
+FAQ
+Release notes
+MCP Catalog and Toolkit
+Beta
+Get started
+Catalog
+Profiles
+Toolkit UI
+Use with CLI
+Dynamic discovery
+Gateway
+Hub MCP server
+FAQs
+E2B sandboxes
+Model Runner
+Get started with DMR
+DMR REST API
+Configuration options
+DMR examples
+IDE and tool integrations
+Open WebUI integration
+Inference engines
+Gordon
+Use cases
+Concepts
+Capabilities
+Data privacy
+How-to guides
+Docker Desktop
+CLI
+Permissions
+Configure tools
+Usage limits
+AI and Docker Compose
+Use AI models in Compose
+Docker Agent
+Model providers
+Local models
+Building a coding agent
+Best practices
+Sharing agents
+Integrations
+A2A
+ACP
+MCP
+Reference
+Configuration file
+Toolsets
+CLI
+Examples
+RAG
+Evals
+Application development
+Docker Desktop
+Setup
+Install
+Mac
+Mac permission requirements
+Windows
+Windows permission requirements
+Linux
+Ubuntu
+Debian
+Fedora
+Arch
+RHEL
+VM or VDI environments
+Sign in
+Allowlist
+Explore Docker Desktop
+Containers
+Images
+Volumes
+Builds
+Kubernetes
+Logs
+Resource Saver mode
+Pause Docker Desktop
+Features and capabilities
+Networking
+How-tos
+GPU support
+USB/IP support
+Synchronized file shares
+containerd image store
+Wasm workloads
+Beta
+Docker Desktop CLI
+Virtual Machine Manager
+WSL
+Best practices
+Custom kernels
+Use WSL
+Settings and maintenance
+Change settings
+Backup and restore data
+Troubleshoot and support
+Troubleshoot and diagnose
+Common topics
+Known issues
+MacOS app damaged dialog
+FAQs
+General
+Mac
+Windows
+Linux
+Releases
+Give feedback
+Uninstall
+Release notes
+Docker Engine
+Install
+Ubuntu
+Debian
+RHEL
+Fedora
+Raspberry Pi OS (32-bit / armhf)
+CentOS
+Binaries
+Post-installation steps
+Storage
+Volumes
+Bind mounts
+tmpfs mounts
+Storage drivers
+Select a storage driver
+BTRFS storage driver
+Device Mapper storage driver (deprecated)
+OverlayFS storage driver
+VFS storage driver
+windowsfilter storage driver
+ZFS storage driver
+containerd image store
+Networking
+Docker with iptables
+Docker with nftables
+Packet filtering and firewalls
+Port publishing and mapping
+Network drivers
+Bridge network driver
+Host network driver
+IPvlan network driver
+Macvlan network driver
+None network driver
+Overlay network driver
+CA certificates
+Legacy container links
+Containers
+Start containers automatically
+Run multiple processes in a container
+Resource constraints
+GPU access
+Runtime metrics
+Running containers
+CLI
+Completion
+Proxy configuration
+Filter commands
+Format command and log output
+OpenTelemetry for the Docker CLI
+Daemon
+Start the daemon
+Use IPv6 networking
+Daemon proxy configuration
+Live restore
+Alternative container runtimes
+Collect Docker metrics with Prometheus
+Configure remote access for Docker daemon
+Read the daemon logs
+Troubleshooting the Docker daemon
+Manage resources
+Docker contexts
+Docker object labels
+Prune unused Docker objects
+Logs and metrics
+Configure logging drivers
+Customize log driver output
+Logging drivers
+Amazon CloudWatch Logs logging driver
+ETW logging driver
+Fluentd logging driver
+Google Cloud Logging driver
+Graylog Extended Format logging driver
+Journald logging driver
+JSON File logging driver
+Local file logging driver
+Splunk logging driver
+Syslog logging driver
+Use a logging driver plugin
+Use docker logs with remote logging drivers
+Security
+Rootless mode
+Tips
+Troubleshooting
+Antivirus software and Docker
+AppArmor security profiles for Docker
+Content trust in Docker
+Automation with content trust
+Delegations for content trust
+Deploy Notary Server with Compose
+Manage keys for content trust
+Play in a content trust sandbox
+Docker security non-events
+Isolate containers with a user namespace
+Protect the Docker daemon socket
+Seccomp security profiles for Docker
+Verify repository client with certificates
+Swarm mode
+Administer and maintain a swarm of Docker Engines
+Deploy a stack to a swarm
+Deploy services to a swarm
+Getting started with Swarm mode
+Create a swarm
+Add nodes to the swarm
+Deploy a service to the swarm
+Inspect a service on the swarm
+Scale the service in the swarm
+Delete the service running on the swarm
+Apply rolling updates to a service
+Drain a node on the swarm
+How swarm works
+How nodes work
+How services work
+Manage swarm security with public key infrastructure (PKI)
+Swarm task states
+Join nodes to a swarm
+Lock your swarm to protect its encryption key
+Manage nodes in a swarm
+Manage sensitive data with Docker secrets
+Manage swarm service networks
+Raft consensus in swarm mode
+Run Docker Engine in swarm mode
+Store configuration data using Docker Configs
+Swarm mode key concepts
+Use Swarm mode routing mesh
+Deprecated features
+Docker Engine plugins
+Access authorization plugin
+Docker log driver plugins
+Docker network driver plugins
+Docker Plugin API
+Docker volume plugins
+Plugin Config Version 1 of Plugin V2
+Use Docker Engine plugins
+Release notes
+Engine v29
+Engine v28
+Engine v27
+Engine v26.1
+Engine v26.0
+Engine v25.0
+Engine v24.0
+Engine v23.0
+Engine v20.10
+Engine v19.03
+Engine v18.09
+Engine v18.06
+Engine v18.05
+Engine v18.04
+Engine v18.03
+Engine v18.02
+Engine v18.01
+Engine v17.12
+Engine v17.11
+Engine v17.10
+Engine v17.09
+Engine v17.07
+Engine v17.06
+Engine v17.05
+Engine v17.04
+Engine v17.03
+Prior releases
+Docker Offload
+Quickstart
+About
+Configure
+Usage
+Optimize usage
+Troubleshoot
+Give feedback
+Docker Build
+Core concepts
+Docker Build Overview
+Dockerfile overview
+Build context
+Build checks
+Building
+Multi-stage
+Variables
+Secrets
+Multi-platform
+Export binaries
+Container Device Interface (CDI)
+Best practices
+Base images
+Builders
+Build drivers
+Docker container driver
+Docker driver
+Kubernetes driver
+Remote driver
+Manage builders
+Bake
+Introduction
+Targets
+Inheritance
+Variables
+Expressions
+Functions
+Matrix targets
+Contexts
+Bake file reference
+Bake standard library functions
+Building with Bake from a Compose file
+Overriding configurations
+Remote Bake file definition
+Cache
+Build cache invalidation
+Build garbage collection
+Cache storage backends
+Amazon S3 cache
+Azure Blob Storage cache
+GitHub Actions cache
+Inline cache
+Local cache
+Registry cache
+Optimize cache usage in builds
+CI
+GitHub Actions
+Annotations
+Attestations
+Build checks
+Build secrets
+Build summary
+BuildKit configuration
+Cache management
+Copy image between registries
+Export to Docker
+GitHub Builder
+New
+Architecture
+Build workflow
+Bake workflow
+Local registry
+Multi-platform image
+Named contexts
+Push to multiple registries
+Reproducible builds
+Share image between jobs
+Tags and labels
+Test before push
+Update Docker Hub description
+Validating builds
+Experimental
+Introduction
+Usage
+Image validation
+Git validation
+Templates & examples
+Testing
+Debugging
+Input reference
+Built-in functions
+Metadata
+Annotations
+Build attestations
+Image attestation storage
+Provenance attestations
+SBOM attestations
+SLSA definitions
+Exporters
+Image and registry exporters
+Local and tar exporters
+OCI and Docker exporters
+BuildKit
+buildkitd.toml
+Configure BuildKit
+Custom Dockerfile syntax
+Dockerfile release notes
+Debugging
+OpenTelemetry support
+Build release notes
+Docker Build Cloud
+Setup
+Usage
+Continuous integration
+Optimization
+Builder settings
+Release notes
+Docker Compose
+Introduction to Compose
+How Compose works
+Why use Compose?
+History and development
+Install
+Plugin
+Standalone (Legacy)
+Uninstall
+Quickstart
+How-tos
+Specify a project name
+Use lifecycle hooks
+Use service profiles
+Control startup order
+Use environment variables
+Set environment variables
+Environment variables precedence
+Pre-defined environment variables
+Interpolation
+Best practices
+Build dependent images
+Use Compose Watch
+Secrets in Compose
+Networking
+Use multiple Compose files
+Merge
+Extend
+Include
+Enable GPU support
+Use Compose in production
+OCI artifact applications
+Use provider services
+Compose Bridge
+Usage
+Customize
+Use Model Runner
+Compose SDK
+New
+Trust model for Compose files
+Support and feedback
+FAQs
+Give feedback
+Release notes
+Docker Extensions
+Marketplace extensions
+Non-marketplace extensions
+Configure a private marketplace
+Settings and feedback
+Extensions SDK
+The build and publish process
+Quickstart
+Part one: Build
+Create a simple extension
+Create an advanced frontend extension
+Add a backend to your extension
+Part two: Publish
+Add labels
+Validate
+Package and release your extension
+Share your extension
+Publish in the Marketplace
+Build multi-arch extensions
+Architecture
+Metadata
+Security
+Design and UI styling
+Guidelines
+Docker design principles
+MUI best practices
+Developer Guides
+Authentication
+Interacting with Kubernetes
+Invoke host binaries
+Use the Docker socket
+Developer SDK tools
+Test and debug
+Continuous Integration (CI)
+CLI reference
+Extension APIs
+Dashboard
+Docker
+Extension Backend
+Extension UI API
+Navigation
+Deprecated products and features
+Release lifecycle
+Supply chain security
+Docker Hardened Images
+New
+Quickstart
+Features
+Explore
+Hardened images
+Build process
+Image types
+Scanner integrations
+Image testing
+Responsibility overview
+Malware scanning
+Feedback
+Migration
+Migration checklist
+AI-assisted migration
+Experimental
+Migrate from Alpine or Debian
+Migrate from Ubuntu
+Migrate from Wolfi
+Migration examples
+Go
+Python
+Node.js
+How-tos
+Search and evaluate
+Mirror a repository
+Customize an image or chart
+Create and build an image
+Use an image
+Use a Helm chart
+Use hardened packages
+Verify an image or chart
+Scan an image
+Enforce image usage
+Use the CLI
+Use DHI Select & Enterprise
+Core concepts
+Attestations
+CIS Benchmark
+Code signing
+CVEs
+Distroless images
+FIPS
+glibc and musl
+Hardening
+Image digests
+Image provenance
+Immutability
+SBOMs
+SLSA
+Software Supply Chain Security
+SSDLC
+STIG
+VEX
+Troubleshoot
+Additional resources
+Docker Hub
+Quickstart
+Library
+Search
+Trusted content
+Catalogs
+Mirror
+Repositories
+Create
+Manage
+Repository information
+Access
+Images
+Tags
+Immutable tags
+Image Management
+Software artifacts
+Push images
+Move images
+Bulk migrate images
+Image security insights
+Webhooks
+Automated builds
+Deprecated
+Set up
+Link accounts
+Automated repository tests
+Advanced options
+Migrate
+Manage autobuilds
+Troubleshoot
+Trusted content
+Docker Official Images
+Docker Verified Publisher Program
+Docker-Sponsored Open Source Program
+Insights and analytics
+Export repositories
+Archive
+Delete
+Settings
+Usage and limits
+Pulls
+Optimize usage
+Troubleshoot
+Release notes
+Docker Scout
+Install
+Quickstart
+Explore
+Dashboard
+Docker Scout image analysis
+Docker Scout metrics exporter
+Image details view
+Manage vulnerability exceptions
+How-tos
+Create an exception using the GUI
+Create an exception using the VEX
+Docker Scout environment variables
+Docker Scout SBOMs
+Use Scout with different artifact types
+Deep dive
+Advisory database sources and matching service
+Data collection and storage in Docker Scout
+Policy Evaluation
+Configure policies
+Docker Scout health scores
+Evaluate policy compliance in CI
+Remediation with Docker Scout
+View Docker Scout policy status
+Integrations
+Code quality
+SonarQube
+Container registries
+Amazon ECR
+Artifactory Container Registry
+Azure Container Registry
+Continuous Integration
+Azure DevOps Pipelines
+Circle CI
+GitHub Actions
+GitLab CI/CD
+Jenkins
+Integrating Docker Scout with environments
+Generic (CLI)
+Sysdig
+Source code management
+GitHub
+Team collaboration
+Slack
+Release notes
+CLI release notes
+Platform release notes
+Platform
+Support
+Billing
+Add or update a payment method
+Manage your billing information
+3D Secure authentication
+Invoices and billing history
+Change your billing cycle
+Submit a tax exemption certificate
+FAQs
+Docker accounts
+Accounts
+Create an account
+Manage an account
+Deactivate an account
+Security
+Personal access tokens
+Two-factor authentication
+Recover your Docker account
+FAQs
+General
+Container
+Network and VM
+Security announcements
+Subscription
+Compare
+Setup
+Scale
+Upgrade or change
+Manage seats
+Docker Desktop license agreement
+FAQs
+Release notes
+Enterprise
+Administration
+Organization
+Setup
+Create
+Onboard
+Change information
+Convert account
+Manage
+Members
+Teams
+Docker products
+Deactivate
+FAQs
+Company
+Create
+Manage
+Organizations
+Owners
+Users
+FAQs
+Activity logs
+Insights
+Deploy Docker Desktop
+MSI installer
+PKG installer
+MS Store
+Deploy with Intune
+Deploy with Jamf Pro
+Microsoft Dev Box
+FAQs
+Security
+Add and manage domains
+Single sign-on
+Setup
+Manage connections
+Troubleshoot
+FAQs
+General
+Domains
+Enforcement
+Identity providers
+User management
+Provision
+SCIM
+Setup
+Group mapping
+Migrate
+Just-in-Time
+Auto-provision
+Troubleshoot
+Enforce sign-in
+Configure
+Roles and permissions
+Core roles
+Custom roles
+Hardened Docker Desktop
+Enhanced Container Isolation
+Enable ECI
+Configure advanced settings
+Limitations
+FAQs
+Settings Management
+Use a JSON file
+Use the Admin Console
+Desktop settings reporting
+Settings reference
+Air-gapped containers
+Registry Access Management
+Image Access Management
+Namespace access
+Organization access tokens
+Home
+/
+Manuals
+/
+Docker Engine
+/
+Daemon
+/
+Troubleshooting the Docker daemon
+Troubleshooting the Docker daemon
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+Daemon
+Unable to connect to the Docker daemon
+Check whether Docker is running
+Troubleshoot conflicts between the
+daemon.json
+and startup scripts
+Out of memory issues
+Kernel compatibility
+Kernel cgroup swap limit capabilities
+Networking
+IP forwarding problems
+DNS resolver issues
+Specify DNS servers for Docker
+Turn off
+dnsmasq
+Docker networks disappearing
+Prevent Netplan from overriding network configuration
+Volumes
+Unable to remove filesystem
+This page describes how to troubleshoot and debug the daemon if you run into
+issues.
+You can turn on debugging on the daemon to learn about the runtime activity of
+the daemon and to aid in troubleshooting. If the daemon is unresponsive, you can
+also
+force a full stack trace
+of all
+threads to be added to the daemon log by sending the
+SIGUSR
+signal to the
+Docker daemon.
+Daemon
+Unable to connect to the Docker daemon
+Cannot connect to the Docker daemon. Is 'docker daemon' running on this host?
+This error may indicate:
+The Docker daemon isn't running on your system. Start the daemon and try
+running the command again.
+Your Docker client is attempting to connect to a Docker daemon on a different
+host, and that host is unreachable.
+Check whether Docker is running
+The operating-system independent way to check whether Docker is running is to
+ask Docker, using the
+docker info
+command.
+You can also use operating system utilities, such as
+sudo systemctl is-active docker
+or
+sudo status docker
+or
+sudo service docker status
+, or checking the service status using Windows
+utilities.
+Finally, you can check in the process list for the
+dockerd
+process, using
+commands like
+ps
+or
+top
+.
+Check which host your client is connecting to
+To see which host your client is connecting to, check the value of the
+DOCKER_HOST
+variable in your environment.
+$
+env
+|
+grep DOCKER_HOST
+If this command returns a value, the Docker client is set to connect to a Docker
+daemon running on that host. If it's unset, the Docker client is set to connect
+to the Docker daemon running on the local host. If it's set in error, use the
+following command to unset it:
+$
+unset
+DOCKER_HOST
+You may need to edit your environment in files such as
+~/.bashrc
+or
+~/.profile
+to prevent the
+DOCKER_HOST
+variable from being set erroneously.
+If
+DOCKER_HOST
+is set as intended, verify that the Docker daemon is running on
+the remote host and that a firewall or network outage isn't preventing you from
+connecting.
+Troubleshoot conflicts between the
+daemon.json
+and startup scripts
+If you use a
+daemon.json
+file and also pass options to the
+dockerd
+command
+manually or using start-up scripts, and these options conflict, Docker fails to
+start with an error such as:
+unable to configure the Docker daemon with file /etc/docker/daemon.json:
+the following directives are specified both as a flag and in the configuration
+file: hosts: (from flag: [unix:///var/run/docker.sock], from file: [tcp://127.0.0.1:2376])
+If you see an error similar to this one and you are starting the daemon manually
+with flags, you may need to adjust your flags or the
+daemon.json
+to remove the
+conflict.
+Note
+If you see this specific error message about
+hosts
+, continue to the
+next section
+for a workaround.
+If you are starting Docker using your operating system's init scripts, you may
+need to override the defaults in these scripts in ways that are specific to the
+operating system.
+Configure the daemon host with systemd
+One notable example of a configuration conflict that's difficult to
+troubleshoot is when you want to specify a different daemon address from the
+default. Docker listens on a socket by default. On Debian and Ubuntu systems
+using
+systemd
+, this means that a host flag
+-H
+is always used when starting
+dockerd
+. If you specify a
+hosts
+entry in the
+daemon.json
+, this causes a
+configuration conflict and results in the Docker daemon failing to start.
+To work around this problem, create a new file
+/etc/systemd/system/docker.service.d/docker.conf
+with the following contents,
+to remove the
+-H
+argument that's used when starting the daemon by default.
+[Service]
+ExecStart
+=
+ExecStart
+=
+/usr/bin/dockerd
+There are other times when you might need to configure
+systemd
+with Docker,
+such as
+configuring a HTTP or HTTPS proxy
+.
+Note
+If you override this option without specifying a
+hosts
+entry in the
+daemon.json
+or a
+-H
+flag when starting Docker manually, Docker fails to
+start.
+Run
+sudo systemctl daemon-reload
+before attempting to start Docker. If Docker
+starts successfully, it's now listening on the IP address specified in the
+hosts
+key of the
+daemon.json
+instead of a socket.
+Important
+Setting
+hosts
+in the
+daemon.json
+isn't supported on Docker
+Desktop for Windows or Docker Desktop for Mac.
+Out of memory issues
+If your containers attempt to use more memory than the system has available, you
+may experience an Out of Memory (OOM) exception, and a container, or the Docker
+daemon, might be stopped by the kernel OOM killer. To prevent this from
+happening, ensure that your application runs on hosts with adequate memory and
+see
+Understand the risks of running out of memory
+.
+Kernel compatibility
+Docker can't run correctly if your kernel is older than version 3.10, or if it's
+missing kernel modules. To check kernel compatibility, you can download and run
+the
+check-config.sh
+script.
+$
+curl https://raw.githubusercontent.com/docker/docker/master/contrib/check-config.sh > check-config.sh
+$
+bash ./check-config.sh
+The script only works on Linux.
+Kernel cgroup swap limit capabilities
+On Ubuntu or Debian hosts, you may see messages similar to the following when
+working with an image.
+WARNING: Your kernel does not support swap limit capabilities. Limitation discarded.
+If you don't need these capabilities, you can ignore the warning.
+You can turn on these capabilities on Ubuntu or Debian by following these
+instructions. Memory and swap accounting incur an overhead of about 1% of the
+total available memory and a 10% overall performance degradation, even when
+Docker isn't running.
+Log into the Ubuntu or Debian host as a user with
+sudo
+privileges.
+Edit the
+/etc/default/grub
+file. Add or edit the
+GRUB_CMDLINE_LINUX
+line
+to add the following two key-value pairs:
+GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
+Save and close the file.
+Update the GRUB boot loader.
+$
+sudo update-grub
+An error occurs if your GRUB configuration file has incorrect syntax. In this
+case, repeat steps 2 and 3.
+The changes take effect when you reboot the system.
+Networking
+IP forwarding problems
+If you manually configure your network using
+systemd-network
+with systemd
+version 219 or later, Docker containers may not be able to access your network.
+Beginning with systemd version 220, the forwarding setting for a given network
+(
+net.ipv4.conf.<interface>.forwarding
+) defaults to off. This setting prevents
+IP forwarding. It also conflicts with Docker's behavior of enabling the
+net.ipv4.conf.all.forwarding
+setting within containers.
+To work around this on RHEL, CentOS, or Fedora, edit the
+<interface>.network
+file in
+/usr/lib/systemd/network/
+on your Docker host, for example,
+/usr/lib/systemd/network/80-container-host0.network
+.
+Add the following block within the
+[Network]
+section.
+[Network]
+...
+IPForward
+=
+kernel
+# OR
+IPForward
+=
+true
+This configuration allows IP forwarding from the container as expected.
+DNS resolver issues
+DNS resolver found in resolv.conf and containers can't use it
+Linux desktop environments often have a network manager program running, that
+uses
+dnsmasq
+to cache DNS requests by adding them to
+/etc/resolv.conf
+. The
+dnsmasq
+instance runs on a loopback address such as
+127.0.0.1
+or
+127.0.1.1
+. It speeds up DNS look-ups and provides DHCP services. Such a
+configuration doesn't work within a Docker container. The Docker container uses
+its own network namespace, and resolves loopback addresses such as
+127.0.0.1
+to itself, and it's unlikely to be running a DNS server on its own loopback
+address.
+If Docker detects that no DNS server referenced in
+/etc/resolv.conf
+is a fully
+functional DNS server, the following warning occurs:
+WARNING: Local (127.0.0.1) DNS resolver found in resolv.conf and containers
+can't use it. Using default external servers : [8.8.8.8 8.8.4.4]
+If you see this warning, first check to see if you use
+dnsmasq
+:
+$
+ps aux
+|
+grep dnsmasq
+If your container needs to resolve hosts which are internal to your network, the
+public nameservers aren't adequate. You have two choices:
+Specify DNS servers for Docker to use.
+Turn off
+dnsmasq
+.
+Turning off
+dnsmasq
+adds the IP addresses of actual DNS nameservers to
+/etc/resolv.conf
+, and you lose the benefits of
+dnsmasq
+.
+You only need to use one of these methods.
+Specify DNS servers for Docker
+The default location of the configuration file is
+/etc/docker/daemon.json
+. You
+can change the location of the configuration file using the
+--config-file
+daemon flag. The following instruction assumes that the location of the
+configuration file is
+/etc/docker/daemon.json
+.
+Create or edit the Docker daemon configuration file, which defaults to
+/etc/docker/daemon.json
+file, which controls the Docker daemon
+configuration.
+$
+sudo nano /etc/docker/daemon.json
+Add a
+dns
+key with one or more DNS server IP addresses as values.
+{
+"dns"
+:
+[
+"8.8.8.8"
+,
+"8.8.4.4"
+]
+}
+If the file has existing contents, you only need to add or edit the
+dns
+line. If your internal DNS server can't resolve public IP addresses, include
+at least one DNS server that can. Doing so allows you to connect to Docker
+Hub, and your containers to resolve internet domain names.
+Save and close the file.
+Restart the Docker daemon.
+$
+sudo service docker restart
+Verify that Docker can resolve external IP addresses by trying to pull an
+image:
+$
+docker pull hello-world
+If necessary, verify that Docker containers can resolve an internal hostname
+by pinging it.
+$
+docker run --rm -it alpine ping -c4 <my_internal_host>
+PING google.com (192.168.1.2): 56 data bytes
+64 bytes from 192.168.1.2: seq=0 ttl=41 time=7.597 ms
+64 bytes from 192.168.1.2: seq=1 ttl=41 time=7.635 ms
+64 bytes from 192.168.1.2: seq=2 ttl=41 time=7.660 ms
+64 bytes from 192.168.1.2: seq=3 ttl=41 time=7.677 ms
+Turn off
+dnsmasq
+Ubuntu
+RHEL, CentOS, or Fedora
+If you prefer not to change the Docker daemon's configuration to use a specific
+IP address, follow these instructions to turn off
+dnsmasq
+in NetworkManager.
+Edit the
+/etc/NetworkManager/NetworkManager.conf
+file.
+Comment out the
+dns=dnsmasq
+line by adding a
+#
+character to the beginning
+of the line.
+# dns=dnsmasq
+Save and close the file.
+Restart both NetworkManager and Docker. As an alternative, you can reboot
+your system.
+$
+sudo systemctl restart network-manager
+$
+sudo systemctl restart docker
+To turn off
+dnsmasq
+on RHEL, CentOS, or Fedora:
+Turn off the
+dnsmasq
+service:
+$
+sudo systemctl stop dnsmasq
+$
+sudo systemctl disable dnsmasq
+Configure the DNS servers manually using the
+Red Hat documentation
+.
+Docker networks disappearing
+If a Docker network, such as the
+docker0
+bridge or a custom network, randomly
+disappears or otherwise appears to be working incorrectly, it could be because
+another service is interfering with or modifying Docker interfaces. Tools that
+manage networking interfaces on the host are known to sometimes also
+inappropriately modify Docker interfaces.
+Refer to the following sections for instructions on how to configure your
+network manager to set Docker interfaces as un-managed, depending on the
+network management tools that exist on the host:
+If
+netscript
+is installed, consider
+uninstalling it
+Configure the network manager to
+treat Docker interfaces as un-managed
+If you're using Netplan, you may need to
+apply a custom Netplan configuration
+Uninstall
+netscript
+If
+netscript
+is installed on your system, you can likely fix this issue by
+uninstalling it. For example, on a Debian-based system:
+$
+sudo apt-get remove netscript-2.4
+Un-manage Docker interfaces
+In some cases, the network manager will attempt to manage Docker interfaces by
+default. You can try to explicitly flag Docker networks as un-managed by
+editing your system's network configuration settings.
+NetworkManager
+systemd-networkd
+If you're using
+NetworkManager
+, edit your system network configuration under
+/etc/network/interfaces
+Create a file at
+/etc/network/interfaces.d/20-docker0
+with the following
+contents:
+iface docker0 inet manual
+Note that this example configuration only "un-manages" the default
+docker0
+bridge, not custom networks.
+Restart
+NetworkManager
+for the configuration change to take effect.
+$
+systemctl restart NetworkManager
+Verify that the
+docker0
+interface has the
+unmanaged
+state.
+$
+nmcli device
+If you're running Docker on a system using
+systemd-networkd
+as a networking
+daemon, configure the Docker interfaces as un-managed by creating configuration
+files under
+/etc/systemd/network
+:
+Create
+/etc/systemd/network/docker.network
+with the following contents:
+# Ensure that the Docker interfaces are un-managed
+[Match]
+Name
+=
+docker0 br-* veth*
+[Link]
+Unmanaged
+=
+yes
+Reload the configuration.
+$
+sudo systemctl restart systemd-networkd
+Restart the Docker daemon.
+$
+sudo systemctl restart docker
+Verify that the Docker interfaces have the
+unmanaged
+state.
+$
+networkctl
+Prevent Netplan from overriding network configuration
+On systems that use
+Netplan
+through
+cloud-init
+, you may
+need to apply a custom configuration to prevent
+netplan
+from overriding the
+network manager configuration:
+Follow the steps in
+Un-manage Docker interfaces
+for creating the network manager configuration.
+Create a
+netplan
+configuration file under
+/etc/netplan/50-cloud-init.yml
+.
+The following example configuration file is a starting point.
+Adjust it to match the interfaces you want to un-manage.
+Incorrect configuration can lead to network connectivity issues.
+/etc/netplan/50-cloud-init.yml
+network
+:
+ethernets
+:
+all
+:
+dhcp4
+:
+true
+dhcp6
+:
+true
+match
+:
+# edit this filter to match whatever makes sense for your system
+name
+:
+en*
+renderer
+:
+networkd
+version
+:
+2
+Apply the new Netplan configuration.
+$
+sudo netplan apply
+Restart the Docker daemon:
+$
+sudo systemctl restart docker
+Verify that the Docker interfaces have the
+unmanaged
+state.
+$
+networkctl
+Volumes
+Unable to remove filesystem
+Error: Unable to remove filesystem
+Some container-based utilities, such
+as
+Google cAdvisor
+, mount Docker system
+directories, such as
+/var/lib/docker/
+, into a container. For instance, the
+documentation for
+cadvisor
+instructs you to run the
+cadvisor
+container as
+follows:
+$
+sudo docker run
+\
+--volume=/:/rootfs:ro \
+--volume=/var/run:/var/run:rw \
+--volume=/sys:/sys:ro \
+--volume=/var/lib/docker/:/var/lib/docker:ro \
+--publish=8080:8080 \
+--detach=true \
+--name=cadvisor \
+google/cadvisor:latest
+When you bind-mount
+/var/lib/docker/
+, this effectively mounts all resources of
+all other running containers as filesystems within the container which mounts
+/var/lib/docker/
+. When you attempt to remove any of these containers, the
+removal attempt may fail with an error like the following:
+Error: Unable to remove filesystem for
+74bef250361c7817bee19349c93139621b272bc8f654ae112dd4eb9652af9515:
+remove /var/lib/docker/containers/74bef250361c7817bee19349c93139621b272bc8f654ae112dd4eb9652af9515/shm:
+Device or resource busy
+The problem occurs if the container which bind-mounts
+/var/lib/docker/
+uses
+statfs
+or
+fstatfs
+on filesystem handles within
+/var/lib/docker/
+and does not close them.
+Typically, we would advise against bind-mounting
+/var/lib/docker
+in this way.
+However,
+cAdvisor
+requires this bind-mount for core functionality.
+If you are unsure which process is causing the path mentioned in the error to
+be busy and preventing it from being removed, you can use the
+lsof
+command
+to find its process. For instance, for the error above:
+$
+sudo lsof /var/lib/docker/containers/74bef250361c7817bee19349c93139621b272bc8f654ae112dd4eb9652af9515/shm
+To work around this problem, stop the container which bind-mounts
+/var/lib/docker
+and try again to remove the other container.
+Edit this page
+Request changes
+Table of contents
+Daemon
+Unable to connect to the Docker daemon
+Check whether Docker is running
+Troubleshoot conflicts between the
+daemon.json
+and startup scripts
+Out of memory issues
+Kernel compatibility
+Kernel cgroup swap limit capabilities
+Networking
+IP forwarding problems
+DNS resolver issues
+Specify DNS servers for Docker
+Turn off
+dnsmasq
+Docker networks disappearing
+Prevent Netplan from overriding network configuration
+Volumes
+Unable to remove filesystem

@@ -1,0 +1,5 @@
+Creating and naming an S3 bucket.
+Choose a globally unique S3 bucket name and select a region when you create the bucket.
+Bucket naming rules restrict characters and length for the S3 bucket.
+This page covers S3 bucket creation and naming conventions only.
+Last updated: 2026-06-01

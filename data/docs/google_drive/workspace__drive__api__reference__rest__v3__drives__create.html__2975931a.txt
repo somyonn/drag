@@ -1,0 +1,54 @@
+# Method: drives.create  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/drives/create
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: drives.create
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Query parameters
+Request body
+Response body
+Authorization scopes
+Try it!
+Creates a shared drive. For more information, see
+Manage shared drives
+.
+HTTP request
+POST https://www.googleapis.com/drive/v3/drives
+The URL uses
+gRPC Transcoding
+syntax.
+Query parameters
+Parameters
+requestId
+string
+Required. An ID, such as a random UUID, which uniquely identifies this user's request for idempotent creation of a shared drive. A repeated request by the same user and with the same request ID will avoid creating duplicates by attempting to create the same shared drive. If the shared drive already exists a 409 error will be returned.
+Request body
+The request body contains an instance of
+Drive
+.
+Response body
+If successful, the response body contains a newly created instance of
+Drive
+.
+Authorization scopes
+Requires the following OAuth scope:
+https://www.googleapis.com/auth/drive
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-08-13 UTC.

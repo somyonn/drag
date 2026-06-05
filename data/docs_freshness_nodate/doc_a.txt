@@ -1,0 +1,3 @@
+S3 lifecycle policy: expiring noncurrent object versions.
+Add a lifecycle rule with NoncurrentVersionExpiration to expire noncurrent object versions after a number of days.
+This document has no embedded revision date, so freshness must fall back to file mtime.

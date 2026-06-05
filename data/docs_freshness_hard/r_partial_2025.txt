@@ -1,0 +1,5 @@
+S3 lifecycle transitions and version management overview.
+A lifecycle policy can transition object versions between storage classes and manage noncurrent versions.
+Lifecycle rules apply to current and noncurrent versions across the bucket.
+This overview touches on lifecycle policies and object versions at a high level.
+Last updated: 2025-08-01

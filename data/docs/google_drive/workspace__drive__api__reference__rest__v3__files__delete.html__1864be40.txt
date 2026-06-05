@@ -1,0 +1,71 @@
+# Method: files.delete  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/files/delete
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: files.delete
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Path parameters
+Query parameters
+Request body
+Response body
+Authorization scopes
+Try it!
+Permanently deletes a file owned by the user without moving it to the trash. For more information, see
+files.trash or delete files and folders
+.
+If the file belongs to a shared drive, the user must be an
+organizer
+on the parent folder. If the target is a folder, all descendants owned by the user are also deleted.
+HTTP request
+DELETE https://www.googleapis.com/drive/v3/files/{fileId}
+The URL uses
+gRPC Transcoding
+syntax.
+Path parameters
+Parameters
+fileId
+string
+The ID of the file.
+Query parameters
+Parameters
+supportsAllDrives
+boolean
+Whether the requesting application supports both My Drives and shared drives.
+supportsTeamDrives
+(deprecated)
+boolean
+Deprecated: Use
+supportsAllDrives
+instead.
+enforceSingleParent
+(deprecated)
+boolean
+Deprecated: If an item isn't in a shared drive and its last parent is deleted but the item itself isn't, the item will be placed under its owner's root.
+Request body
+The request body must be empty.
+Response body
+If successful, the response body is an empty JSON object.
+Authorization scopes
+Requires one of the following OAuth scopes:
+https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/drive.appdata
+https://www.googleapis.com/auth/drive.file
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-05-21 UTC.

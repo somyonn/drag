@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRAG — RAG Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">◇</span>
+          <div>
+            <h1>DRAG</h1>
+            <p class="brand-sub">RAG query console</p>
+          </div>
+        </div>
+
+        <section class="panel">
+          <h2>Mode</h2>
+          <div class="segmented" id="modeToggle">
+            <button type="button" data-mode="domain" class="active">Domain profiles</button>
+            <button type="button" data-mode="baseline">Baseline</button>
+          </div>
+        </section>
+
+        <section class="panel" id="profilePanel">
+          <h2>Profile</h2>
+          <div class="profile-list" id="profileList"></div>
+        </section>
+
+        <section class="panel" id="retrievalPanel">
+          <h2>Retrieval</h2>
+          <p class="panel-hint">Retrieve = vector candidates; Top-k = chunks sent to the LLM (shorter prompt → faster real LLM).</p>
+          <label class="field">
+            <span>Retrieve (candidates)</span>
+            <input type="number" id="retrievalK" min="1" max="50" value="10" />
+          </label>
+          <label class="field">
+            <span>Top-k (to LLM)</span>
+            <input type="number" id="topK" min="1" max="20" value="3" />
+          </label>
+        </section>
+
+        <section class="panel status-panel">
+          <h2>Knowledge base</h2>
+          <p class="panel-hint">AWS · Docker · Google Drive (unified index, local only)</p>
+          <ul id="indexStatus" class="status-list"></ul>
+          <p class="panel-hint">LLM: OpenAI-compatible API → mock fallback if unavailable</p>
+        </section>
+      </aside>
+
+      <main class="main">
+        <form id="queryForm" class="query-form">
+          <label for="queryInput" class="sr-only">Question</label>
+          <textarea
+            id="queryInput"
+            rows="3"
+            placeholder="Ask about AWS, Docker, or Google Drive / Workspace docs…"
+            required
+          ></textarea>
+          <div class="form-actions">
+            <button type="submit" id="submitBtn" class="btn-primary">
+              <span class="btn-label">Ask</span>
+            </button>
+            <span id="statusText" class="status-text" aria-live="polite"></span>
+          </div>
+        </form>
+
+        <div id="errorBox" class="error-box hidden" role="alert"></div>
+
+        <article id="answerCard" class="card hidden">
+          <header class="card-header">
+            <h2>Answer</h2>
+            <div id="badges" class="badges"></div>
+          </header>
+          <div id="answerBody" class="answer-body"></div>
+        </article>
+
+        <section id="latencySection" class="card hidden">
+          <header class="card-header">
+            <h2>Timing breakdown</h2>
+          </header>
+          <div id="latencyBreakdown" class="latency-breakdown"></div>
+        </section>
+
+        <section id="sourcesSection" class="card hidden">
+          <header class="card-header">
+            <h2>Retrieved chunks</h2>
+          </header>
+          <div id="sourcesList" class="sources-list"></div>
+        </section>
+
+      </main>
+    </div>
+    <script src="/static/app.js" type="module"></script>
+  </body>
+</html>

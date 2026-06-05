@@ -1,0 +1,269 @@
+# Google Drive API  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Google Drive API
+Stay organized with collections
+Save and categorize content based on your preferences.
+The Google Drive API allows clients to access resources from Google Drive.
+REST Resource: v3.about
+REST Resource: v3.accessproposals
+REST Resource: v3.approvals
+REST Resource: v3.apps
+REST Resource: v3.changes
+REST Resource: v3.channels
+REST Resource: v3.comments
+REST Resource: v3.drives
+REST Resource: v3.files
+REST Resource: v3.operations
+REST Resource: v3.permissions
+REST Resource: v3.replies
+REST Resource: v3.revisions
+Service: googleapis.com/drive/v3
+To call this service, we recommend that you use the Google-provided
+client libraries
+. If your application needs to use your own libraries to call this service, use the following information when you make the API requests.
+Discovery document
+A
+Discovery Document
+is a machine-readable specification for describing and consuming REST APIs. It is used to build client libraries, IDE plugins, and other tools that interact with Google APIs. One service may provide multiple discovery documents. This service provides the following discovery document:
+https://www.googleapis.com/discovery/v1/apis/drive/v3/rest
+Service endpoint
+A
+service endpoint
+is a base URL that specifies the network address of an API service. One service might have multiple service endpoints. This service has the following service endpoint and all URIs below are relative to this service endpoint:
+https://www.googleapis.com
+REST Resource:
+v3.about
+Methods
+get
+GET /drive/v3/about
+Gets information about the user, the user's Drive, and system capabilities.
+REST Resource:
+v3.accessproposals
+Methods
+get
+GET /drive/v3/files/{fileId}/accessproposals/{proposalId}
+Retrieves an access proposal by ID.
+list
+GET /drive/v3/files/{fileId}/accessproposals
+List the access proposals on a file.
+resolve
+POST /drive/v3/files/{fileId}/accessproposals/{proposalId}:resolve
+Approves or denies an access proposal.
+REST Resource:
+v3.approvals
+Methods
+approve
+POST /drive/v3/files/{fileId}/approvals/{approvalId}:approve
+Approves an approval.
+cancel
+POST /drive/v3/files/{fileId}/approvals/{approvalId}:cancel
+Cancels an approval.
+comment
+POST /drive/v3/files/{fileId}/approvals/{approvalId}:comment
+Comments on an approval.
+decline
+POST /drive/v3/files/{fileId}/approvals/{approvalId}:decline
+Declines an approval.
+get
+GET /drive/v3/files/{fileId}/approvals/{approvalId}
+Gets an approval by ID.
+list
+GET /drive/v3/files/{fileId}/approvals
+Lists the approvals on a file.
+reassign
+POST /drive/v3/files/{fileId}/approvals/{approvalId}:reassign
+Reassigns the reviewers on an approval.
+start
+POST /drive/v3/files/{fileId}/approvals:start
+Starts an approval on a file.
+REST Resource:
+v3.apps
+Methods
+get
+GET /drive/v3/apps/{appId}
+Gets a specific app.
+list
+GET /drive/v3/apps
+Lists a user's installed apps.
+REST Resource:
+v3.changes
+Methods
+getStartPageToken
+GET /drive/v3/changes/startPageToken
+Gets the starting pageToken for listing future changes.
+list
+GET /drive/v3/changes
+Lists the changes for a user or shared drive.
+watch
+POST /drive/v3/changes/watch
+Subscribes to changes for a user.
+REST Resource:
+v3.channels
+Methods
+stop
+POST /drive/v3/channels/stop
+Stops watching resources through this channel.
+REST Resource:
+v3.comments
+Methods
+create
+POST /drive/v3/files/{fileId}/comments
+Creates a comment on a file.
+delete
+DELETE /drive/v3/files/{fileId}/comments/{commentId}
+Deletes a comment.
+get
+GET /drive/v3/files/{fileId}/comments/{commentId}
+Gets a comment by ID.
+list
+GET /drive/v3/files/{fileId}/comments
+Lists a file's comments.
+update
+PATCH /drive/v3/files/{fileId}/comments/{commentId}
+Updates a comment with patch semantics.
+REST Resource:
+v3.drives
+Methods
+create
+POST /drive/v3/drives
+Creates a shared drive.
+delete
+DELETE /drive/v3/drives/{driveId}
+Permanently deletes a shared drive for which the user is an
+organizer
+.
+get
+GET /drive/v3/drives/{driveId}
+Gets a shared drive's metadata by ID.
+hide
+POST /drive/v3/drives/{driveId}/hide
+Hides a shared drive from the default view.
+list
+GET /drive/v3/drives
+Lists the user's shared drives.
+unhide
+POST /drive/v3/drives/{driveId}/unhide
+Restores a shared drive to the default view.
+update
+PATCH /drive/v3/drives/{driveId}
+Updates the metadata for a shared drive.
+REST Resource:
+v3.files
+Methods
+copy
+POST /drive/v3/files/{fileId}/copy
+Creates a copy of a file and applies any requested updates with patch semantics.
+create
+POST /drive/v3/files
+POST /upload/drive/v3/files
+Creates a file.
+delete
+DELETE /drive/v3/files/{fileId}
+Permanently deletes a file owned by the user without moving it to the trash.
+download
+POST /drive/v3/files/{fileId}/download
+Downloads the content of a file.
+emptyTrash
+DELETE /drive/v3/files/trash
+Permanently deletes all of the user's trashed files.
+export
+GET /drive/v3/files/{fileId}/export
+Exports a Google Workspace document to the requested MIME type and returns exported byte content.
+generateCseToken
+GET /drive/v3/files/generateCseToken
+Generates a CSE token which can be used to create or update CSE files.
+generateIds
+GET /drive/v3/files/generateIds
+Generates a set of file IDs which can be provided in create or copy requests.
+get
+GET /drive/v3/files/{fileId}
+Gets a file's metadata or content by ID.
+list
+GET /drive/v3/files
+Lists the user's files.
+listLabels
+GET /drive/v3/files/{fileId}/listLabels
+Lists the labels on a file.
+modifyLabels
+POST /drive/v3/files/{fileId}/modifyLabels
+Modifies the set of labels applied to a file.
+update
+PATCH /drive/v3/files/{fileId}
+PATCH /upload/drive/v3/files/{fileId}
+Updates a file's metadata, content, or both.
+watch
+POST /drive/v3/files/{fileId}/watch
+Subscribes to changes to a file.
+REST Resource:
+v3.operations
+Methods
+get
+GET /drive/v3/operations/{name}
+Gets the latest state of a long-running operation.
+REST Resource:
+v3.permissions
+Methods
+create
+POST /drive/v3/files/{fileId}/permissions
+Creates a permission for a file or shared drive.
+delete
+DELETE /drive/v3/files/{fileId}/permissions/{permissionId}
+Deletes a permission.
+get
+GET /drive/v3/files/{fileId}/permissions/{permissionId}
+Gets a permission by ID.
+list
+GET /drive/v3/files/{fileId}/permissions
+Lists a file's or shared drive's permissions.
+update
+PATCH /drive/v3/files/{fileId}/permissions/{permissionId}
+Updates a permission with patch semantics.
+REST Resource:
+v3.replies
+Methods
+create
+POST /drive/v3/files/{fileId}/comments/{commentId}/replies
+Creates a reply to a comment.
+delete
+DELETE /drive/v3/files/{fileId}/comments/{commentId}/replies/{replyId}
+Deletes a reply.
+get
+GET /drive/v3/files/{fileId}/comments/{commentId}/replies/{replyId}
+Gets a reply by ID.
+list
+GET /drive/v3/files/{fileId}/comments/{commentId}/replies
+Lists a comment's replies.
+update
+PATCH /drive/v3/files/{fileId}/comments/{commentId}/replies/{replyId}
+Updates a reply with patch semantics.
+REST Resource:
+v3.revisions
+Methods
+delete
+DELETE /drive/v3/files/{fileId}/revisions/{revisionId}
+Permanently deletes a file version.
+get
+GET /drive/v3/files/{fileId}/revisions/{revisionId}
+Gets a revision's metadata or content by ID.
+list
+GET /drive/v3/files/{fileId}/revisions
+Lists a file's revisions.
+update
+PATCH /drive/v3/files/{fileId}/revisions/{revisionId}
+Updates a revision with patch semantics.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-04-23 UTC.

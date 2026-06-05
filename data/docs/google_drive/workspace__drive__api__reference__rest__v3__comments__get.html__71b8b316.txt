@@ -1,0 +1,69 @@
+# Method: comments.get  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/comments/get
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: comments.get
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Path parameters
+Query parameters
+Request body
+Response body
+Authorization scopes
+Try it!
+Gets a comment by ID. For more information, see
+Manage comments and replies
+.
+Required: The
+fields
+parameter must be set. To return the exact fields you need, see
+Return specific fields
+.
+HTTP request
+GET https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}
+The URL uses
+gRPC Transcoding
+syntax.
+Path parameters
+Parameters
+fileId
+string
+The ID of the file.
+commentId
+string
+The ID of the comment.
+Query parameters
+Parameters
+includeDeleted
+boolean
+Whether to return deleted comments. Deleted comments will not include their original content.
+Request body
+The request body must be empty.
+Response body
+If successful, the response body contains an instance of
+Comment
+.
+Authorization scopes
+Requires one of the following OAuth scopes:
+https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/drive.file
+https://www.googleapis.com/auth/drive.meet.readonly
+https://www.googleapis.com/auth/drive.readonly
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-04-18 UTC.

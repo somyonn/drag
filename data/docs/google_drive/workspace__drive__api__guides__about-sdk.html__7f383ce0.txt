@@ -1,0 +1,123 @@
+# Google Drive API overview  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/guides/about-sdk
+
+Home
+Google Workspace
+Google Drive
+Guides
+Send feedback
+Google Drive API overview
+Stay organized with collections
+Save and categorize content based on your preferences.
+The Google Drive API lets you create apps that use Google Drive cloud storage.
+You can develop applications that integrate with Drive, and
+create robust functionality in your application using the Drive API.
+This diagram shows the relationship between your Drive app, the
+Drive API, and Drive:
+Figure 1.
+Google Drive relationship diagram.
+These terms define the key components shown in Figure 1:
+Google Drive
+Google's cloud file storage service provides users with a
+personal storage space, called
+My Drive
+, and the option to
+access collaborative shared folders, called
+shared drives
+.
+Google Drive API
+The REST API that lets you use Drive storage
+from within your app.
+Google Drive app
+An app that uses Drive as its storage solution.
+Google Drive UI
+Google's user interface that manages files stored on
+Drive. If your app is an editor-type app, such as a
+spreadsheet or word processor, you can integrate with the
+Drive UI to create and open files within your app.
+My Drive
+A Drive storage location that a
+specific user owns. Files stored on My Drive can be shared
+with other users, but ownership of the content remains specific to an
+individual user.
+OAuth 2.0
+The authorization protocol that Drive API requires to
+authenticate your app users. If your application uses
+Sign In With
+Google
+, it handles the OAuth 2.0 flow
+and application access tokens.
+Shared drive
+A Drive storage location that owns files that multiple users
+collaborate on. Any user with access to a shared drive has access to all
+files it contains. Users can also be granted access to individual
+files inside the shared drive.
+What can you do with the Drive API?
+You can use the Drive API to:
+Download files
+from Drive
+and
+upload files
+to Drive.
+Search for files and folders
+stored in
+Drive. Create complex search queries that return any of the
+file metadata fields in the
+files
+resource.
+Let users
+share files, folders, and drives
+to collaborate on content.
+Combine with the
+Google Picker API
+to search all
+files in Drive, then return the filename, URL, last modified
+date, and user.
+Create
+third-party shortcuts
+that
+are external links to data stored outside of Drive, in a
+different datastore or cloud storage system.
+Create a dedicated Drive folder to
+store
+application-specific data
+so the app cannot access
+all the user's content stored in Drive.
+Monitor or respond to file activity using
+Google Drive
+events
+.
+Integrate your Drive-enabled app with the
+Drive UI
+using the
+Google Drive UI
+. It's Google's standard web UI that you can
+use to create, organize, discover, and share Drive files.
+Apply
+labels
+to Drive files,
+set label field values, read label field values on files, and search for
+files using label metadata terms defined by the custom label taxonomy.
+Want to see the Google Drive API in action?
+The Google Workspace Developers channel offers videos about tips,
+ tricks, and the latest features.
+Subscribe now
+Related topics
+To learn about developing with Google Workspace APIs, including handling
+authentication and authorization, see
+Develop on
+Google Workspace
+.
+To learn how to configure and run a Drive API app, read the
+Quickstarts
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-04-20 UTC.

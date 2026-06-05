@@ -1,0 +1,378 @@
+{
+  "index_dir": "data/index/privacy_test",
+  "docs_dir": "data/docs_privacy_test",
+  "llm_condition": "mock",
+  "end_to_end": {
+    "num_cases": 1,
+    "query_micro_recall": 1.0,
+    "context_no_leakage_rate": 0.0,
+    "cases": [
+      {
+        "id": "privacy_q1",
+        "is_mock_answer": true,
+        "query_masking": {
+          "per_type": {
+            "email": {
+              "expected": 1,
+              "detected": 1,
+              "recall": 1.0
+            },
+            "aws_key": {
+              "expected": 1,
+              "detected": 1,
+              "recall": 1.0
+            },
+            "rrn": {
+              "expected": 1,
+              "detected": 1,
+              "recall": 1.0
+            },
+            "credit_card": {
+              "expected": 1,
+              "detected": 1,
+              "recall": 1.0
+            },
+            "ip": {
+              "expected": 1,
+              "detected": 1,
+              "recall": 1.0
+            },
+            "phone": {
+              "expected": 1,
+              "detected": 1,
+              "recall": 1.0
+            }
+          },
+          "micro_recall": 1.0
+        },
+        "context_residual_pii": {
+          "ip": 2,
+          "email": 2
+        },
+        "context_no_leakage": false,
+        "stage_counts": {
+          "query": {
+            "email": 1,
+            "aws_key": 1,
+            "rrn": 1,
+            "credit_card": 1,
+            "ip": 1,
+            "phone": 1
+          },
+          "context": {
+            "email": 8,
+            "aws_key": 3,
+            "rrn": 3,
+            "credit_card": 5,
+            "ip": 5,
+            "phone": 12
+          },
+          "answer": {}
+        },
+        "masking_latency_ms": {
+          "query_mask_ms": 0.025,
+          "context_mask_ms": 0.209,
+          "answer_mask_ms": 0.023
+        }
+      }
+    ]
+  },
+  "detector_pr": {
+    "num_docs": 6,
+    "curve": [
+      {
+        "level": "conservative",
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889
+      },
+      {
+        "level": "balanced",
+        "precision": 0.8611,
+        "recall": 0.8857,
+        "f1": 0.8732
+      },
+      {
+        "level": "aggressive",
+        "precision": 0.875,
+        "recall": 1.0,
+        "f1": 0.9333
+      }
+    ],
+    "by_level": {
+      "conservative": {
+        "level": "conservative",
+        "micro": {
+          "tp": 28,
+          "fp": 0,
+          "fn": 7,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8889
+        },
+        "macro": {
+          "precision": 1.0,
+          "recall": 0.8163,
+          "f1": 0.8962
+        },
+        "per_type": {
+          "email": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889
+          },
+          "aws_key": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "rrn": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571
+          },
+          "credit_card": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889
+          },
+          "ip": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8333,
+            "f1": 0.9091
+          },
+          "phone": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.7143,
+            "f1": 0.8333
+          }
+        },
+        "fp_examples": [],
+        "fn_examples": [
+          {
+            "doc": "incident_access_log_01.txt",
+            "type": "phone",
+            "missed": 1
+          },
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "email",
+            "missed": 2
+          },
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "rrn",
+            "missed": 1
+          },
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "credit_card",
+            "missed": 1
+          },
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "ip",
+            "missed": 1
+          },
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "phone",
+            "missed": 1
+          }
+        ]
+      },
+      "balanced": {
+        "level": "balanced",
+        "micro": {
+          "tp": 31,
+          "fp": 5,
+          "fn": 4,
+          "precision": 0.8611,
+          "recall": 0.8857,
+          "f1": 0.8732
+        },
+        "macro": {
+          "precision": 0.9306,
+          "recall": 0.8972,
+          "f1": 0.8986
+        },
+        "per_type": {
+          "email": {
+            "tp": 8,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8889
+          },
+          "aws_key": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "rrn": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571
+          },
+          "credit_card": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "ip": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.8333,
+            "f1": 0.9091
+          },
+          "phone": {
+            "tp": 7,
+            "fp": 5,
+            "fn": 0,
+            "precision": 0.5833,
+            "recall": 1.0,
+            "f1": 0.7368
+          }
+        },
+        "fp_examples": [
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "phone",
+            "false_positives": 1
+          },
+          {
+            "doc": "decoy_numbers_06.txt",
+            "type": "phone",
+            "false_positives": 4
+          }
+        ],
+        "fn_examples": [
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "email",
+            "missed": 2
+          },
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "rrn",
+            "missed": 1
+          },
+          {
+            "doc": "hard_obfuscated_05.txt",
+            "type": "ip",
+            "missed": 1
+          }
+        ]
+      },
+      "aggressive": {
+        "level": "aggressive",
+        "micro": {
+          "tp": 35,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333
+        },
+        "macro": {
+          "precision": 0.9156,
+          "recall": 1.0,
+          "f1": 0.9501
+        },
+        "per_type": {
+          "email": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "aws_key": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "rrn": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "credit_card": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "ip": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.8571,
+            "recall": 1.0,
+            "f1": 0.9231
+          },
+          "phone": {
+            "tp": 7,
+            "fp": 4,
+            "fn": 0,
+            "precision": 0.6364,
+            "recall": 1.0,
+            "f1": 0.7778
+          }
+        },
+        "fp_examples": [
+          {
+            "doc": "decoy_numbers_06.txt",
+            "type": "ip",
+            "false_positives": 1
+          },
+          {
+            "doc": "decoy_numbers_06.txt",
+            "type": "phone",
+            "false_positives": 4
+          }
+        ],
+        "fn_examples": []
+      }
+    }
+  }
+}

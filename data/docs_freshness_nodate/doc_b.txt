@@ -1,0 +1,3 @@
+Expiring noncurrent versions with an S3 lifecycle configuration.
+Use NoncurrentVersionExpiration with NoncurrentDays to remove old noncurrent object versions automatically.
+This document has no embedded revision date, so freshness must fall back to file mtime.

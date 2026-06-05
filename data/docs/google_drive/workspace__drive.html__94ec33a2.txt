@@ -1,0 +1,77 @@
+# Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive
+
+Home
+Google Workspace
+Google Drive
+Send feedback
+Stay organized with collections
+Save and categorize content based on your preferences.
+Develop Google Drive solutions.
+Enhance the Google Drive experience
+Insert interactive content, powered by your account data or an external service, with
+add-ons
+.
+Show a custom interface for uploading files from Drive into your third-party service.
+Enable users to quickly create files from custom templates.
+View documentation
+Learn about add-ons
+Automate Google Drive with simple code
+Anyone can use
+Apps Script
+to automate and enhance Google Drive in a web-based, low-code environment.
+Create Drive files based on Google Form submissions.
+Modify files in bulk.
+Populate a spreadsheet with file sharing info for audit.
+View documentation
+Learn about Apps Script
+Build AI-powered Google Drive solutions
+Discover and try Google Drive samples that help you get started with building AI features using AI models, agents, platforms, and more.
+smart_toy
+Travel Concierge agent
+Build an AI agent add-on that integrates with ADK and Vertex AI Agent Engine.
+Open tutorial
+smart_toy
+Gemini Enterprise Agents
+Build Gemini Enterprise agents that are tightly integrated with Workspace data stores, APIs, and add ons.
+Open codelab
+smart_toy
+Vertex AI Agents
+Build Vertex AI agents that are tightly integrated with Workspace data stores, APIs, and add ons.
+Open codelab
+smart_toy
+All samples
+Explore add-on samples by featured Google products, language, sample type, and type.
+Explore catalog
+Connect your service to Google Drive
+Use the REST APIs below to interact programmatically with Google Drive.
+Drive API
+Upload, download, share, and manage files
+stored in Google Drive.
+View documentation
+Try it out
+Drive Activity API
+Get info about user activity
+on files and folders.
+View documentation
+Drive Labels API
+Apply and manage labels on your Drive files and folders,
+and search for files using metadata terms defined by a custom label
+ taxonomy.
+View documentation
+Google Picker API
+Embed a file manager widget
+in your web app.
+View documentation
+Want to see the Google Drive API in action?
+The Google Workspace Developers channel offers videos about tips, tricks, and the latest features.
+Subscribe now
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-05-19 UTC.

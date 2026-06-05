@@ -1,0 +1,126 @@
+{
+  "controlled": {
+    "num_cases": 1,
+    "cases": [
+      {
+        "id": "fresh_q1",
+        "ordering": {
+          "top1_newest_correct": true,
+          "pairwise_concordance": 1.0,
+          "kendall_tau": 1.0,
+          "exact_order_match": true
+        },
+        "has_appended_citation": false
+      }
+    ]
+  },
+  "tradeoff_ablation": {
+    "weights": [
+      0.0,
+      0.05,
+      0.15,
+      0.3,
+      0.5,
+      1.0
+    ],
+    "num_cases": 1,
+    "curves": [
+      {
+        "id": "fresh_hard_q1",
+        "top_k": 4,
+        "operating_points": [
+          {
+            "weight": 0.0,
+            "relevance_at_k": 1.0,
+            "freshness_kendall_tau": 0.3333,
+            "top1_newest": true,
+            "ranked": [
+              "r_new_2026.txt",
+              "r_mid_2024.txt",
+              "r_old_2022.txt",
+              "r_partial_2025.txt"
+            ]
+          },
+          {
+            "weight": 0.05,
+            "relevance_at_k": 1.0,
+            "freshness_kendall_tau": 0.3333,
+            "top1_newest": true,
+            "ranked": [
+              "r_new_2026.txt",
+              "r_mid_2024.txt",
+              "r_old_2022.txt",
+              "r_partial_2025.txt"
+            ]
+          },
+          {
+            "weight": 0.15,
+            "relevance_at_k": 1.0,
+            "freshness_kendall_tau": 0.3333,
+            "top1_newest": true,
+            "ranked": [
+              "r_new_2026.txt",
+              "r_mid_2024.txt",
+              "r_old_2022.txt",
+              "r_partial_2025.txt"
+            ]
+          },
+          {
+            "weight": 0.3,
+            "relevance_at_k": 1.0,
+            "freshness_kendall_tau": 0.3333,
+            "top1_newest": true,
+            "ranked": [
+              "r_new_2026.txt",
+              "r_mid_2024.txt",
+              "r_old_2022.txt",
+              "r_partial_2025.txt"
+            ]
+          },
+          {
+            "weight": 0.5,
+            "relevance_at_k": 1.0,
+            "freshness_kendall_tau": 0.6667,
+            "top1_newest": true,
+            "ranked": [
+              "r_new_2026.txt",
+              "r_mid_2024.txt",
+              "r_partial_2025.txt",
+              "r_old_2022.txt"
+            ]
+          },
+          {
+            "weight": 1.0,
+            "relevance_at_k": 0.75,
+            "freshness_kendall_tau": -0.3333,
+            "top1_newest": false,
+            "ranked": [
+              "r_new_2026.txt",
+              "r_mid_2024.txt",
+              "r_partial_2025.txt",
+              "d_fresh_2026.txt"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "fallback": {
+    "with_content_dates": {
+      "docs_dir": "data/docs_freshness_hard",
+      "num_docs": 6,
+      "content_dated": 6,
+      "mtime_fallback": 0,
+      "timestamp_span_sec": 160099200.0,
+      "freshness_signal_usable": true
+    },
+    "without_content_dates": {
+      "docs_dir": "data/docs_freshness_nodate",
+      "num_docs": 3,
+      "content_dated": 0,
+      "mtime_fallback": 3,
+      "timestamp_span_sec": 0.0,
+      "freshness_signal_usable": false
+    }
+  }
+}

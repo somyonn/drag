@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "doc::s3_versioning_v1.txt::chunk::0",
+    "doc_id": "doc::s3_versioning_v1.txt",
+    "source_uri": "data/docs_freshness_test/s3_versioning_v1.txt",
+    "text": "AWS S3 bucket versioning and lifecycle policy reference.\nEnable versioning to retain multiple variants of an object in the same bucket.\nConfigure lifecycle rules to transition noncurrent versions to cheaper storage and expire them.\nThis guide explains enabling versioning, lifecycle transitions, and expiration for S3 buckets.\nLast updated: 2022-01-15",
+    "start_char": 0,
+    "end_char": 351
+  },
+  {
+    "chunk_id": "doc::s3_versioning_v2.txt::chunk::0",
+    "doc_id": "doc::s3_versioning_v2.txt",
+    "source_uri": "data/docs_freshness_test/s3_versioning_v2.txt",
+    "text": "AWS S3 bucket versioning and lifecycle policy reference.\nEnable versioning to retain multiple variants of an object in the same bucket.\nConfigure lifecycle rules to transition noncurrent versions to cheaper storage and expire them.\nThis guide explains enabling versioning, lifecycle transitions, and expiration for S3 buckets.\nLast updated: 2023-03-10",
+    "start_char": 0,
+    "end_char": 351
+  },
+  {
+    "chunk_id": "doc::s3_versioning_v3.txt::chunk::0",
+    "doc_id": "doc::s3_versioning_v3.txt",
+    "source_uri": "data/docs_freshness_test/s3_versioning_v3.txt",
+    "text": "AWS S3 bucket versioning and lifecycle policy reference.\nEnable versioning to retain multiple variants of an object in the same bucket.\nConfigure lifecycle rules to transition noncurrent versions to cheaper storage and expire them.\nThis guide explains enabling versioning, lifecycle transitions, and expiration for S3 buckets.\nLast updated: 2024-06-20",
+    "start_char": 0,
+    "end_char": 351
+  },
+  {
+    "chunk_id": "doc::s3_versioning_v4.txt::chunk::0",
+    "doc_id": "doc::s3_versioning_v4.txt",
+    "source_uri": "data/docs_freshness_test/s3_versioning_v4.txt",
+    "text": "AWS S3 bucket versioning and lifecycle policy reference.\nEnable versioning to retain multiple variants of an object in the same bucket.\nConfigure lifecycle rules to transition noncurrent versions to cheaper storage and expire them.\nThis guide explains enabling versioning, lifecycle transitions, and expiration for S3 buckets.\nLast updated: 2025-02-05",
+    "start_char": 0,
+    "end_char": 351
+  },
+  {
+    "chunk_id": "doc::s3_versioning_v5.txt::chunk::0",
+    "doc_id": "doc::s3_versioning_v5.txt",
+    "source_uri": "data/docs_freshness_test/s3_versioning_v5.txt",
+    "text": "AWS S3 bucket versioning and lifecycle policy reference.\nEnable versioning to retain multiple variants of an object in the same bucket.\nConfigure lifecycle rules to transition noncurrent versions to cheaper storage and expire them.\nThis guide explains enabling versioning, lifecycle transitions, and expiration for S3 buckets.\nLast updated: 2025-11-30",
+    "start_char": 0,
+    "end_char": 351
+  },
+  {
+    "chunk_id": "doc::s3_versioning_v6.txt::chunk::0",
+    "doc_id": "doc::s3_versioning_v6.txt",
+    "source_uri": "data/docs_freshness_test/s3_versioning_v6.txt",
+    "text": "AWS S3 bucket versioning and lifecycle policy reference.\nEnable versioning to retain multiple variants of an object in the same bucket.\nConfigure lifecycle rules to transition noncurrent versions to cheaper storage and expire them.\nThis guide explains enabling versioning, lifecycle transitions, and expiration for S3 buckets.\nLast updated: 2026-04-18",
+    "start_char": 0,
+    "end_char": 351
+  }
+]

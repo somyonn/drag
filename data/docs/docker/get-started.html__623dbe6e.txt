@@ -1,0 +1,72 @@
+# Get started | Docker Docs
+
+Source: https://docs.docker.com/get-started/
+
+Back
+Get started
+Guides
+Manuals
+Reference
+Get Docker
+What is Docker?
+Introduction
+Get Docker Desktop
+Develop with containers
+Build and push your first image
+What's next
+Docker concepts
+The basics
+What is a container?
+What is an image?
+What is a registry?
+What is Docker Compose?
+Building images
+Understanding the image layers
+Writing a Dockerfile
+Build, tag, and publish an image
+Using the build cache
+Multi-stage builds
+Running containers
+Publishing and exposing ports
+Overriding container defaults
+Persisting container data
+Sharing local files with containers
+Multi-container applications
+Docker workshop
+Part 1: Containerize an application
+Part 2: Update the application
+Part 3: Share the application
+Part 4: Persist the DB
+Part 5: Use bind mounts
+Part 6: Multi-container apps
+Part 7: Use Docker Compose
+Part 8: Image-building best practices
+Part 9: What next
+Educational resources
+Home
+/
+Get started
+Get started
+Ask Gordon
+Copy Markdown
+View Markdown
+If you're new to Docker, this section guides you through the essential resources to get started.
+Follow the guides to help you get started and learn how Docker can optimize your development workflows.
+For more advanced concepts and scenarios in Docker, see
+Guides
+.
+Foundations of Docker
+Install Docker and jump into discovering what Docker is.
+Get Docker
+Choose the best installation path for your setup.
+What is Docker?
+Learn about the Docker platform.
+Learn the foundational concepts and workflows of Docker.
+Introduction
+Get started with the basics and the benefits of containerizing your applications.
+Docker concepts
+Gain a better understanding of foundational Docker concepts.
+Docker workshop
+Get guided through a 45-minute workshop to learn about Docker.
+Edit this page
+Request changes

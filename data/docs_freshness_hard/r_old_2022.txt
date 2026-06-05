@@ -1,0 +1,5 @@
+S3 lifecycle policy: expiring noncurrent object versions.
+To expire noncurrent object versions, add a lifecycle rule with a NoncurrentVersionExpiration action.
+The rule deletes older noncurrent versions after the specified number of noncurrent days.
+This is the primary mechanism to expire noncurrent object versions in an S3 lifecycle policy.
+Last updated: 2022-01-10

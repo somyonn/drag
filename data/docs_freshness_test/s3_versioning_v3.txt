@@ -1,0 +1,5 @@
+AWS S3 bucket versioning and lifecycle policy reference.
+Enable versioning to retain multiple variants of an object in the same bucket.
+Configure lifecycle rules to transition noncurrent versions to cheaper storage and expire them.
+This guide explains enabling versioning, lifecycle transitions, and expiration for S3 buckets.
+Last updated: 2024-06-20

@@ -1,0 +1,53 @@
+# Method: operations.get  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/operations/get
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: operations.get
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Path parameters
+Request body
+Response body
+Authorization scopes
+Try it!
+Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.
+HTTP request
+GET https://www.googleapis.com/drive/v3/operations/{name}
+The URL uses
+gRPC Transcoding
+syntax.
+Path parameters
+Parameters
+name
+string
+The name of the operation resource.
+Request body
+The request body must be empty.
+Response body
+If successful, the response body contains an instance of
+Operation
+.
+Authorization scopes
+Requires one of the following OAuth scopes:
+https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/drive.file
+https://www.googleapis.com/auth/drive.meet.readonly
+https://www.googleapis.com/auth/drive.readonly
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-04-18 UTC.

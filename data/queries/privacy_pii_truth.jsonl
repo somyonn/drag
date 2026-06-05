@@ -1,0 +1,6 @@
+{"doc": "data/docs_privacy_test/incident_access_log_01.txt", "kind": "pii", "true_counts": {"email": 3, "phone": 3, "rrn": 2, "credit_card": 2, "ip": 2, "aws_key": 1}}
+{"doc": "data/docs_privacy_test/hr_offboarding_02.txt", "kind": "pii", "true_counts": {"email": 2, "phone": 1, "rrn": 1, "credit_card": 1, "ip": 1, "aws_key": 0}}
+{"doc": "data/docs_privacy_test/db_breach_notice_03.txt", "kind": "pii", "true_counts": {"email": 3, "phone": 2, "rrn": 0, "credit_card": 1, "ip": 2, "aws_key": 2}}
+{"doc": "data/docs_privacy_test/hard_obfuscated_05.txt", "kind": "pii", "true_counts": {"email": 2, "phone": 1, "rrn": 1, "credit_card": 1, "ip": 1, "aws_key": 0}}
+{"doc": "data/docs_privacy_test/clean_runbook_04.txt", "kind": "decoy", "true_counts": {"email": 0, "phone": 0, "rrn": 0, "credit_card": 0, "ip": 0, "aws_key": 0}}
+{"doc": "data/docs_privacy_test/decoy_numbers_06.txt", "kind": "decoy", "true_counts": {"email": 0, "phone": 0, "rrn": 0, "credit_card": 0, "ip": 0, "aws_key": 0}}

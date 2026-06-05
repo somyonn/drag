@@ -1,0 +1,7 @@
+Escalation notes with lightly obfuscated identifiers from a support thread.
+Reporter email: jane [at] corp [dot] com
+Backup contact mail: ops(at)vendor(dot)io
+Resident number without hyphen: 9001011234567
+Mobile without separators: 01099887766
+IPv6 source address: 2001:db8:85a3:0:0:8a2e:370:7334
+Card without separators: 4111111111111111

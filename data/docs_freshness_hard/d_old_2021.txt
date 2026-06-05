@@ -1,0 +1,5 @@
+Launching an EC2 instance with an instance profile.
+Attach an IAM role through an instance profile so the EC2 instance can call AWS APIs.
+Select an AMI, instance type, and key pair when launching the EC2 instance.
+This page is about EC2 instances and IAM roles, not storage lifecycles.
+Last updated: 2021-05-05

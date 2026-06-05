@@ -1,11 +1,13 @@
 numpy>=1.26.0
-scikit-learn>=1.4.0
-chromadb>=0.5.5
-sentence-transformers>=3.0.1
-numpy>=1.26
+# Pinned to the scikit-learn minor that built data/index/official (avoids
+# InconsistentVersionWarning when unpickling vectorizer.pkl). Rebuild the index
+# with run_ingest.py if you upgrade beyond this range.
+scikit-learn>=1.8.0,<1.9
+faiss-cpu>=1.8.0
 tqdm>=4.66
 requests>=2.32
 pydantic>=2.7
 python-dotenv>=1.0.1
 beautifulsoup4>=4.12
-
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0

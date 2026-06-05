@@ -1,0 +1,926 @@
+# Docker Engine 17.07 release notes | Docker Docs
+
+Source: https://docs.docker.com/engine/release-notes/17.07/
+
+Back
+Manuals
+Get started
+Guides
+Reference
+AI and agents
+Overview
+Docker Sandboxes
+Get started
+Usage
+Agents
+Claude Code
+Codex
+Copilot
+Cursor
+Droid
+Gemini
+Kiro
+OpenCode
+Docker Agent
+Shell
+Customize
+Early Access
+Templates
+Kits
+Examples
+Build an agent
+Architecture
+Security model
+Isolation layers
+Defaults
+Credentials
+Policies
+Org governance
+Workspace trust
+Troubleshooting
+FAQ
+Release notes
+MCP Catalog and Toolkit
+Beta
+Get started
+Catalog
+Profiles
+Toolkit UI
+Use with CLI
+Dynamic discovery
+Gateway
+Hub MCP server
+FAQs
+E2B sandboxes
+Model Runner
+Get started with DMR
+DMR REST API
+Configuration options
+DMR examples
+IDE and tool integrations
+Open WebUI integration
+Inference engines
+Gordon
+Use cases
+Concepts
+Capabilities
+Data privacy
+How-to guides
+Docker Desktop
+CLI
+Permissions
+Configure tools
+Usage limits
+AI and Docker Compose
+Use AI models in Compose
+Docker Agent
+Model providers
+Local models
+Building a coding agent
+Best practices
+Sharing agents
+Integrations
+A2A
+ACP
+MCP
+Reference
+Configuration file
+Toolsets
+CLI
+Examples
+RAG
+Evals
+Application development
+Docker Desktop
+Setup
+Install
+Mac
+Mac permission requirements
+Windows
+Windows permission requirements
+Linux
+Ubuntu
+Debian
+Fedora
+Arch
+RHEL
+VM or VDI environments
+Sign in
+Allowlist
+Explore Docker Desktop
+Containers
+Images
+Volumes
+Builds
+Kubernetes
+Logs
+Resource Saver mode
+Pause Docker Desktop
+Features and capabilities
+Networking
+How-tos
+GPU support
+USB/IP support
+Synchronized file shares
+containerd image store
+Wasm workloads
+Beta
+Docker Desktop CLI
+Virtual Machine Manager
+WSL
+Best practices
+Custom kernels
+Use WSL
+Settings and maintenance
+Change settings
+Backup and restore data
+Troubleshoot and support
+Troubleshoot and diagnose
+Common topics
+Known issues
+MacOS app damaged dialog
+FAQs
+General
+Mac
+Windows
+Linux
+Releases
+Give feedback
+Uninstall
+Release notes
+Docker Engine
+Install
+Ubuntu
+Debian
+RHEL
+Fedora
+Raspberry Pi OS (32-bit / armhf)
+CentOS
+Binaries
+Post-installation steps
+Storage
+Volumes
+Bind mounts
+tmpfs mounts
+Storage drivers
+Select a storage driver
+BTRFS storage driver
+Device Mapper storage driver (deprecated)
+OverlayFS storage driver
+VFS storage driver
+windowsfilter storage driver
+ZFS storage driver
+containerd image store
+Networking
+Docker with iptables
+Docker with nftables
+Packet filtering and firewalls
+Port publishing and mapping
+Network drivers
+Bridge network driver
+Host network driver
+IPvlan network driver
+Macvlan network driver
+None network driver
+Overlay network driver
+CA certificates
+Legacy container links
+Containers
+Start containers automatically
+Run multiple processes in a container
+Resource constraints
+GPU access
+Runtime metrics
+Running containers
+CLI
+Completion
+Proxy configuration
+Filter commands
+Format command and log output
+OpenTelemetry for the Docker CLI
+Daemon
+Start the daemon
+Use IPv6 networking
+Daemon proxy configuration
+Live restore
+Alternative container runtimes
+Collect Docker metrics with Prometheus
+Configure remote access for Docker daemon
+Read the daemon logs
+Troubleshooting the Docker daemon
+Manage resources
+Docker contexts
+Docker object labels
+Prune unused Docker objects
+Logs and metrics
+Configure logging drivers
+Customize log driver output
+Logging drivers
+Amazon CloudWatch Logs logging driver
+ETW logging driver
+Fluentd logging driver
+Google Cloud Logging driver
+Graylog Extended Format logging driver
+Journald logging driver
+JSON File logging driver
+Local file logging driver
+Splunk logging driver
+Syslog logging driver
+Use a logging driver plugin
+Use docker logs with remote logging drivers
+Security
+Rootless mode
+Tips
+Troubleshooting
+Antivirus software and Docker
+AppArmor security profiles for Docker
+Content trust in Docker
+Automation with content trust
+Delegations for content trust
+Deploy Notary Server with Compose
+Manage keys for content trust
+Play in a content trust sandbox
+Docker security non-events
+Isolate containers with a user namespace
+Protect the Docker daemon socket
+Seccomp security profiles for Docker
+Verify repository client with certificates
+Swarm mode
+Administer and maintain a swarm of Docker Engines
+Deploy a stack to a swarm
+Deploy services to a swarm
+Getting started with Swarm mode
+Create a swarm
+Add nodes to the swarm
+Deploy a service to the swarm
+Inspect a service on the swarm
+Scale the service in the swarm
+Delete the service running on the swarm
+Apply rolling updates to a service
+Drain a node on the swarm
+How swarm works
+How nodes work
+How services work
+Manage swarm security with public key infrastructure (PKI)
+Swarm task states
+Join nodes to a swarm
+Lock your swarm to protect its encryption key
+Manage nodes in a swarm
+Manage sensitive data with Docker secrets
+Manage swarm service networks
+Raft consensus in swarm mode
+Run Docker Engine in swarm mode
+Store configuration data using Docker Configs
+Swarm mode key concepts
+Use Swarm mode routing mesh
+Deprecated features
+Docker Engine plugins
+Access authorization plugin
+Docker log driver plugins
+Docker network driver plugins
+Docker Plugin API
+Docker volume plugins
+Plugin Config Version 1 of Plugin V2
+Use Docker Engine plugins
+Release notes
+Engine v29
+Engine v28
+Engine v27
+Engine v26.1
+Engine v26.0
+Engine v25.0
+Engine v24.0
+Engine v23.0
+Engine v20.10
+Engine v19.03
+Engine v18.09
+Engine v18.06
+Engine v18.05
+Engine v18.04
+Engine v18.03
+Engine v18.02
+Engine v18.01
+Engine v17.12
+Engine v17.11
+Engine v17.10
+Engine v17.09
+Engine v17.07
+Engine v17.06
+Engine v17.05
+Engine v17.04
+Engine v17.03
+Prior releases
+Docker Offload
+Quickstart
+About
+Configure
+Usage
+Optimize usage
+Troubleshoot
+Give feedback
+Docker Build
+Core concepts
+Docker Build Overview
+Dockerfile overview
+Build context
+Build checks
+Building
+Multi-stage
+Variables
+Secrets
+Multi-platform
+Export binaries
+Container Device Interface (CDI)
+Best practices
+Base images
+Builders
+Build drivers
+Docker container driver
+Docker driver
+Kubernetes driver
+Remote driver
+Manage builders
+Bake
+Introduction
+Targets
+Inheritance
+Variables
+Expressions
+Functions
+Matrix targets
+Contexts
+Bake file reference
+Bake standard library functions
+Building with Bake from a Compose file
+Overriding configurations
+Remote Bake file definition
+Cache
+Build cache invalidation
+Build garbage collection
+Cache storage backends
+Amazon S3 cache
+Azure Blob Storage cache
+GitHub Actions cache
+Inline cache
+Local cache
+Registry cache
+Optimize cache usage in builds
+CI
+GitHub Actions
+Annotations
+Attestations
+Build checks
+Build secrets
+Build summary
+BuildKit configuration
+Cache management
+Copy image between registries
+Export to Docker
+GitHub Builder
+New
+Architecture
+Build workflow
+Bake workflow
+Local registry
+Multi-platform image
+Named contexts
+Push to multiple registries
+Reproducible builds
+Share image between jobs
+Tags and labels
+Test before push
+Update Docker Hub description
+Validating builds
+Experimental
+Introduction
+Usage
+Image validation
+Git validation
+Templates & examples
+Testing
+Debugging
+Input reference
+Built-in functions
+Metadata
+Annotations
+Build attestations
+Image attestation storage
+Provenance attestations
+SBOM attestations
+SLSA definitions
+Exporters
+Image and registry exporters
+Local and tar exporters
+OCI and Docker exporters
+BuildKit
+buildkitd.toml
+Configure BuildKit
+Custom Dockerfile syntax
+Dockerfile release notes
+Debugging
+OpenTelemetry support
+Build release notes
+Docker Build Cloud
+Setup
+Usage
+Continuous integration
+Optimization
+Builder settings
+Release notes
+Docker Compose
+Introduction to Compose
+How Compose works
+Why use Compose?
+History and development
+Install
+Plugin
+Standalone (Legacy)
+Uninstall
+Quickstart
+How-tos
+Specify a project name
+Use lifecycle hooks
+Use service profiles
+Control startup order
+Use environment variables
+Set environment variables
+Environment variables precedence
+Pre-defined environment variables
+Interpolation
+Best practices
+Build dependent images
+Use Compose Watch
+Secrets in Compose
+Networking
+Use multiple Compose files
+Merge
+Extend
+Include
+Enable GPU support
+Use Compose in production
+OCI artifact applications
+Use provider services
+Compose Bridge
+Usage
+Customize
+Use Model Runner
+Compose SDK
+New
+Trust model for Compose files
+Support and feedback
+FAQs
+Give feedback
+Release notes
+Docker Extensions
+Marketplace extensions
+Non-marketplace extensions
+Configure a private marketplace
+Settings and feedback
+Extensions SDK
+The build and publish process
+Quickstart
+Part one: Build
+Create a simple extension
+Create an advanced frontend extension
+Add a backend to your extension
+Part two: Publish
+Add labels
+Validate
+Package and release your extension
+Share your extension
+Publish in the Marketplace
+Build multi-arch extensions
+Architecture
+Metadata
+Security
+Design and UI styling
+Guidelines
+Docker design principles
+MUI best practices
+Developer Guides
+Authentication
+Interacting with Kubernetes
+Invoke host binaries
+Use the Docker socket
+Developer SDK tools
+Test and debug
+Continuous Integration (CI)
+CLI reference
+Extension APIs
+Dashboard
+Docker
+Extension Backend
+Extension UI API
+Navigation
+Deprecated products and features
+Release lifecycle
+Supply chain security
+Docker Hardened Images
+New
+Quickstart
+Features
+Explore
+Hardened images
+Build process
+Image types
+Scanner integrations
+Image testing
+Responsibility overview
+Malware scanning
+Feedback
+Migration
+Migration checklist
+AI-assisted migration
+Experimental
+Migrate from Alpine or Debian
+Migrate from Ubuntu
+Migrate from Wolfi
+Migration examples
+Go
+Python
+Node.js
+How-tos
+Search and evaluate
+Mirror a repository
+Customize an image or chart
+Create and build an image
+Use an image
+Use a Helm chart
+Use hardened packages
+Verify an image or chart
+Scan an image
+Enforce image usage
+Use the CLI
+Use DHI Select & Enterprise
+Core concepts
+Attestations
+CIS Benchmark
+Code signing
+CVEs
+Distroless images
+FIPS
+glibc and musl
+Hardening
+Image digests
+Image provenance
+Immutability
+SBOMs
+SLSA
+Software Supply Chain Security
+SSDLC
+STIG
+VEX
+Troubleshoot
+Additional resources
+Docker Hub
+Quickstart
+Library
+Search
+Trusted content
+Catalogs
+Mirror
+Repositories
+Create
+Manage
+Repository information
+Access
+Images
+Tags
+Immutable tags
+Image Management
+Software artifacts
+Push images
+Move images
+Bulk migrate images
+Image security insights
+Webhooks
+Automated builds
+Deprecated
+Set up
+Link accounts
+Automated repository tests
+Advanced options
+Migrate
+Manage autobuilds
+Troubleshoot
+Trusted content
+Docker Official Images
+Docker Verified Publisher Program
+Docker-Sponsored Open Source Program
+Insights and analytics
+Export repositories
+Archive
+Delete
+Settings
+Usage and limits
+Pulls
+Optimize usage
+Troubleshoot
+Release notes
+Docker Scout
+Install
+Quickstart
+Explore
+Dashboard
+Docker Scout image analysis
+Docker Scout metrics exporter
+Image details view
+Manage vulnerability exceptions
+How-tos
+Create an exception using the GUI
+Create an exception using the VEX
+Docker Scout environment variables
+Docker Scout SBOMs
+Use Scout with different artifact types
+Deep dive
+Advisory database sources and matching service
+Data collection and storage in Docker Scout
+Policy Evaluation
+Configure policies
+Docker Scout health scores
+Evaluate policy compliance in CI
+Remediation with Docker Scout
+View Docker Scout policy status
+Integrations
+Code quality
+SonarQube
+Container registries
+Amazon ECR
+Artifactory Container Registry
+Azure Container Registry
+Continuous Integration
+Azure DevOps Pipelines
+Circle CI
+GitHub Actions
+GitLab CI/CD
+Jenkins
+Integrating Docker Scout with environments
+Generic (CLI)
+Sysdig
+Source code management
+GitHub
+Team collaboration
+Slack
+Release notes
+CLI release notes
+Platform release notes
+Platform
+Support
+Billing
+Add or update a payment method
+Manage your billing information
+3D Secure authentication
+Invoices and billing history
+Change your billing cycle
+Submit a tax exemption certificate
+FAQs
+Docker accounts
+Accounts
+Create an account
+Manage an account
+Deactivate an account
+Security
+Personal access tokens
+Two-factor authentication
+Recover your Docker account
+FAQs
+General
+Container
+Network and VM
+Security announcements
+Subscription
+Compare
+Setup
+Scale
+Upgrade or change
+Manage seats
+Docker Desktop license agreement
+FAQs
+Release notes
+Enterprise
+Administration
+Organization
+Setup
+Create
+Onboard
+Change information
+Convert account
+Manage
+Members
+Teams
+Docker products
+Deactivate
+FAQs
+Company
+Create
+Manage
+Organizations
+Owners
+Users
+FAQs
+Activity logs
+Insights
+Deploy Docker Desktop
+MSI installer
+PKG installer
+MS Store
+Deploy with Intune
+Deploy with Jamf Pro
+Microsoft Dev Box
+FAQs
+Security
+Add and manage domains
+Single sign-on
+Setup
+Manage connections
+Troubleshoot
+FAQs
+General
+Domains
+Enforcement
+Identity providers
+User management
+Provision
+SCIM
+Setup
+Group mapping
+Migrate
+Just-in-Time
+Auto-provision
+Troubleshoot
+Enforce sign-in
+Configure
+Roles and permissions
+Core roles
+Custom roles
+Hardened Docker Desktop
+Enhanced Container Isolation
+Enable ECI
+Configure advanced settings
+Limitations
+FAQs
+Settings Management
+Use a JSON file
+Use the Admin Console
+Desktop settings reporting
+Settings reference
+Air-gapped containers
+Registry Access Management
+Image Access Management
+Namespace access
+Organization access tokens
+Home
+/
+Manuals
+/
+Docker Engine
+/
+Release notes
+/
+Engine v17.07
+Docker Engine 17.07 release notes
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+17.07.0-ce
+17.07.0-ce
+2017-08-29
+API & Client
+Add support for proxy configuration in config.json
+docker/cli#93
+Enable pprof/debug endpoints by default
+moby/moby#32453
+Passwords can now be passed using
+STDIN
+using the new
+--password-stdin
+flag on
+docker login
+docker/cli#271
+Add
+--detach
+to docker scale
+docker/cli#243
+Prevent
+docker logs --no-stream
+from hanging due to non-existing containers
+moby/moby#34004
+Fix
+docker stack ps
+printing error to
+stdout
+instead of
+stderr
+docker/cli#298
+Fix progress bar being stuck on
+docker service create
+if an error occurs during deploy
+docker/cli#259
+Improve presentation of progress bars in interactive mode
+docker/cli#260
+docker/cli#237
+Print a warning if
+docker login --password
+is used, and recommend
+--password-stdin
+docker/cli#270
+Make API version negotiation more robust
+moby/moby#33827
+Hide
+--detach
+when connected to daemons older than Docker 17.05
+docker/cli#219
+Add
+scope
+filter in
+GET /networks/(id or name)
+moby/moby#33630
+Builder
+Implement long running interactive session and sending build context incrementally
+moby/moby#32677
+docker/cli#231
+moby/moby#33859
+Warn on empty continuation lines
+moby/moby#33719
+Fix
+.dockerignore
+entries with a leading
+/
+not matching anything
+moby/moby#32088
+Logging
+Fix wrong filemode for rotate log files
+moby/moby#33926
+Fix stderr logging for journald and syslog
+moby/moby#33832
+Runtime
+Allow stopping of paused container
+moby/moby#34027
+Add quota support for the overlay2 storage driver
+moby/moby#32977
+Remove container locks on
+docker ps
+moby/moby#31273
+Store container names in memdb
+moby/moby#33886
+Fix race condition between
+docker exec
+and
+docker pause
+moby/moby#32881
+Devicemapper: Rework logging and add
+--storage-opt dm.libdm_log_level
+moby/moby#33845
+Devicemapper: Prevent "device in use" errors if deferred removal is enabled, but not deferred deletion
+moby/moby#33877
+Devicemapper: Use KeepAlive to prevent tasks being garbage-collected while still in use
+moby/moby#33376
+Report intermediate prune results if prune is cancelled
+moby/moby#33979
+Fix run
+docker rename <container-id> new_name
+concurrently resulting in the having multiple names
+moby/moby#33940
+Fix file-descriptor leak and error handling
+moby/moby#33713
+Fix SIGSEGV when running containers
+docker/cli#303
+Prevent a goroutine leak when healthcheck gets stopped
+moby/moby#33781
+Image: Improve store locking
+moby/moby#33755
+Fix Btrfs quota groups not being removed when container is destroyed
+moby/moby#29427
+Libcontainerd: fix defunct containerd processes not being properly reaped
+moby/moby#33419
+Preparations for Linux Containers on Windows
+LCOW: Dedicated scratch space for service VM utilities
+moby/moby#33809
+LCOW: Support most operations excluding remote filesystem
+moby/moby#33241
+moby/moby#33826
+LCOW: Change directory from lcow to "Linux Containers"
+moby/moby#33835
+LCOW: pass command arguments without extra quoting
+moby/moby#33815
+LCOW: Updates necessary due to platform schema change
+moby/moby#33785
+Swarm mode
+Initial support for pluggable secret backends
+moby/moby#34157
+moby/moby#34123
+Sort swarm stacks and nodes using natural sorting
+docker/cli#315
+Make engine support cluster config event
+moby/moby#34032
+Only pass a join address when in the process of joining a cluster
+moby/moby#33361
+Fix error during service creation if a network with the same name exists both as "local" and "swarm" scoped network
+docker/cli#184
+(experimental) Add support for plugins on swarm
+moby/moby#33575
+Edit this page
+Request changes
+Table of contents
+17.07.0-ce

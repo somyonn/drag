@@ -1,0 +1,1093 @@
+# Install Docker Engine from binaries | Docker Docs
+
+Source: https://docs.docker.com/engine/install/binaries/
+
+Back
+Manuals
+Get started
+Guides
+Reference
+AI and agents
+Overview
+Docker Sandboxes
+Get started
+Usage
+Agents
+Claude Code
+Codex
+Copilot
+Cursor
+Droid
+Gemini
+Kiro
+OpenCode
+Docker Agent
+Shell
+Customize
+Early Access
+Templates
+Kits
+Examples
+Build an agent
+Architecture
+Security model
+Isolation layers
+Defaults
+Credentials
+Policies
+Org governance
+Workspace trust
+Troubleshooting
+FAQ
+Release notes
+MCP Catalog and Toolkit
+Beta
+Get started
+Catalog
+Profiles
+Toolkit UI
+Use with CLI
+Dynamic discovery
+Gateway
+Hub MCP server
+FAQs
+E2B sandboxes
+Model Runner
+Get started with DMR
+DMR REST API
+Configuration options
+DMR examples
+IDE and tool integrations
+Open WebUI integration
+Inference engines
+Gordon
+Use cases
+Concepts
+Capabilities
+Data privacy
+How-to guides
+Docker Desktop
+CLI
+Permissions
+Configure tools
+Usage limits
+AI and Docker Compose
+Use AI models in Compose
+Docker Agent
+Model providers
+Local models
+Building a coding agent
+Best practices
+Sharing agents
+Integrations
+A2A
+ACP
+MCP
+Reference
+Configuration file
+Toolsets
+CLI
+Examples
+RAG
+Evals
+Application development
+Docker Desktop
+Setup
+Install
+Mac
+Mac permission requirements
+Windows
+Windows permission requirements
+Linux
+Ubuntu
+Debian
+Fedora
+Arch
+RHEL
+VM or VDI environments
+Sign in
+Allowlist
+Explore Docker Desktop
+Containers
+Images
+Volumes
+Builds
+Kubernetes
+Logs
+Resource Saver mode
+Pause Docker Desktop
+Features and capabilities
+Networking
+How-tos
+GPU support
+USB/IP support
+Synchronized file shares
+containerd image store
+Wasm workloads
+Beta
+Docker Desktop CLI
+Virtual Machine Manager
+WSL
+Best practices
+Custom kernels
+Use WSL
+Settings and maintenance
+Change settings
+Backup and restore data
+Troubleshoot and support
+Troubleshoot and diagnose
+Common topics
+Known issues
+MacOS app damaged dialog
+FAQs
+General
+Mac
+Windows
+Linux
+Releases
+Give feedback
+Uninstall
+Release notes
+Docker Engine
+Install
+Ubuntu
+Debian
+RHEL
+Fedora
+Raspberry Pi OS (32-bit / armhf)
+CentOS
+Binaries
+Post-installation steps
+Storage
+Volumes
+Bind mounts
+tmpfs mounts
+Storage drivers
+Select a storage driver
+BTRFS storage driver
+Device Mapper storage driver (deprecated)
+OverlayFS storage driver
+VFS storage driver
+windowsfilter storage driver
+ZFS storage driver
+containerd image store
+Networking
+Docker with iptables
+Docker with nftables
+Packet filtering and firewalls
+Port publishing and mapping
+Network drivers
+Bridge network driver
+Host network driver
+IPvlan network driver
+Macvlan network driver
+None network driver
+Overlay network driver
+CA certificates
+Legacy container links
+Containers
+Start containers automatically
+Run multiple processes in a container
+Resource constraints
+GPU access
+Runtime metrics
+Running containers
+CLI
+Completion
+Proxy configuration
+Filter commands
+Format command and log output
+OpenTelemetry for the Docker CLI
+Daemon
+Start the daemon
+Use IPv6 networking
+Daemon proxy configuration
+Live restore
+Alternative container runtimes
+Collect Docker metrics with Prometheus
+Configure remote access for Docker daemon
+Read the daemon logs
+Troubleshooting the Docker daemon
+Manage resources
+Docker contexts
+Docker object labels
+Prune unused Docker objects
+Logs and metrics
+Configure logging drivers
+Customize log driver output
+Logging drivers
+Amazon CloudWatch Logs logging driver
+ETW logging driver
+Fluentd logging driver
+Google Cloud Logging driver
+Graylog Extended Format logging driver
+Journald logging driver
+JSON File logging driver
+Local file logging driver
+Splunk logging driver
+Syslog logging driver
+Use a logging driver plugin
+Use docker logs with remote logging drivers
+Security
+Rootless mode
+Tips
+Troubleshooting
+Antivirus software and Docker
+AppArmor security profiles for Docker
+Content trust in Docker
+Automation with content trust
+Delegations for content trust
+Deploy Notary Server with Compose
+Manage keys for content trust
+Play in a content trust sandbox
+Docker security non-events
+Isolate containers with a user namespace
+Protect the Docker daemon socket
+Seccomp security profiles for Docker
+Verify repository client with certificates
+Swarm mode
+Administer and maintain a swarm of Docker Engines
+Deploy a stack to a swarm
+Deploy services to a swarm
+Getting started with Swarm mode
+Create a swarm
+Add nodes to the swarm
+Deploy a service to the swarm
+Inspect a service on the swarm
+Scale the service in the swarm
+Delete the service running on the swarm
+Apply rolling updates to a service
+Drain a node on the swarm
+How swarm works
+How nodes work
+How services work
+Manage swarm security with public key infrastructure (PKI)
+Swarm task states
+Join nodes to a swarm
+Lock your swarm to protect its encryption key
+Manage nodes in a swarm
+Manage sensitive data with Docker secrets
+Manage swarm service networks
+Raft consensus in swarm mode
+Run Docker Engine in swarm mode
+Store configuration data using Docker Configs
+Swarm mode key concepts
+Use Swarm mode routing mesh
+Deprecated features
+Docker Engine plugins
+Access authorization plugin
+Docker log driver plugins
+Docker network driver plugins
+Docker Plugin API
+Docker volume plugins
+Plugin Config Version 1 of Plugin V2
+Use Docker Engine plugins
+Release notes
+Engine v29
+Engine v28
+Engine v27
+Engine v26.1
+Engine v26.0
+Engine v25.0
+Engine v24.0
+Engine v23.0
+Engine v20.10
+Engine v19.03
+Engine v18.09
+Engine v18.06
+Engine v18.05
+Engine v18.04
+Engine v18.03
+Engine v18.02
+Engine v18.01
+Engine v17.12
+Engine v17.11
+Engine v17.10
+Engine v17.09
+Engine v17.07
+Engine v17.06
+Engine v17.05
+Engine v17.04
+Engine v17.03
+Prior releases
+Docker Offload
+Quickstart
+About
+Configure
+Usage
+Optimize usage
+Troubleshoot
+Give feedback
+Docker Build
+Core concepts
+Docker Build Overview
+Dockerfile overview
+Build context
+Build checks
+Building
+Multi-stage
+Variables
+Secrets
+Multi-platform
+Export binaries
+Container Device Interface (CDI)
+Best practices
+Base images
+Builders
+Build drivers
+Docker container driver
+Docker driver
+Kubernetes driver
+Remote driver
+Manage builders
+Bake
+Introduction
+Targets
+Inheritance
+Variables
+Expressions
+Functions
+Matrix targets
+Contexts
+Bake file reference
+Bake standard library functions
+Building with Bake from a Compose file
+Overriding configurations
+Remote Bake file definition
+Cache
+Build cache invalidation
+Build garbage collection
+Cache storage backends
+Amazon S3 cache
+Azure Blob Storage cache
+GitHub Actions cache
+Inline cache
+Local cache
+Registry cache
+Optimize cache usage in builds
+CI
+GitHub Actions
+Annotations
+Attestations
+Build checks
+Build secrets
+Build summary
+BuildKit configuration
+Cache management
+Copy image between registries
+Export to Docker
+GitHub Builder
+New
+Architecture
+Build workflow
+Bake workflow
+Local registry
+Multi-platform image
+Named contexts
+Push to multiple registries
+Reproducible builds
+Share image between jobs
+Tags and labels
+Test before push
+Update Docker Hub description
+Validating builds
+Experimental
+Introduction
+Usage
+Image validation
+Git validation
+Templates & examples
+Testing
+Debugging
+Input reference
+Built-in functions
+Metadata
+Annotations
+Build attestations
+Image attestation storage
+Provenance attestations
+SBOM attestations
+SLSA definitions
+Exporters
+Image and registry exporters
+Local and tar exporters
+OCI and Docker exporters
+BuildKit
+buildkitd.toml
+Configure BuildKit
+Custom Dockerfile syntax
+Dockerfile release notes
+Debugging
+OpenTelemetry support
+Build release notes
+Docker Build Cloud
+Setup
+Usage
+Continuous integration
+Optimization
+Builder settings
+Release notes
+Docker Compose
+Introduction to Compose
+How Compose works
+Why use Compose?
+History and development
+Install
+Plugin
+Standalone (Legacy)
+Uninstall
+Quickstart
+How-tos
+Specify a project name
+Use lifecycle hooks
+Use service profiles
+Control startup order
+Use environment variables
+Set environment variables
+Environment variables precedence
+Pre-defined environment variables
+Interpolation
+Best practices
+Build dependent images
+Use Compose Watch
+Secrets in Compose
+Networking
+Use multiple Compose files
+Merge
+Extend
+Include
+Enable GPU support
+Use Compose in production
+OCI artifact applications
+Use provider services
+Compose Bridge
+Usage
+Customize
+Use Model Runner
+Compose SDK
+New
+Trust model for Compose files
+Support and feedback
+FAQs
+Give feedback
+Release notes
+Docker Extensions
+Marketplace extensions
+Non-marketplace extensions
+Configure a private marketplace
+Settings and feedback
+Extensions SDK
+The build and publish process
+Quickstart
+Part one: Build
+Create a simple extension
+Create an advanced frontend extension
+Add a backend to your extension
+Part two: Publish
+Add labels
+Validate
+Package and release your extension
+Share your extension
+Publish in the Marketplace
+Build multi-arch extensions
+Architecture
+Metadata
+Security
+Design and UI styling
+Guidelines
+Docker design principles
+MUI best practices
+Developer Guides
+Authentication
+Interacting with Kubernetes
+Invoke host binaries
+Use the Docker socket
+Developer SDK tools
+Test and debug
+Continuous Integration (CI)
+CLI reference
+Extension APIs
+Dashboard
+Docker
+Extension Backend
+Extension UI API
+Navigation
+Deprecated products and features
+Release lifecycle
+Supply chain security
+Docker Hardened Images
+New
+Quickstart
+Features
+Explore
+Hardened images
+Build process
+Image types
+Scanner integrations
+Image testing
+Responsibility overview
+Malware scanning
+Feedback
+Migration
+Migration checklist
+AI-assisted migration
+Experimental
+Migrate from Alpine or Debian
+Migrate from Ubuntu
+Migrate from Wolfi
+Migration examples
+Go
+Python
+Node.js
+How-tos
+Search and evaluate
+Mirror a repository
+Customize an image or chart
+Create and build an image
+Use an image
+Use a Helm chart
+Use hardened packages
+Verify an image or chart
+Scan an image
+Enforce image usage
+Use the CLI
+Use DHI Select & Enterprise
+Core concepts
+Attestations
+CIS Benchmark
+Code signing
+CVEs
+Distroless images
+FIPS
+glibc and musl
+Hardening
+Image digests
+Image provenance
+Immutability
+SBOMs
+SLSA
+Software Supply Chain Security
+SSDLC
+STIG
+VEX
+Troubleshoot
+Additional resources
+Docker Hub
+Quickstart
+Library
+Search
+Trusted content
+Catalogs
+Mirror
+Repositories
+Create
+Manage
+Repository information
+Access
+Images
+Tags
+Immutable tags
+Image Management
+Software artifacts
+Push images
+Move images
+Bulk migrate images
+Image security insights
+Webhooks
+Automated builds
+Deprecated
+Set up
+Link accounts
+Automated repository tests
+Advanced options
+Migrate
+Manage autobuilds
+Troubleshoot
+Trusted content
+Docker Official Images
+Docker Verified Publisher Program
+Docker-Sponsored Open Source Program
+Insights and analytics
+Export repositories
+Archive
+Delete
+Settings
+Usage and limits
+Pulls
+Optimize usage
+Troubleshoot
+Release notes
+Docker Scout
+Install
+Quickstart
+Explore
+Dashboard
+Docker Scout image analysis
+Docker Scout metrics exporter
+Image details view
+Manage vulnerability exceptions
+How-tos
+Create an exception using the GUI
+Create an exception using the VEX
+Docker Scout environment variables
+Docker Scout SBOMs
+Use Scout with different artifact types
+Deep dive
+Advisory database sources and matching service
+Data collection and storage in Docker Scout
+Policy Evaluation
+Configure policies
+Docker Scout health scores
+Evaluate policy compliance in CI
+Remediation with Docker Scout
+View Docker Scout policy status
+Integrations
+Code quality
+SonarQube
+Container registries
+Amazon ECR
+Artifactory Container Registry
+Azure Container Registry
+Continuous Integration
+Azure DevOps Pipelines
+Circle CI
+GitHub Actions
+GitLab CI/CD
+Jenkins
+Integrating Docker Scout with environments
+Generic (CLI)
+Sysdig
+Source code management
+GitHub
+Team collaboration
+Slack
+Release notes
+CLI release notes
+Platform release notes
+Platform
+Support
+Billing
+Add or update a payment method
+Manage your billing information
+3D Secure authentication
+Invoices and billing history
+Change your billing cycle
+Submit a tax exemption certificate
+FAQs
+Docker accounts
+Accounts
+Create an account
+Manage an account
+Deactivate an account
+Security
+Personal access tokens
+Two-factor authentication
+Recover your Docker account
+FAQs
+General
+Container
+Network and VM
+Security announcements
+Subscription
+Compare
+Setup
+Scale
+Upgrade or change
+Manage seats
+Docker Desktop license agreement
+FAQs
+Release notes
+Enterprise
+Administration
+Organization
+Setup
+Create
+Onboard
+Change information
+Convert account
+Manage
+Members
+Teams
+Docker products
+Deactivate
+FAQs
+Company
+Create
+Manage
+Organizations
+Owners
+Users
+FAQs
+Activity logs
+Insights
+Deploy Docker Desktop
+MSI installer
+PKG installer
+MS Store
+Deploy with Intune
+Deploy with Jamf Pro
+Microsoft Dev Box
+FAQs
+Security
+Add and manage domains
+Single sign-on
+Setup
+Manage connections
+Troubleshoot
+FAQs
+General
+Domains
+Enforcement
+Identity providers
+User management
+Provision
+SCIM
+Setup
+Group mapping
+Migrate
+Just-in-Time
+Auto-provision
+Troubleshoot
+Enforce sign-in
+Configure
+Roles and permissions
+Core roles
+Custom roles
+Hardened Docker Desktop
+Enhanced Container Isolation
+Enable ECI
+Configure advanced settings
+Limitations
+FAQs
+Settings Management
+Use a JSON file
+Use the Admin Console
+Desktop settings reporting
+Settings reference
+Air-gapped containers
+Registry Access Management
+Image Access Management
+Namespace access
+Organization access tokens
+Home
+/
+Manuals
+/
+Docker Engine
+/
+Install
+/
+Binaries
+Install Docker Engine from binaries
+Ask Gordon
+Copy Markdown
+View Markdown
+Table of contents
+Install daemon and client binaries on Linux
+Prerequisites
+Install static binaries
+Install client binaries on macOS
+Install server and client binaries on Windows
+Upgrade static binaries
+Next steps
+Important
+This page contains information on how to install Docker using binaries. These
+instructions are mostly suitable for testing purposes. We do not recommend
+installing Docker using binaries in production environments as they don't have automatic security updates. The Linux binaries described on this
+page are statically linked, which means that vulnerabilities in build-time
+dependencies are not automatically patched by security updates of your Linux
+distribution.
+Updating binaries is also slightly more involved when compared to Docker packages
+installed using a package manager or through Docker Desktop, as it requires
+(manually) updating the installed version whenever there is a new release of
+Docker.
+Also, static binaries may not include all functionalities provided by the dynamic
+packages.
+On Windows and Mac, we recommend that you install
+Docker Desktop
+instead. For Linux, we recommend that you follow the instructions specific for
+your distribution.
+If you want to try Docker or use it in a testing environment, but you're not on
+a supported platform, you can try installing from static binaries. If possible,
+you should use packages built for your operating system, and use your operating
+system's package management system to manage Docker installation and upgrades.
+Static binaries for the Docker daemon binary are only available for Linux (as
+dockerd
+) and Windows (as
+dockerd.exe
+).
+Static binaries for the Docker client are available for Linux, Windows, and macOS (as
+docker
+).
+This topic discusses binary installation for Linux, Windows, and macOS:
+Install daemon and client binaries on Linux
+Install client binaries on macOS
+Install server and client binaries on Windows
+Install daemon and client binaries on Linux
+Prerequisites
+Before attempting to install Docker from binaries, be sure your host machine
+meets the prerequisites:
+A 64-bit installation
+Version 3.10 or higher of the Linux kernel. The latest version of the kernel
+available for your platform is recommended.
+iptables
+version 1.4 or higher
+git
+version 1.7 or higher
+A
+ps
+executable, usually provided by
+procps
+or a similar package.
+XZ Utils
+4.9 or higher
+A
+properly mounted
+cgroupfs
+hierarchy; a single, all-encompassing
+cgroup
+mount
+point is not sufficient. See Github issues
+#2683
+,
+#3485
+,
+#4568
+).
+Secure your environment as much as possible
+OS considerations
+Enable SELinux or AppArmor if possible.
+It is recommended to use AppArmor or SELinux if your Linux distribution supports
+either of the two. This helps improve security and blocks certain
+types of exploits. Review the documentation for your Linux distribution for
+instructions for enabling and configuring AppArmor or SELinux.
+Security warning
+If either of the security mechanisms is enabled, do not disable it as a
+work-around to make Docker or its containers run. Instead, configure it
+correctly to fix any problems.
+Docker daemon considerations
+Enable
+seccomp
+security profiles if possible. See
+Enabling
+seccomp
+for Docker
+.
+Enable user namespaces if possible. See the
+Daemon user namespace options
+.
+Install static binaries
+Download the static binary archive. Go to
+https://download.docker.com/linux/static/stable/
+,
+choose your hardware platform, and download the
+.tgz
+file relating to the
+version of Docker Engine you want to install.
+Extract the archive using the
+tar
+utility. The
+dockerd
+and
+docker
+binaries are extracted.
+$
+tar xzvf /path/to/<FILE>.tar.gz
+Optional
+: Move the binaries to a directory on your executable path, such
+as
+/usr/bin/
+. If you skip this step, you must provide the path to the
+executable when you invoke
+docker
+or
+dockerd
+commands.
+$
+sudo cp docker/* /usr/bin/
+Start the Docker daemon:
+$
+sudo dockerd
+&
+If you need to start the daemon with additional options, modify the above
+command accordingly or create and edit the file
+/etc/docker/daemon.json
+to add the custom configuration options.
+Verify that Docker is installed correctly by running the
+hello-world
+image.
+$
+sudo docker run hello-world
+This command downloads a test image and runs it in a container. When the
+container runs, it prints a message and exits.
+You have now successfully installed and started Docker Engine.
+Tip
+Receiving errors when trying to run without root?
+The
+docker
+user group exists but contains no users, which is why youâre required
+to use
+sudo
+to run Docker commands. Continue to
+Linux postinstall
+to allow non-privileged users to run Docker commands and for other optional configuration steps.
+Install client binaries on macOS
+Note
+The following instructions are mostly suitable for testing purposes. The macOS
+binary includes the Docker client only. It does not include the
+dockerd
+daemon
+which is required to run containers. Therefore, we recommend that you install
+Docker Desktop
+instead.
+The binaries for Mac also do not contain:
+A runtime environment. You must set up a functional engine either in a Virtual Machine, or on a remote Linux machine.
+Docker components such as
+buildx
+and
+docker compose
+.
+To install client binaries, perform the following steps:
+Download the static binary archive. Go to
+https://download.docker.com/mac/static/stable/
+and select
+x86_64
+(for Mac on Intel chip) or
+aarch64
+(for Mac on Apple silicon),
+and then download the
+.tgz
+file relating to the version of Docker Engine you want
+to install.
+Extract the archive using the
+tar
+utility. The
+docker
+binary is
+extracted.
+$
+tar xzvf /path/to/<FILE>.tar.gz
+Clear the extended attributes to allow it run.
+$
+sudo xattr -rc docker
+Now, when you run the following command, you can see the Docker CLI usage instructions:
+$
+docker/docker
+Optional
+: Move the binary to a directory on your executable path, such
+as
+/usr/local/bin/
+. If you skip this step, you must provide the path to the
+executable when you invoke
+docker
+or
+dockerd
+commands.
+$
+sudo cp docker/docker /usr/local/bin/
+Verify that Docker is installed correctly by running the
+hello-world
+image. The value of
+<hostname>
+is a hostname or IP address running the
+Docker daemon and accessible to the client.
+$
+sudo docker -H <hostname> run hello-world
+This command downloads a test image and runs it in a container. When the
+container runs, it prints a message and exits.
+Install server and client binaries on Windows
+Note
+The following section describes how to install the Docker daemon on Windows
+Server which allows you to run Windows containers only. When you install the
+Docker daemon on Windows Server, the daemon doesn't contain Docker components
+such as
+buildx
+and
+compose
+. If you're running Windows 10 or 11,
+we recommend that you install
+Docker Desktop
+instead.
+Binary packages on Windows include both
+dockerd.exe
+and
+docker.exe
+. On Windows,
+these binaries only provide the ability to run native Windows containers (not
+Linux containers).
+To install server and client binaries, perform the following steps:
+Download the static binary archive. Go to
+https://download.docker.com/win/static/stable/x86_64
+and select the latest version from the list.
+Run the following PowerShell commands to install and extract the archive to your program files:
+PS
+C:
+\>
+Expand-Archive
+/
+path
+/
+to
+/<
+FILE
+>.
+zip
+-DestinationPath
+$Env:ProgramFiles
+Register the service and start the Docker Engine:
+PS
+C:
+\>
+&
+$Env:ProgramFiles
+\
+Docker
+\
+dockerd
+-
+-register-service
+PS
+C:
+\>
+Start-Service
+docker
+Verify that Docker is installed correctly by running the
+hello-world
+image.
+PS
+C:
+\>
+&
+$Env:ProgramFiles
+\
+Docker
+\
+docker
+run
+hello-world
+:
+nanoserver
+This command downloads a test image and runs it in a container. When the
+container runs, it prints a message and exits.
+Upgrade static binaries
+To upgrade your manual installation of Docker Engine, first stop any
+dockerd
+or
+dockerd.exe
+processes running locally, then follow the
+regular installation steps to install the new version on top of the existing
+version.
+Next steps
+Continue to
+Post-installation steps for Linux
+.
+Edit this page
+Request changes
+Table of contents
+Install daemon and client binaries on Linux
+Prerequisites
+Install static binaries
+Install client binaries on macOS
+Install server and client binaries on Windows
+Upgrade static binaries
+Next steps

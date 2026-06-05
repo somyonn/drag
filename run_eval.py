@@ -6,8 +6,8 @@ import json
 from pathlib import Path
 
 from dotenv import load_dotenv
-from rag.generate import CloudThenMockLLMClient, MockLLMClient, OpenAIChatClient
-from rag.metrics import summarize_latencies_ms
+from rag.llm.generate import CloudThenMockLLMClient
+from rag.core.metrics import summarize_latencies_ms
 from rag.pipeline import query_pipeline
 
 
@@ -22,20 +22,14 @@ def main() -> None:
     load_dotenv()
     parser = argparse.ArgumentParser(description="Batch evaluation for baseline RAG")
     parser.add_argument("--queries", required=True, help="Text file with one query per line")
-    parser.add_argument("--index-dir", default="data/index")
+    parser.add_argument("--index-dir", default="data/index/official")
     parser.add_argument("--top-k", type=int, default=3)
     parser.add_argument("--log-path", default="runs/logs.jsonl")
-    parser.add_argument("--llm", choices=["auto", "mock", "openai"], default="auto")
     args = parser.parse_args()
 
     queries = load_queries(args.queries)
     latencies: list[float] = []
-    if args.llm == "mock":
-        llm_client = MockLLMClient()
-    elif args.llm == "openai":
-        llm_client = OpenAIChatClient()
-    else:
-        llm_client = CloudThenMockLLMClient()
+    llm_client = CloudThenMockLLMClient()
 
     for query in queries:
         result = query_pipeline(

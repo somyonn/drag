@@ -1,32 +1,47 @@
 {
   "low_latency": {
-    "index_dir": "data/index/aws",
+    "index_dir": "data/index/official",
+    "external_sync": {
+      "enabled": false,
+      "sync_on_query": false
+    },
     "retrieval_k": 6,
     "top_k": 3,
     "policy": [
-      "service keyword routing (ec2/s3/iam)",
+      "unified index: AWS + Docker + Google Drive docs",
       "short context budget",
       "fast path first"
     ]
   },
   "privacy": {
-    "index_dir": "data/index/aws",
+    "index_dir": "data/index/official",
+    "external_sync": {
+      "enabled": false,
+      "sync_on_query": false
+    },
     "retrieval_k": 5,
     "top_k": 3,
     "policy": [
-      "PII-like pattern redaction on context and answer",
-      "minimum context exposure",
-      "policy-focused responses"
+      "PII-like pattern redaction on input query, context, and answer",
+      "type-wise masking summary (email/phone/aws_key/rrn/credit_card/ip)",
+      "minimum context exposure"
     ]
   },
   "freshness_accuracy": {
-    "index_dir": "data/index/aws",
+    "index_dir": "data/index/official",
+    "docs_dir": "data/docs",
+    "external_sync": {
+      "enabled": false,
+      "sync_on_query": false,
+      "timeout_sec": 15.0,
+      "delay_sec": 0.05
+    },
     "retrieval_k": 10,
     "top_k": 4,
     "policy": [
-      "freshness-aware rerank using file mtime",
-      "source citation required",
-      "higher recall retrieval"
+      "freshness-aware rerank using content date (falls back to file mtime)",
+      "higher recall retrieval",
+      "external sync disabled (local index only)"
     ]
   }
 }

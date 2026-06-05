@@ -1,0 +1,55 @@
+# Method: revisions.delete  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/revisions/delete
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: revisions.delete
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Path parameters
+Request body
+Response body
+Authorization scopes
+Try it!
+Permanently deletes a file version. You can only delete revisions for files with binary content in Google Drive, like images or videos. Revisions for other files, like Google Docs or Sheets, and the last remaining file version can't be deleted. For more information, see
+Manage file revisions
+.
+HTTP request
+DELETE https://www.googleapis.com/drive/v3/files/{fileId}/revisions/{revisionId}
+The URL uses
+gRPC Transcoding
+syntax.
+Path parameters
+Parameters
+fileId
+string
+The ID of the file.
+revisionId
+string
+The ID of the revision.
+Request body
+The request body must be empty.
+Response body
+If successful, the response body is an empty JSON object.
+Authorization scopes
+Requires one of the following OAuth scopes:
+https://www.googleapis.com/auth/drive
+https://www.googleapis.com/auth/drive.appdata
+https://www.googleapis.com/auth/drive.file
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2025-08-13 UTC.

@@ -1,0 +1,95 @@
+# What's next | Docker Docs
+
+Source: https://docs.docker.com/get-started/introduction/whats-next/
+
+Back
+Get started
+Guides
+Manuals
+Reference
+Get Docker
+What is Docker?
+Introduction
+Get Docker Desktop
+Develop with containers
+Build and push your first image
+What's next
+Docker concepts
+The basics
+What is a container?
+What is an image?
+What is a registry?
+What is Docker Compose?
+Building images
+Understanding the image layers
+Writing a Dockerfile
+Build, tag, and publish an image
+Using the build cache
+Multi-stage builds
+Running containers
+Publishing and exposing ports
+Overriding container defaults
+Persisting container data
+Sharing local files with containers
+Multi-container applications
+Docker workshop
+Part 1: Containerize an application
+Part 2: Update the application
+Part 3: Share the application
+Part 4: Persist the DB
+Part 5: Use bind mounts
+Part 6: Multi-container apps
+Part 7: Use Docker Compose
+Part 8: Image-building best practices
+Part 9: What next
+Educational resources
+Home
+/
+Get started
+/
+Introduction
+/
+What's next
+What's next
+Ask Gordon
+Copy Markdown
+View Markdown
+The following sections provide step-by-step guides to help you understand core Docker concepts, building images, and running containers.
+The basics
+Get started learning the core concepts of containers, images, registries, and Docker Compose.
+What is a container?
+Learn how to run your first container.
+What is an image?
+Learn the basics of image layers.
+What is a registry?
+Learn about container registries, explore their interoperability, and interact with registries.
+What is Docker Compose?
+Gain a better understanding of Docker Compose.
+Building images
+Craft optimized container images with Dockerfiles, build cache, and multi-stage builds.
+Understanding image layers
+Learn about the layers of container images.
+Writing a Dockerfile
+Learn how to create an image using a Dockerfile.
+Build, tag and publish an image
+Learn how to build, tag, and publish an image to Docker Hub or any other registry.
+Using the build cache
+Learn about the build cache, what changes invalidate the cache, and how to effectively use the build cache.
+Multi-stage builds
+Get a better understanding of multi-stage builds and their benefits.
+Running containers
+Master essential techniques for exposing ports, overriding defaults, persisting data, sharing files, and managing multi-container applications.
+Publishing ports
+Understand the significance of publishing and exposing ports in Docker.
+Overriding container defaults
+Learn how to override the container defaults using the
+docker run
+command.
+Persisting container data
+Learn the significance of data persistence in Docker.
+Sharing local files with containers
+Explore the various storage options available in Docker and their common usage.
+Multi-container applications
+Learn the significance of multi-container applications and how they're different from single-container applications.
+Edit this page
+Request changes

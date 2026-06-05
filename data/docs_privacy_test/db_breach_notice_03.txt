@@ -1,0 +1,6 @@
+Database breach notification draft for affected accounts and contact records.
+Notify these mailboxes: user1@mail.com, user2@mail.com, security@vendor.io
+Callback numbers for the incident: 031-700-1212, 010-9999-0000
+Leaked credentials include AWS access key AKIAJ1234567890ABCDE and key ASIAXYZ9876543210PQR
+Source access addresses: 203.0.113.42, 198.51.100.7
+Card numbers exposed: 4000 1234 5678 9010

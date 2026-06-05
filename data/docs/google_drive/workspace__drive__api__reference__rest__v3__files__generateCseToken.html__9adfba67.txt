@@ -1,0 +1,97 @@
+# Method: files.generateCseToken  |  Google Drive  |  Google for Developers
+
+Source: https://developers.google.com/workspace/drive/api/reference/rest/v3/files/generateCseToken
+
+Home
+Google Workspace
+Google Drive
+Reference
+Send feedback
+Method: files.generateCseToken
+Stay organized with collections
+Save and categorize content based on your preferences.
+HTTP request
+Query parameters
+Request body
+Response body
+JSON representation
+Authorization scopes
+Try it!
+Generates a CSE token which can be used to create or update CSE files.
+HTTP request
+GET https://www.googleapis.com/drive/v3/files/generateCseToken
+The URL uses
+gRPC Transcoding
+syntax.
+Query parameters
+Parameters
+fileId
+string
+The ID of the file for which the JWT should be generated. If not provided, an id will be generated.
+parent
+string
+The ID of the expected parent of the file. Used when generating a JWT for a new CSE file. If specified, the parent will be fetched, and if the parent is a shared drive item, the shared drive's policy will be used to determine the KACLS that should be used.
+It is invalid to specify both fileId and parent in a single request.
+Request body
+The request body must be empty.
+Response body
+JWT and associated metadata used to generate CSE files.
+If successful, the response body contains data with the following structure:
+JSON representation
+{
+"fileId"
+:
+string
+,
+"currentKaclsId"
+:
+string
+,
+"currentKaclsName"
+:
+string
+,
+"jwt"
+:
+string
+,
+"kind"
+:
+string
+}
+Fields
+fileId
+string
+The fileId for which the JWT was generated.
+currentKaclsId
+string (
+int64
+format)
+The current Key ACL Service (KACLS) ID associated with the JWT.
+currentKaclsName
+string
+Name of the KACLs that the returned KACLs ID points to.
+jwt
+string
+The signed JSON Web Token (JWT) for the file.
+kind
+string
+Output only. Identifies what kind of resource this is. Value: the fixed string
+"drive#generateCseTokenResponse"
+.
+Authorization scopes
+Requires one of the following OAuth scopes:
+https://www.googleapis.com/auth/docs
+https://www.googleapis.com/auth/drive
+Some scopes are restricted and require a security assessment for your app to use them. For more information, see the
+Authorization guide
+.
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the
+Creative Commons Attribution 4.0 License
+, and code samples are licensed under the
+Apache 2.0 License
+. For details, see the
+Google Developers Site Policies
+. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-05-01 UTC.
